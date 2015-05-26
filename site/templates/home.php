@@ -8,9 +8,9 @@
 
   <main class="main" role="main" id="main">
 
-    <article class="text">
-      <?php echo $page->text()->kirbytext() ?>
-    </article>
+    <?php foreach($pages->visible() as $section): ?>
+    <?php snippet($section->uid(), array('data' => $section)); ?>
+    <?php endforeach ?>
 
   </main>
 

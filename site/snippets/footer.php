@@ -17,11 +17,22 @@
     'use strict';
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
+        var root = $('html, body');
+        $('.menu-link').click(function() {
+          var href = $.attr(this, 'href');
+          root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+        });
+
         //var nav = document.getElementById('nav');
         //sticky(nav);
         //window.fitText( document.getElementById("responsive-headline") );
         var slabTextHeadlines = function() {
-          $("h1").slabText({
+          $(".slab-headline").slabText({
             // Don't slabtext the headers if the viewport is under 380px
             "viewportBreakpoint":479
           });
@@ -29,6 +40,21 @@
         Typekit.load({
           active: slabTextHeadlines()
         });
+
+        var header = document.getElementById('site-header')
+        // make '.nav' stick to the top
+        sticky(header);
+
+        var article = $('article');
+        article.on('scrollSpy:enter', function() {
+          console.log('enter:', $(this).attr('id'));
+        });
+
+        article.on('scrollSpy:exit', function() {
+          console.log('exit:', $(this).attr('id'));
+        });
+
+        article.scrollSpy();
       };
     }
     

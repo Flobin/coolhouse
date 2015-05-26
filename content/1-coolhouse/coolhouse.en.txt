@@ -1,0 +1,5 @@
+title: Coolhouse
+----
+URL-key: Coolhouse
+----
+text: Text about the Coolhouse

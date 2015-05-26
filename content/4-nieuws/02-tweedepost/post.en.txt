@@ -1,0 +1,5 @@
+title: Eerste post
+----
+Date: 2015-05-26
+----
+text: This is the second post

@@ -1,10 +1,6 @@
-! function(name, definition) {
-  if (typeof module != 'undefined' && module.exports) module.exports = definition();
-  else if (typeof define == 'function') define(definition);
-  else this[name] = definition();
-}('sticky', function() {
+(function(){
 
-  return function sticky(el, top) {
+  window.sticky = function(el, top) {
 
     var requiredOriginalStyles = ['position', 'top', 'left', 'z-index'];
 
@@ -59,4 +55,4 @@
     }
   }
 
-});
+})();

@@ -24,7 +24,7 @@
 </head>
 <body class="<?php echo $page->template() ?>">
 
-  <header class="header" role="banner">
+  <header class="header" role="banner" id="site-header">
     <a class="logo" href="<?php echo $site->language()->url() ?>">
       <img src="<?php echo url('assets/build/img/logo-wit.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
     </a>
