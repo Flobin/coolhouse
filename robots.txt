@@ -1,0 +1,9 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /kirby/
+Disallow: /site/
+Disallow: /panel/
+Disallow: /thumbs/
+Disallow: /content/sitemap/
+

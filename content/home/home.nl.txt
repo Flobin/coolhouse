@@ -1,0 +1,33 @@
+Title: Coolhouse
+
+----
+
+Text: 
+
+<section>
+	
+	<h1 id="responsive-headline"><span class="slabtext">Wijds wonen in de haven van Scheveningen</span></h1>
+
+	Nieuwe penthouses, lofts, en huizen op een toplocatie. Rondom uitzicht met prachtige terrassen. Vrijheid is het sleutelwoord bij Coolhouse. Dat geldt ook als we het hebben over uw woonwensen. Laat ons straks weten hoe uw droomappartement er uitziet. Dan gaan wij dit realiseren.
+</section>
+<section>
+	<figure class="left">
+		<img src="/assets/build/img/balkons.jpg" alt="balkons" />
+	</figure>
+
+	<h2>Supermooie balkons</h2>
+	Rondom uw hele apartement balkons met geweldig uitzicht in 270 graden. 
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque risus lacus, scelerisque sit amet libero quis, mattis laoreet dolor. Vestibulum finibus a orci in pulvinar. Pellentesque iaculis efficitur suscipit. Duis faucibus ut sem eleifend congue. 
+
+	<button class="">lees meer</button>
+</section>
+<section>
+	<figure class="right">
+		<img src="/assets/build/img/geheel.png" alt="geheel" />
+	</figure>
+
+	<h2>Bla bla</h2>
+
+	Pellentesque ipsum dui, vestibulum vel neque dictum, lobortis suscipit massa. Fusce pellentesque ante urna, vitae luctus justo porttitor eget. Phasellus sit amet odio odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac leo et nisi congue auctor.
+</section>

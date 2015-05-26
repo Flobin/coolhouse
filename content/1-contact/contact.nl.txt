@@ -1,0 +1,13 @@
+Title: Contact
+
+----
+
+URL-Key: contact
+
+----
+
+Text:
+
+#Stuur ons een berichtje!
+
+Vul het formulier in en we nemen zo snel mogelijk contact met u op.
