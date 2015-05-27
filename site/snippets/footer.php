@@ -48,10 +48,14 @@
         var article = $('article');
         article.on('scrollSpy:enter', function() {
           console.log('enter:', $(this).attr('id'));
+          var menu = $('.menu');
+          menu.find('a[href="#' + this.id + '"]').addClass('active');
         });
 
         article.on('scrollSpy:exit', function() {
           console.log('exit:', $(this).attr('id'));
+          var activeLink = $('.active');
+          activeLink.removeClass('active');
         });
 
         article.scrollSpy();
