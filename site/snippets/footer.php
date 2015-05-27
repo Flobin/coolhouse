@@ -17,7 +17,9 @@
     'use strict';
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
-        var root = $('html, body');
+        var root = $('html, body'),
+            activeLink = $('.active'),
+            menu = $('.menu');
         $('.menu-link').click(function() {
           var href = $.attr(this, 'href');
           root.animate({
@@ -48,13 +50,11 @@
         var article = $('article');
         article.on('scrollSpy:enter', function() {
           console.log('enter:', $(this).attr('id'));
-          var menu = $('.menu');
           menu.find('a[href="#' + this.id + '"]').addClass('active');
         });
 
         article.on('scrollSpy:exit', function() {
           console.log('exit:', $(this).attr('id'));
-          var activeLink = $('.active');
           activeLink.removeClass('active');
         });
 
