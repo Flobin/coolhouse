@@ -18,7 +18,6 @@
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
         var root = $('html, body'),
-            activeLink = $('.active'),
             menu = $('.menu');
         $('.menu-link').click(function() {
           var href = $.attr(this, 'href');
@@ -55,7 +54,7 @@
 
         article.on('scrollSpy:exit', function() {
           console.log('exit:', $(this).attr('id'));
-          activeLink.removeClass('active');
+          $('.active').removeClass('active');
         });
 
         article.scrollSpy();
