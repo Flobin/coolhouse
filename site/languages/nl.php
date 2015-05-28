@@ -14,10 +14,15 @@ l::set('uniform-calc-plus', 'plus');
 l::set('uniform-log-success', 'The log entry was successfully created.');
 l::set('uniform-log-error', 'There was an error while writing the logfile.');
 
-l::set('uniform-login-error', 'Wrong username or password.');
-l::set('uniform-login-success', 'Login successful.');
+l::set('uniform-login-error', 'Verkeerde gebruikersnaam of wachtwoord.');
+l::set('uniform-login-success', 'Login succesvol.');
 
 l::set('uniform-webhook-success', 'Calling webhook successful.');
 l::set('uniform-webhook-error', 'There was an error calling the webhook: ');
 
 l::set('uniform-email-select-error', 'Invalid recipient.');
+
+l::set('message', 'Bericht');
+l::set('submit', 'Verstuur');
+
+l::set('readmore', 'Lees  verder…');

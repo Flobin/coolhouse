@@ -1,0 +1,5 @@
+title: Nieuws
+----
+URL-key: Nieuws
+----
+text: bla bla Nieuws

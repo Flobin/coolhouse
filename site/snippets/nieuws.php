@@ -8,7 +8,7 @@
   <article>
     <h3><?php echo $article->title()->html() ?></h3>
     <p><?php echo $article->text()->excerpt(300) ?></p>
-    <p><a href="<?php echo $article->url() ?>">Read more…</a></p>
+    <p><a href="<?php echo $article->url() ?>"><?php echo l::get('readmore') ?></a></p>
   </article>
 
   <?php endforeach ?>

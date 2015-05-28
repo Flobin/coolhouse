@@ -9,13 +9,13 @@
     <form action="<?php echo $page->url()?>" method="post">
 
       <label<?php e($form->hasError('_from'), ' class="erroneous"')?> for="email">E-Mail</label>
-      <input type="email" name="_from" id="email" value="<?php $form->echoValue('_from') ?>" required/>
+      <input type="email" name="_from" id="email" value="<?php $form->echoValue('_from') ?>" required/><br>
 
-      <label for="message">Message</label>
+      <label for="message"><?php echo l::get('message') ?></label>
       <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
 
       <label class="uniform__potty" for="website">Please leave this field blank</label>
-      <input type="text" name="website" id="website" class="uniform__potty" />
+      <input type="text" name="website" id="website" class="uniform__potty" /><br>
 
       <?php if ($form->hasMessage()): ?>
       <div class="message <?php e($form->successful(), 'success' , 'error')?>">
@@ -23,7 +23,7 @@
       </div>
       <?php endif; ?>
 
-      <button type="submit" name="_submit" value="<?php echo $form->token() ?>"<?php e($form->successful(), ' disabled')?>>Submit</button>
+      <button class="submit" type="submit" name="_submit" value="<?php echo $form->token() ?>"<?php e($form->successful(), ' disabled')?>><?php echo l::get('submit') ?></button>
 
     </form>
   </section>

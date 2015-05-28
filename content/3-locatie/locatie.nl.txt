@@ -4,4 +4,4 @@ URL-key: Locatie
 ----
 text: bla bla Locatie
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.075285868242!2d4.268124499999999!3d52.0965614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b095b6b414d3%3A0x8c183c9626f9a9ea!2sDoctor+Lelykade%2C+2583+Den+Haag%2C+Netherlands!5e0!3m2!1sen!2s!4v1432632333464" width="1920" height="600" frameborder="0" style="border:0" class="left" id="locatie-map"></iframe>
+<section class="big container"><div id="locatie-map"></div></section>

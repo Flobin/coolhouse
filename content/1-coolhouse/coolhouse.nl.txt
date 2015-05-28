@@ -8,17 +8,15 @@ text:
 
 Nieuwe penthouses, lofts, en huizen op een toplocatie. Rondom uitzicht met prachtige terrassen. Vrijheid is het sleutelwoord bij Coolhouse. Dat geldt ook als we het hebben over uw woonwensen. Laat ons straks weten hoe uw droomappartement er uitziet. Dan gaan wij dit realiseren.
 
-(image: /assets/build/img/straatview.png class: left alt: balkons)
+<section class="big three-columns gallery">
+(image: /assets/build/img/geheel.png alt: geheel)
+(image: /assets/build/img/geheel.png alt: geheel)
+(image: /assets/build/img/geheel.png alt: geheel)
+</section>
 
-###Balkons
-Rondom uw hele apartement balkons met geweldig uitzicht in 270 graden. 
+<h3>Balkons</h3>
+<p>Rondom uw hele apartement balkons met geweldig uitzicht in 270 graden, van de stad tot de haven.</p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque risus lacus, scelerisque sit amet libero quis, mattis laoreet dolor. Vestibulum finibus a orci in pulvinar. Pellentesque iaculis efficitur suscipit. Duis faucibus ut sem eleifend congue. 
+<h3>Vrije indeling</h3>
 
-<button class="">lees meer</button>
-
-(image: /assets/build/img/geheel.png class: right alt: geheel)
-
-###Bla bla
-
-Pellentesque ipsum dui, vestibulum vel neque dictum, lobortis suscipit massa. Fusce pellentesque ante urna, vitae luctus justo porttitor eget. Phasellus sit amet odio odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac leo et nisi congue auctor.
+<p>Vanwege de kolommenstructuur zijn de appartementen geheel vrij in te delen. Zo kunnen we ervoor zorgen dat u de woning krijgt die bij u past.</p>

@@ -1,9 +1,6 @@
 <nav role="navigation">
 
   <ul class="menu">
-    <li>
-      <a href="/">home</a>
-    </li>
     <?php foreach($pages->visible() as $p): ?>
     <li>
       <a class="menu-link" href="#<?php echo $p->title() ?>"><?php echo $p->title()->html() ?></a>

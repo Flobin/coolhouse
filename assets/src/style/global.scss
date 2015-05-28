@@ -155,6 +155,7 @@ h1,h2,h3,h4,h5 {
     line-height: 1;
     font-weight: 300;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -388,9 +389,6 @@ article {
     &:first-child {
         margin-top: 0;
     }
-    p, h1, h2, h3, h4, h5, h6, form {
-        @extend .container;
-    }
 }
 .right {
     //margin: 0 1em 1em 1em;
@@ -400,7 +398,7 @@ article {
         width: 50%;
     }
     @include at-least($L) {
-        width: 33%;
+        width: 50%;
     }
     @include at-least($XL) {
         width: 50%;
@@ -426,6 +424,54 @@ article {
     @extend .container;
     margin-bottom: 1em;
     clear: both;
+}
+.gallery {
+    &:after { 
+        content: "";
+        display: block; 
+        clear: both;
+    }
+    margin-top: 1rem;
+}
+.two-columns {
+    figure {
+        display: inline-block;
+        width: 49%;
+        margin-right: 2%;
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+}
+.three-columns {
+    figure {
+        display: inline-block;
+        width: 32%;
+        margin-right: 2%;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    } 
+}
+.four-columns {
+    figure {
+        @include until($M) {
+            display: inline-block;
+            width: 49%;
+            margin-right: 2%;
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+        @include at-least($M) {
+            display: inline-block;
+            width: 24%;
+            margin-right: 2%;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    }
 }
 .fullwidth {
     width: 100%;
@@ -483,9 +529,25 @@ footer {
     background-color: hsla(0,0%,30%,1);
     color: hsla(0,0%,100%,1);
 }
+
 /* ==========================================================================
    #COOLHOUSE
 ========================================================================== */
+.home {
+    p, h1, h2, h3, h4, h5, h6, form {
+        @extend .container;
+    }
+}
+//figure+h1,figure+h2,figure+h3,figure+p {
+//    padding-top: 1rem;
+//}
+.row {
+    @extend .clearfix;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
 
 /* ==========================================================================
    #WONINGEN
@@ -494,6 +556,10 @@ footer {
 /* ==========================================================================
    #LOCATIE
 ========================================================================== */
+#locatie-map {
+    min-height: 300px;
+    width: 100%;
+}
 
 /* ==========================================================================
    #NIEUWS
@@ -502,6 +568,49 @@ footer {
 /* ==========================================================================
    #CONTACT
 ========================================================================== */
+input, textarea {
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+label, .submit {
+    display: block;
+    width: 100%;
+    @include at-least($S) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    @include at-least($M) {
+        display: inline-block;
+        width: auto;
+    }
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    @include at-least($S) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    @include at-least($M) {
+        display: inline-block;
+        max-width: 50%;
+        margin: 0;
+    }
+    @include at-least($L) {
+        max-width: 500px;
+    }
+}
+form br {
+    margin-bottom: 1rem
+}
+
+/* ==========================================================================
+   #BLOG
+========================================================================== */
+.post article {
+    @extend .container;
+}
 
 /* ==========================================================================
    #MISC
@@ -521,9 +630,7 @@ footer {
     left: -9999px;
 }
 
-#locatie-map {
-    min-height: 300px;
-}
+
 #woningen-cover {
     background-image: url('/assets/build/img/Coolhuis_street.jpg');
 }
@@ -535,7 +642,4 @@ footer {
 }
 #contact-cover {
     background-image: url('/assets/build/img/Coolhuis_balcony.jpg');
-}
-input, textarea {
-    border: 1px solid #000;
 }
