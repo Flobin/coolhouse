@@ -9,9 +9,9 @@ text:
 Nieuwe penthouses, lofts, en huizen op een toplocatie. Rondom uitzicht met prachtige terrassen. Vrijheid is het sleutelwoord bij Coolhouse. Dat geldt ook als we het hebben over uw woonwensen. Laat ons straks weten hoe uw droomappartement er uitziet. Dan gaan wij dit realiseren.
 
 <section class="big three-columns gallery">
+(image: http://lorempixel.com/output/city-q-c-640-480-4.jpg alt: geheel)
 (image: /assets/build/img/geheel.png alt: geheel)
-(image: /assets/build/img/geheel.png alt: geheel)
-(image: /assets/build/img/geheel.png alt: geheel)
+(image: http://lorempixel.com/output/city-q-c-640-480-7.jpg alt: geheel)
 </section>
 
 <h3>Balkons</h3>

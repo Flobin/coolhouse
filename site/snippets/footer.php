@@ -19,11 +19,12 @@
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
         var root = $('html, body'),
-            menu = $('.menu');
+            menu = $('.menu'),
+            article = $('.homepage-article');
         $('.menu-link').click(function() {
           var href = $.attr(this, 'href');
-          root.animate({
-              scrollTop: $(href).offset().top
+          root.stop(true,true).animate({
+              scrollTop: $(href).position().top
           }, 500, function () {
               window.location.hash = href;
           });
@@ -47,15 +48,14 @@
           active: slabTextHeadlines()
         });
 
-        var article = $('article');
         article.on('scrollSpy:enter', function() {
           console.log('enter:', $(this).attr('id'));
+          $('.active').removeClass('active');
           menu.find('a[href="#' + this.id + '"]').addClass('active');
         });
 
         article.on('scrollSpy:exit', function() {
           console.log('exit:', $(this).attr('id'));
-          $('.active').removeClass('active');
         });
 
         article.scrollSpy();

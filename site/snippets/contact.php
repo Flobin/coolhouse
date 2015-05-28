@@ -1,6 +1,6 @@
-<article id="Contact">
-	<div class="fullwidth section-cover" id="contact-cover">
-  </div>
+<div class="fullwidth section-cover" id="contact-cover">
+</div>
+<article id="Contact" class="homepage-article">
   <h2><?php echo $data->title()->html() ?></h2>
   <section>
   	<?php echo $data->text()->kirbytext() ?>

@@ -4,4 +4,13 @@ URL-key: Locatie
 ----
 text: bla bla Locatie
 
+<section class="big four-columns gallery">
+(image: http://lorempixel.com/output/city-q-c-640-480-5.jpg alt: geheel)
+(image: http://lorempixel.com/output/city-q-c-640-480-6.jpg alt: geheel)
+(image: http://lorempixel.com/output/city-q-c-640-480-3.jpg alt: geheel)
+(image: http://lorempixel.com/output/city-q-c-640-480-1.jpg alt: geheel)
+</section>
+
+Nog een paar regels tekst. No natum vivendo quo, at est audiam dolores similique. No mea liber delenit percipitur, no mea brute tation. Natum mutat exerci sit te, ad est reque quidam. Sed molestie forensibus id, ex quidam bonorum suscipiantur ius. Ad eos dolor saepe legendos.
+
 <section class="big container"><div id="locatie-map"></div></section>

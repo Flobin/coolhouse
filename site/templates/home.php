@@ -2,7 +2,7 @@
 
   <div id="cover">
     <figure id="cover-logo">
-      <img src="/assets/build/img/logo-wit.svg" alt="Coolhouse logo" id="cover-logo-img"/>
+      <img src="/assets/build/img/logo-white.svg" alt="Coolhouse logo" id="cover-logo-img"/>
     </figure>
   </div>
 

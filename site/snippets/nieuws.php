@@ -1,6 +1,6 @@
-<article id="Nieuws">
-  <div class="fullwidth section-cover" id="nieuws-cover">
-  </div>
+<div class="fullwidth section-cover" id="nieuws-cover">
+</div>
+<article id="Nieuws" class="homepage-article">
   <h2><?php echo $data->title()->html() ?></h2>
   <section>
   <?php foreach($site->page('nieuws')->children()->visible()->flip() as $article): ?>

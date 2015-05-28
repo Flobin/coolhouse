@@ -155,7 +155,6 @@ h1,h2,h3,h4,h5 {
     line-height: 1;
     font-weight: 300;
     margin-bottom: 0.5rem;
-    margin-top: 1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -337,8 +336,31 @@ nav {
     text-transform: uppercase;
     font-size: 0.75rem;
     margin-right: 0.375rem;
+    @include at-least($M) {
+        margin-right: 0.5rem;
+    }
+    @include at-least($L) {
+        margin-right: 0.75rem;
+    }
+    @include at-least($XL) {
+        margin-right: 1rem;
+    }
     &:last-child {
         margin-right: 0;
+    }
+    &:nth-last-child(3):after {
+        content: '|';
+        color: #fff;
+        margin-left: 0.375rem;
+        @include at-least($M) {
+            margin-left: 0.5rem;
+        }
+        @include at-least($L) {
+            margin-left: 0.75rem;
+        }
+        @include at-least($XL) {
+            margin-left: 1rem;
+        }
     }
     a {
         
@@ -381,14 +403,6 @@ main {
 #responsive-headline {
     display: inline-block;
     width: 100%;
-}
-article {
-    display: block;
-    @extend .clearfix;
-    margin-top: 3em;
-    &:first-child {
-        margin-top: 0;
-    }
 }
 .right {
     //margin: 0 1em 1em 1em;
@@ -465,7 +479,7 @@ article {
         }
         @include at-least($M) {
             display: inline-block;
-            width: 24%;
+            width: 23.5%;
             margin-right: 2%;
             &:nth-child(4n) {
                 margin-right: 0;
@@ -483,13 +497,14 @@ figure img {
     display: block;
     max-width: 100%;
 }
-.section-cover {
+div.section-cover {
     min-height: 50vh;
     background-attachment: fixed;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     @extend %well-vertical;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -537,6 +552,15 @@ footer {
     p, h1, h2, h3, h4, h5, h6, form {
         @extend .container;
     }
+    article {
+        display: block;
+        @extend .clearfix;
+        margin-bottom: 3em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        padding-top: 3rem;
+    }
 }
 //figure+h1,figure+h2,figure+h3,figure+p {
 //    padding-top: 1rem;
@@ -559,6 +583,7 @@ figure img {
 #locatie-map {
     min-height: 300px;
     width: 100%;
+    margin-top: 1rem;
 }
 
 /* ==========================================================================
