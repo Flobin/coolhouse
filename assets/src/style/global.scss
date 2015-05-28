@@ -394,11 +394,9 @@ main {
     //background-size: contain;
     //background-position: top center;
     //background-repeat: no-repeat;
-    padding-top: 2rem;
     article {
         //@extend .container;
     }
-    padding-bottom: 2rem
 }
 #responsive-headline {
     display: inline-block;
@@ -505,8 +503,18 @@ div.section-cover {
     background-repeat: no-repeat;
     @extend %well-vertical;
     margin-bottom: 0;
+    div {
+        @extend .container;
+        height: 100%;
+        min-height: 50vh;
+        position: relative;
+    }
 }
-
+h2.section-title {
+    color: hsla(0,0%,100%,1);
+    position: absolute;
+    bottom: 1rem;
+}
 /* ==========================================================================
    #FOOTER
 ========================================================================== */
@@ -552,14 +560,17 @@ footer {
     p, h1, h2, h3, h4, h5, h6, form {
         @extend .container;
     }
-    article {
+    #main > article {
         display: block;
         @extend .clearfix;
-        margin-bottom: 3em;
+        padding-bottom: 3em;
+        padding-top: 3rem;
         &:last-child {
             margin-bottom: 0;
         }
-        padding-top: 3rem;
+        h2, h3 {
+            margin-top: 1em;
+        }
     }
 }
 //figure+h1,figure+h2,figure+h3,figure+p {
