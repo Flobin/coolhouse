@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'assets/src/img/',
-                    src: ['**/*.{png,jpg,gif}'],
+                    src: ['**/*.{png,jpg,gif,svg}'],
                     dest: 'assets/build/img/'
                 }]
             }
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                 }
             },
             images: {
-                files: ['assets/src/img/**/*.{png,jpg,gif}'],
+                files: ['assets/src/img/**/*.{png,jpg,gif,svg}'],
                 tasks: ['imagemin'],
                 options: {
                     spawn: false,
