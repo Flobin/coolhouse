@@ -42,7 +42,7 @@ $M-font-size: 16px;
 $L-font-size: 18px;
 $XL-font-size: 20px;
 $base-background-color: hsla(0,0%,100%,1);
-$alt-color: hsla(202, 100%, 69.4118%, 1);
+$alt-color: hsla(202, 100%, 69.4118%, 1); //#63C6FF RGB: 99 198 255
 $alt-color-dark: darken($alt-color, 25%);
 $base-border-radius: 0.25rem;
 
@@ -738,41 +738,98 @@ figure img {
 /* ==========================================================================
    #CONTACT
 ========================================================================== */
-input, textarea {
-    border: 1px solid #000;
-    border-radius: 0.25rem;
+//from http://tympanus.net/Development/TextInputEffects/index2.html - manami
+.mc-field-group {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #999;
+    @include at-least($M) {
+        display: inline-block;
+        width: 32%;
+        margin-right: 2%;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+.mc-input {
+    width: 100%;
+    background: transparent;
     padding: 0.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    z-index: 100;
+    opacity: 0;
+    float: right;
+    //line-height: normal;
 }
-label, .submit {
+.mc-label {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    padding: 0.5em 0;
+    //pointer-events: none;
+    font-size: 1em;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background: #999;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        -webkit-transition: -webkit-transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        height: 2px;
+        background: #999;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+.mc-label-content {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
     display: block;
     width: 100%;
-    @include at-least($S) {
-        max-width: 90%;
-        margin: 0 auto;
+
+}
+.mc-input:focus {
+    outline: none;
+}
+.input-focus, .mc-input:focus{
+    &.mc-input {
+        opacity: 1;
+        -webkit-transition: opacity 0s 0.3s ease-in-out;
+        transition: opacity 0s 0.3s ease-in-out;
     }
-    @include at-least($M) {
-        display: inline-block;
-        width: auto;
+    &+.mc-label::before {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    &+.mc-label::after {
+        opacity: 0;
+    }
+    &+.mc-label .mc-label-content {
+        color: #cbc4c6;
+        -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
+        transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
     }
 }
-input, textarea {
-    display: block;
-    width: 100%;
-    @include at-least($S) {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    @include at-least($M) {
-        display: inline-block;
-        max-width: 50%;
-        margin: 0;
-    }
-    @include at-least($L) {
-        max-width: 500px;
-    }
-}
-form br {
-    margin-bottom: 1rem
+.indicates-required {
+    font-size: 75%;
+    font-style: italic;
 }
 
 /* ==========================================================================
