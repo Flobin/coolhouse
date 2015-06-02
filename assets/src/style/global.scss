@@ -743,15 +743,15 @@ figure img {
     width: 100%;
     position: relative;
     overflow: hidden;
-    color: #999;
+    color: #666;
     @include at-least($M) {
         display: inline-block;
-        width: 32%;
+        width: 31%;
         margin-right: 2%;
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
     }
+}
+.mc-last-group {
+    margin-right: 0;
 }
 .mc-input {
     width: 100%;
@@ -771,6 +771,7 @@ figure img {
     padding: 0.5em 0;
     //pointer-events: none;
     font-size: 1em;
+    z-index: -1;
     &::before {
         content: '';
         position: absolute;
@@ -780,7 +781,7 @@ figure img {
         bottom: 0;
         height: 100%;
         width: 100%;
-        background: #999;
+        background: #666;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
         -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -793,7 +794,7 @@ figure img {
         left: 0;
         top: 100%;
         height: 2px;
-        background: #999;
+        background: #666;
         -webkit-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
@@ -822,7 +823,7 @@ figure img {
         opacity: 0;
     }
     &+.mc-label .mc-label-content {
-        color: #cbc4c6;
+        color: #666;
         -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
         transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
     }
@@ -830,6 +831,13 @@ figure img {
 .indicates-required {
     font-size: 75%;
     font-style: italic;
+    margin-bottom: 1rem;
+}
+#mc-embedded-subscribe {
+    padding: 0.5em;
+    background-color: #666;
+    color: #fff;
+    text-transform: lowercase;
 }
 
 /* ==========================================================================

@@ -75,10 +75,12 @@
         initMap();
 
         input.focus(function() {
-          $(this).addClass("input-focus")
+          $(this).addClass("input-focus");
         });
         input.blur(function() {
-          $(this).removeClass("input-focus")
+          if ($(this).val() == '') {
+            $(this).removeClass("input-focus");
+          }
         });
 
       };

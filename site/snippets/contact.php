@@ -20,10 +20,10 @@
           </div>
           <div class="mc-field-group">
             <input type="text" value="" name="FNAME" class="required mc-input" id="mce-FNAME">
-            <label class="mc-label" for="mce-FNAME"><span class="mc-label-content"><?php echo l::get('firstname') ?> <span class="asterisk">*</span></span>
+            <label class="mc-label" for="mce-FNAME"><span class="mc-label-content"><?php echo l::get('firstname') ?><span class="asterisk">*</span></span>
             </label>
           </div>
-          <div class="mc-field-group">
+          <div class="mc-field-group mc-last-group">
             <input type="text" value="" name="LNAME" class="mc-input" id="mce-LNAME">
             <label class="mc-label" for="mce-LNAME"><span class="mc-label-content"><?php echo l::get('lastname') ?> </label></span>
           </div>
