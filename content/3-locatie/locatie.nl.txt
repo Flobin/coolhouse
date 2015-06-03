@@ -2,7 +2,7 @@ title: Locatie
 ----
 URL-key: Locatie
 ----
-text: bla bla Locatie
+text: bla bla Locatie Nam vulputate magna eget rutrum eleifend. Phasellus malesuada mauris vitae lacinia aliquet. Aliquam ac risus dolor. Aliquam feugiat pellentesque ultrices. Nam et lorem a purus placerat condimentum. Integer ac imperdiet mi, non dignissim sapien.
 
 <section class="big four-columns gallery">
 (image: http://lorempixel.com/output/city-q-c-640-480-5.jpg alt: geheel)

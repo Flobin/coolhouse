@@ -42,7 +42,10 @@ $M-font-size: 16px;
 $L-font-size: 18px;
 $XL-font-size: 20px;
 $base-background-color: hsla(0,0%,100%,1);
-$alt-color: hsla(202, 100%, 69.4118%, 1); //#63C6FF RGB: 99 198 255
+$dark-blue: hsla(215,48%,13%,1); //111E30
+$light-blue: hsla(202, 100%, 69.4118%, 1);
+$gold: hsla(43,90%,44%,1); //D79E0B
+$alt-color: lighten($dark-blue, 25%);//#63C6FF RGB: 99 198 255
 $alt-color-dark: darken($alt-color, 25%);
 $base-border-radius: 0.25rem;
 
@@ -90,7 +93,7 @@ a, a:visited {
     @include transition(color 0.3s ease-in-out);
 }
 a:hover {
-    color: $alt-color-dark;
+    color: $gold;
 }
 button, a {
     @include transition(all 0.3s ease-in-out);
@@ -283,11 +286,58 @@ p+p {
     left: 0;
     z-index: -2;
     overflow: hidden;
-    background-image: url('/assets/build/img/Coolhuis_balcony.jpg');
+    background-color: #fff;
+}
+#cover-logo {
+    width: 100%;
+    height: 100%;
+    @extend %vertical-parent;
+}
+#cover-logo-img {
+    height: 50vh;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    @extend %vertical-align;
+}
+.logo-0 {
+    fill: $dark-blue;
+}
+.logo-1 {
+    opacity:0.8;
+    fill:$gold;
+}
+.logo-2 {
+    opacity:0.8;
+    fill:none;
+    stroke:$gold;
+    stroke-width:1.4;
+    stroke-miterlimit:10;
+}
+    /*
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-image: url('/assets/build/img/straatview_square_480.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/straatview_portrait_480.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/straatview_square_1024.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/straatview_portrait_1024.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/straatview_orig_1200.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/straatview_orig_1734.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/straatview_orig_1734@2x.jpg');
+    }
 }
 #cover-logo {
     position: fixed;
@@ -300,13 +350,13 @@ p+p {
     height: 100%;
     width: auto;
     display: block;
-}
+}*/
 .header {
     width: 100%;
     height: 3rem;
     padding: 0 1rem;
-    background-color: hsla(0,0%,0%,1);
-    color: hsla(0,0%,100%,1);
+    background-color: $dark-blue;
+    color: $gold;
     /*position: absolute;
     top: 0;
     left: 0;
@@ -319,11 +369,18 @@ p+p {
     left: 0;
     bottom: 0;
 }
-.logo img {
+#header-logo-img {
     height: 2rem;
     width: auto;
     display: block;
     float: left;
+    margin-top: 0.5rem;
+}
+.logo-c {
+    fill: $gold;
+    &:hover {
+        fill: #fff;
+    }
 }
 
 /* ==========================================================================
@@ -386,12 +443,16 @@ nav {
         }
     }
     a {
+        color: $gold;
         padding: 0.5rem 0;
+        &:hover {
+            color: #fff;
+        }
     }
     .active {
         color: #fff;
         &:hover {
-            color: $alt-color
+            color: $gold;
         }
     }
 }
@@ -447,11 +508,11 @@ nav {
         height: 2.5em;
         padding: 0.5em;
         &:hover, &:focus {
-            background-color: $alt-color;
+            background-color: $gold;
             color: #fff;
         }
         &.active {
-            color: $alt-color-dark;
+            color: $dark-blue;
             &:hover, &:focus {
                 color: #fff;
             }
@@ -470,7 +531,7 @@ nav {
     display: block;
     padding: 0.5rem;
     height: 3rem;
-    background: $alt-color;
+    background: $gold;
     color: #fff;
     width: 120px;
     position: relative;
@@ -480,7 +541,7 @@ nav {
     @extend %float-vertical;
 }
 .toggle:hover:after, .toggle:focus:after{
-    background: $alt-color;
+    background: $gold;
 }
 #toggle:checked + .toggle:after{
     content: 'close';
@@ -620,7 +681,7 @@ figure img {
     max-width: 100%;
 }
 div.section-cover {
-    min-height: 50vh;
+    min-height: 75vh;
     background-attachment: fixed;
     background-position: top center;
     background-size: cover;
@@ -630,7 +691,7 @@ div.section-cover {
     div {
         @extend .container;
         height: 100%;
-        min-height: 50vh;
+        min-height: 75vh;
         position: relative;
     }
 }
@@ -638,6 +699,7 @@ h2.section-title {
     color: hsla(0,0%,100%,1);
     position: absolute;
     bottom: 1rem;
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 /* ==========================================================================
    #FOOTER
@@ -673,7 +735,7 @@ main {
 
 footer {
     padding: 1em 0;
-    background-color: hsla(0,0%,30%,1);
+    background-color: $dark-blue;
     color: hsla(0,0%,100%,1);
 }
 
@@ -711,20 +773,74 @@ figure img {
 /* ==========================================================================
    #WONINGEN
 ========================================================================== */
-.svg1 {
-    fill:$alt-color;
+#woningen-cover {
+    background-position: bottom center;
+    background-image: url('/assets/build/img/straatview_square_480.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/straatview_portrait_480.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/straatview_square_768.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/straatview_portrait_768.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/straatview_orig_1024.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/straatview_orig_1200.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/straatview_orig_1734.jpg');
+    }
+}
+.unit {
     opacity: 0;
     &:hover {
         opacity: 0.5;
     }
 }
+.svg0 {
+    fill: $dark-blue;
+
+}
+.svg1 {
+    fill:$alt-color;
+}
 .svg2 {
-    fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
+    fill:none;
+    stroke:#000000;
+    stroke-width:0.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
 }
 
 /* ==========================================================================
    #LOCATIE
 ========================================================================== */
+#locatie-cover {
+    background-image: url('/assets/build/img/Scheveningen.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/Scheveningen.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/Scheveningen.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/Scheveningen.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/Scheveningen.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/Scheveningen.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/Scheveningen.jpg');
+    }
+}
 #locatie-map {
     min-height: 300px;
     width: 100%;
@@ -734,10 +850,52 @@ figure img {
 /* ==========================================================================
    #NIEUWS
 ========================================================================== */
+#nieuws-cover {
+    background-image: url('/assets/build/img/balkon_wide_480.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/balkon_portrait_480.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/balkon_wide_768.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/balkon_portrait_768.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/balkon_wide_1024.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/balkon_wide_1200.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/balkon_wide_2223.jpg');
+    }
+}
 
 /* ==========================================================================
    #CONTACT
 ========================================================================== */
+#contact-cover {
+    background-image: url('/assets/build/img/section_169_480.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/section_portrait_480.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/section_169_768.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/section_portrait_768.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/section_169_1024.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/section_169_1200.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/section_169_2000.jpg');
+    }
+}
 //from http://tympanus.net/Development/TextInputEffects/index2.html - manami
 .mc-field-group {
     width: 100%;
@@ -859,22 +1017,5 @@ figure img {
         font-family: $sans-font-family;
     }
 }
-.uniform__potty {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
 
 
-#woningen-cover {
-    background-image: url('/assets/build/img/Coolhuis_street.jpg');
-}
-#locatie-cover {
-    background-image: url('/assets/build/img/Coolhuis_balcony.jpg');
-}
-#nieuws-cover {
-    background-image: url('/assets/build/img/Coolhuis_street.jpg');
-}
-#contact-cover {
-    background-image: url('/assets/build/img/Coolhuis_balcony.jpg');
-}

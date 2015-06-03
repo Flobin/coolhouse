@@ -65,7 +65,6 @@
           };
           var mapElement = document.getElementById('locatie-map');
           var map = new google.maps.Map(mapElement, mapOptions);
-          // Let's also add a marker while we're at it
           var marker = new google.maps.Marker({
               position: new google.maps.LatLng(52.096310, 4.267894),
               map: map,
