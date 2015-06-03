@@ -769,6 +769,12 @@ figure img {
     width: 100%;
     height: auto;
 }
+.logo-h-1 {
+    fill: $dark-blue;
+}
+.logo-h-2 {
+    fill: $gold;
+}
 
 /* ==========================================================================
    #WONINGEN
@@ -810,7 +816,7 @@ figure img {
 }
 .svg2 {
     fill:none;
-    stroke:#000000;
+    stroke:$dark-blue;
     stroke-width:0.5;
     stroke-linecap:round;
     stroke-linejoin:round;
@@ -901,7 +907,7 @@ figure img {
     width: 100%;
     position: relative;
     overflow: hidden;
-    color: #666;
+    color: $dark-blue;
     @include at-least($M) {
         display: inline-block;
         width: 31%;
@@ -939,7 +945,7 @@ figure img {
         bottom: 0;
         height: 100%;
         width: 100%;
-        background: #666;
+        background: $dark-blue;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
         -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -952,7 +958,7 @@ figure img {
         left: 0;
         top: 100%;
         height: 2px;
-        background: #666;
+        background: $dark-blue;
         -webkit-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
     }
@@ -981,7 +987,7 @@ figure img {
         opacity: 0;
     }
     &+.mc-label .mc-label-content {
-        color: #666;
+        color: $dark-blue;
         -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
         transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
     }
@@ -993,9 +999,13 @@ figure img {
 }
 #mc-embedded-subscribe {
     padding: 0.5em;
-    background-color: #666;
+    background-color: $dark-blue;
     color: #fff;
     text-transform: lowercase;
+    @include transition(background-color, 0.3s, ease-in-out);
+    &:hover,&:focus,&:active {
+        background-color: $gold;
+    }
 }
 
 /* ==========================================================================
@@ -1003,6 +1013,9 @@ figure img {
 ========================================================================== */
 .post article {
     @extend .container;
+}
+.post main {
+    padding-top: 3rem;
 }
 
 /* ==========================================================================
