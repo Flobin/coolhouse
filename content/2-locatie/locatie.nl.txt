@@ -2,13 +2,35 @@ title: Locatie
 ----
 URL-key: Locatie
 ----
-text: bla bla Locatie Nam vulputate magna eget rutrum eleifend. Phasellus malesuada mauris vitae lacinia aliquet. Aliquam ac risus dolor. Aliquam feugiat pellentesque ultrices. Nam et lorem a purus placerat condimentum. Integer ac imperdiet mi, non dignissim sapien.
+text: 
 
-<section class="big four-columns gallery">
-(image: http://lorempixel.com/output/city-q-c-640-480-5.jpg alt: geheel)
-(image: http://lorempixel.com/output/city-q-c-640-480-6.jpg alt: geheel)
-(image: http://lorempixel.com/output/city-q-c-640-480-3.jpg alt: geheel)
-(image: http://lorempixel.com/output/city-q-c-640-480-1.jpg alt: geheel)
+<figure class="big">
+	<picture>
+	      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_panorama_wide_1680.jpg">
+	      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_panorama_wide_1200.jpg">
+	      <source  media="(min-width: 768px)" srcset="/assets/build/img/strand_panorama_wide_1024.jpg">
+	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/strand_panorama_wide_768.jpg">
+	      <img src="/assets/build/img/strand_panorama_wide_480.jpg" alt="foto van het zuiderstrand">
+	</picture>
+</figure>
+
+bla bla Locatie Nam vulputate magna eget rutrum eleifend. Phasellus malesuada mauris vitae lacinia aliquet. Aliquam ac risus dolor. Aliquam feugiat pellentesque ultrices. Nam et lorem a purus placerat condimentum. Integer ac imperdiet mi, non dignissim sapien.
+
+<section class="big two-columns gallery">
+	<figure>
+		<picture>
+		      <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_overzicht_1024.jpg">
+		      <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_overzicht_768.jpg">
+		      <img src="/assets/build/img/haven_overzicht.jpg" alt="foto van de haven">
+		</picture>
+	</figure>
+	<figure>
+		<picture>
+		      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_1024.jpg">
+		      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_768.jpg">
+		      <img src="/assets/build/img/strand.jpg" alt="foto van het strand">
+		</picture>
+	</figure>
 </section>
 
 Nog een paar regels tekst. No natum vivendo quo, at est audiam dolores similique. No mea liber delenit percipitur, no mea brute tation. Natum mutat exerci sit te, ad est reque quidam. Sed molestie forensibus id, ex quidam bonorum suscipiantur ius. Ad eos dolor saepe legendos.

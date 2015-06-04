@@ -60,11 +60,15 @@ text:
 
 Nieuwe penthouses, lofts, en huizen op een toplocatie. Rondom uitzicht met prachtige terrassen. Vrijheid is het sleutelwoord bij Coolhouse. Dat geldt ook als we het hebben over uw woonwensen. Laat ons straks weten hoe uw droomappartement er uitziet. Dan gaan wij dit realiseren.
 
-<section class="big three-columns gallery">
-(image: http://lorempixel.com/output/city-q-c-640-480-4.jpg alt: geheel)
-(image: /assets/build/img/geheel.png alt: geheel)
-(image: http://lorempixel.com/output/city-q-c-640-480-7.jpg alt: geheel)
-</section>
+<figure class="big">
+	<picture>
+	      <source media="(min-width: 1200px)" srcset="/assets/build/img/section_all_1680.jpg">
+	      <source media="(min-width: 1024px)" srcset="/assets/build/img/section_all_1200.jpg">
+	      <source  media="(min-width: 768px)" srcset="/assets/build/img/section_all_1024.jpg">
+	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/section_all_768.jpg">
+	      <img src="/assets/build/img/section_all_480.jpg" alt="rendering van een appartement">
+	</picture>
+</figure>
 
 <h3>Balkons</h3>
 <p>Rondom uw hele appartement balkons met geweldig uitzicht in 270 graden, van de stad tot de haven.</p>

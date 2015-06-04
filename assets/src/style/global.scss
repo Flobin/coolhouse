@@ -676,7 +676,7 @@ figure.two-fifths, iframe.two-fifths {
     clear: both;
     margin-bottom: 1em;
 }
-figure img {
+figure img, figure picture {
     display: block;
     max-width: 100%;
 }
@@ -827,24 +827,24 @@ figure img {
    #LOCATIE
 ========================================================================== */
 #locatie-cover {
-    background-image: url('/assets/build/img/Scheveningen.jpg');
+    background-image: url('/assets/build/img/haven.jpg');
     @media screen and (orientation:portrait) {
-        background-image: url('/assets/build/img/Scheveningen.jpg');
+        background-image: url('/assets/build/img/haven_portrait_480.jpg');
     }
     @include at-least($S) {
-        background-image: url('/assets/build/img/Scheveningen.jpg');
+        background-image: url('/assets/build/img/haven_768.jpg');
         @media screen and (orientation:portrait) {
-            background-image: url('/assets/build/img/Scheveningen.jpg');
+            background-image: url('/assets/build/img/haven_portrait_768.jpg');
         }
     }
     @include at-least($M) {
-        background-image: url('/assets/build/img/Scheveningen.jpg');
+        background-image: url('/assets/build/img/haven_1024.jpg');
     }
     @include at-least($L) {
-        background-image: url('/assets/build/img/Scheveningen.jpg');
+        background-image: url('/assets/build/img/haven_1200.jpg');
     }
     @include at-least($XL) {
-        background-image: url('/assets/build/img/Scheveningen.jpg');
+        background-image: url('/assets/build/img/haven_1632.jpg');
     }
 }
 #locatie-map {

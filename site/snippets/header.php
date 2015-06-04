@@ -10,6 +10,7 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
   <script>
+    if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)document.cookie='HTTP_IS_RETINA=1;path=/';
     (function(d) {
       var config = {
         kitId: 'buk4abp',
