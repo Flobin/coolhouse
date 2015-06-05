@@ -155,11 +155,12 @@ html, body {
     line-height: 1.5;
     font-family: sans-serif;
     font-weight: 300;
+    text-align: justify;
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,h6 {
     line-height: 1;
     font-weight: 300;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -252,7 +253,7 @@ p, main {
     font-weight: light;
 }
 p+p {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .slabtexted .slabtext {
@@ -582,7 +583,7 @@ main {
     //margin: 0 1em 1em 1em;
     @include at-least($M) {
         float: right;
-        margin: 1em 0 1em 1em;
+        margin: 3rem 0 3rem 1rem;
         width: 50%;
     }
     @include at-least($L) {
@@ -596,7 +597,7 @@ main {
     //margin: 0 1em 1em 1em;
     @include at-least($M) {
         float: left;
-        margin: 1em 1em 1em 0;
+        margin: 3rem 1rem 3rem 0;
         width: 50%;
     }
     @include at-least($L) {
@@ -610,7 +611,7 @@ main {
 }
 .big {
     @extend .container;
-    margin-bottom: 1em;
+    margin-bottom: 3rem;
     clear: both;
 }
 .gallery {
@@ -619,7 +620,7 @@ main {
         display: block; 
         clear: both;
     }
-    margin-top: 1rem;
+    margin-top: 3rem;
     iframe {
         float: left;
     }
@@ -664,17 +665,11 @@ main {
         }
     }
 }
-figure.three-fifths, iframe.three-fifths {
-    width: 59%;
-}
-figure.two-fifths, iframe.two-fifths {
-    width: 39%;
-}
 .fullwidth {
     width: 100%;
     height: auto;
     clear: both;
-    margin-bottom: 1em;
+    margin-bottom: 3rem;
 }
 figure img, figure picture {
     display: block;
@@ -698,8 +693,15 @@ div.section-cover {
 h2.section-title {
     color: hsla(0,0%,100%,1);
     position: absolute;
-    bottom: 1rem;
+    bottom: 1.5rem;
     text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+.row {
+    @extend .clearfix;
+}
+figure img {
+    width: 100%;
+    height: auto;
 }
 /* ==========================================================================
    #FOOTER
@@ -755,25 +757,66 @@ footer {
             margin-bottom: 0;
         }
         h2, h3 {
-            margin-top: 1em;
+            margin-top: 3rem;
         }
     }
 }
 //figure+h1,figure+h2,figure+h3,figure+p {
 //    padding-top: 1rem;
 //}
-.row {
-    @extend .clearfix;
-}
-figure img {
-    width: 100%;
-    height: auto;
-}
 .logo-h-1 {
     fill: $dark-blue;
 }
 .logo-h-2 {
     fill: $gold;
+}
+#Coolhouse .big {
+    margin-top: 3rem;
+}
+#Coolhouse .fullwidth {
+    margin-top: 3rem;
+    text-align: center;
+    @include until($S) {
+        max-height: 205px;
+    }
+    @include until($M) {
+        max-height: 275px;
+    }
+    @include until($L) {
+        max-height: 310px;
+    }
+    @include until($XL) {
+        max-height: 319px;
+    }
+    @include at-least($XL) {
+        max-height: 500px;
+    }
+    @include at-least(1875px) {
+        max-height: 560px;
+    }
+}
+canvas.ddpanorama {
+   //cursor: url(./images/openhand.cur), e-resize you need a default here for this to work
+   cursor:-webkit-grab;
+   cursor: -moz-grab;
+   cursor: grab;                    // some future proofing
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   height: auto;
+   @extend .big;
+   overflow: hidden;
+   max-height: 500px;
+   //@extend %vertical-align;
+}
+canvas.ddpanorama:active {
+   //cursor: url(./images/closedhand.cur), e-resize;
+   cursor: -webkit-grabbing;
+   cursor: -moz-grabbing;
+   cursor: grabbing;
 }
 
 /* ==========================================================================
@@ -822,6 +865,20 @@ figure img {
     stroke-linejoin:round;
     stroke-miterlimit:10;
 }
+.svg3 {
+
+}
+.svg4 {
+    fill:none;
+    stroke:$dark-blue;
+    stroke-width:0.1;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+#Woningen .big {
+    margin-top: 2rem;
+}
 
 /* ==========================================================================
    #LOCATIE
@@ -850,7 +907,7 @@ figure img {
 #locatie-map {
     min-height: 300px;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /* ==========================================================================

@@ -14,7 +14,7 @@ text:
 	</picture>
 </figure>
 
-bla bla Locatie Nam vulputate magna eget rutrum eleifend. Phasellus malesuada mauris vitae lacinia aliquet. Aliquam ac risus dolor. Aliquam feugiat pellentesque ultrices. Nam et lorem a purus placerat condimentum. Integer ac imperdiet mi, non dignissim sapien.
+De woningen van het Coolhouse zijn ideaal gesitueerd. Vlakbij kunt u uitwaaien op het strand van Scheveningen, maar u bent ook zo in de stad. Voorzieningen als een supermarkt, bank, en allerlei leuke restaurants en café’s zijn allemaal binnen loopafstand. 
 
 <section class="big two-columns gallery">
 	<figure>
@@ -33,6 +33,7 @@ bla bla Locatie Nam vulputate magna eget rutrum eleifend. Phasellus malesuada ma
 	</figure>
 </section>
 
-Nog een paar regels tekst. No natum vivendo quo, at est audiam dolores similique. No mea liber delenit percipitur, no mea brute tation. Natum mutat exerci sit te, ad est reque quidam. Sed molestie forensibus id, ex quidam bonorum suscipiantur ius. Ad eos dolor saepe legendos.
+###Bereikbaarheid
+Het Coolhouse is gemakkelijk te bereiken met de auto, openbaar vervoer, en natuurlijk de fiets. Met een ondergrondse parkeergarage is er altijd voldoende parkeergelegenheid. Tramlijnen 11, 17 en buslijn 22 stoppen bijna voor de deur. Die brengen u naar de binnenstad of één van de stations waar u uw reis kunt vervolgen. En met de fiets bent u binnen een kwartier in hartje Den Haag.
 
 <section class="big container"><div id="locatie-map"></div></section>
