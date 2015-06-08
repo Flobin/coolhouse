@@ -1,7 +1,9 @@
 <div class="fullwidth section-cover" id="nieuws-cover">
-	<div>
-		<h2 class="section-title"><?php echo $data->title()->html() ?></h2>
-	</div>
+	<h2 class="section-title"><?php echo $data->title()->html() ?></h2>
+  <div class="cover-clip">
+    <div class="cover-img">
+    </div>
+  </div>
 </div>
 <article id="Nieuws" class="homepage-article">
   <section>

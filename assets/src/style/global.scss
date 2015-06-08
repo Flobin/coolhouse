@@ -43,7 +43,7 @@ $L-font-size: 18px;
 $XL-font-size: 20px;
 $base-background-color: hsla(0,0%,100%,1);
 $dark-blue: hsla(215,48%,13%,1); //111E30
-$light-blue: hsla(202, 100%, 69.4118%, 1);
+$light-blue: hsla(213,49%,48%,1); //3E75B7
 $gold: hsla(43,90%,44%,1); //D79E0B
 $alt-color: lighten($dark-blue, 25%);//#63C6FF RGB: 99 198 255
 $alt-color-dark: darken($alt-color, 25%);
@@ -447,13 +447,13 @@ nav {
         color: $gold;
         padding: 0.5rem 0;
         &:hover {
-            color: #fff;
+            color: $light-blue;
         }
     }
     .active {
         color: #fff;
         &:hover {
-            color: $gold;
+            color: $light-blue;
         }
     }
 }
@@ -675,26 +675,60 @@ figure img, figure picture {
     display: block;
     max-width: 100%;
 }
-div.section-cover {
-    min-height: 75vh;
-    background-attachment: fixed;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @extend %well-vertical;
-    margin-bottom: 0;
-    div {
+.home {
+    p, form {
         @extend .container;
-        height: 100%;
-        min-height: 75vh;
-        position: relative;
     }
+    #main > article {
+        display: block;
+        @extend .clearfix;
+        padding-bottom: 3em;
+        padding-top: 3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        h2, h3 {
+            margin-top: 3rem;
+            @extend .container;
+        }
+    }
+}
+div.section-cover {
+    height: 75vh;
+    position: relative;
+    margin-bottom: 0;
 }
 h2.section-title {
     color: hsla(0,0%,100%,1);
-    position: absolute;
-    bottom: 1.5rem;
     text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.2);
+    display: block;
+    @extend .container;
+    position: relative;
+    top: calc(100% - 3rem);
+    z-index: 999;
+}
+.cover-clip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip: rect(auto,auto,auto,auto);
+}
+.cover-img {
+    @extend %well-vertical;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .row {
     @extend .clearfix;
@@ -744,26 +778,12 @@ footer {
 /* ==========================================================================
    #COOLHOUSE
 ========================================================================== */
-.home {
-    p, h1, h2, h3, h4, h5, h6, form {
-        @extend .container;
-    }
-    #main > article {
-        display: block;
-        @extend .clearfix;
-        padding-bottom: 3em;
-        padding-top: 3rem;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        h2, h3 {
-            margin-top: 3rem;
-        }
-    }
-}
 //figure+h1,figure+h2,figure+h3,figure+p {
 //    padding-top: 1rem;
 //}
+.slab-headline {
+    @extend .container;
+}
 .logo-h-1 {
     fill: $dark-blue;
 }
@@ -822,7 +842,7 @@ canvas.ddpanorama:active {
 /* ==========================================================================
    #WONINGEN
 ========================================================================== */
-#woningen-cover {
+#woningen-cover .cover-img{
     background-position: bottom center;
     background-image: url('/assets/build/img/straatview_square_480.jpg');
     @media screen and (orientation:portrait) {
@@ -850,14 +870,14 @@ canvas.ddpanorama:active {
         opacity: 0.5;
     }
 }
-.svg0 {
+.overview-0 {
     fill: $dark-blue;
 
 }
-.svg1 {
-    fill:$alt-color;
+.overview-1 {
+    fill:$light-blue;
 }
-.svg2 {
+.overview-2 {
     fill:none;
     stroke:$dark-blue;
     stroke-width:0.5;
@@ -865,16 +885,20 @@ canvas.ddpanorama:active {
     stroke-linejoin:round;
     stroke-miterlimit:10;
 }
-.svg3 {
+.overview-3 {
 
 }
-.svg4 {
+.overview-4 {
     fill:none;
     stroke:$dark-blue;
     stroke-width:0.1;
     stroke-linecap:round;
     stroke-linejoin:round;
     stroke-miterlimit:10;
+}
+.overview-5 {
+    //font-family:'FuturaPT-Book';
+    font-size: 17;
 }
 #Woningen .big {
     margin-top: 2rem;
@@ -883,7 +907,7 @@ canvas.ddpanorama:active {
 /* ==========================================================================
    #LOCATIE
 ========================================================================== */
-#locatie-cover {
+#locatie-cover .cover-img {
     background-image: url('/assets/build/img/haven.jpg');
     @media screen and (orientation:portrait) {
         background-image: url('/assets/build/img/haven_portrait_480.jpg');
@@ -913,7 +937,7 @@ canvas.ddpanorama:active {
 /* ==========================================================================
    #NIEUWS
 ========================================================================== */
-#nieuws-cover {
+#nieuws-cover .cover-img {
     background-image: url('/assets/build/img/balkon_wide_480.jpg');
     @media screen and (orientation:portrait) {
         background-image: url('/assets/build/img/balkon_portrait_480.jpg');
@@ -938,7 +962,7 @@ canvas.ddpanorama:active {
 /* ==========================================================================
    #CONTACT
 ========================================================================== */
-#contact-cover {
+#contact-cover .cover-img {
     background-image: url('/assets/build/img/section_169_480.jpg');
     @media screen and (orientation:portrait) {
         background-image: url('/assets/build/img/section_portrait_480.jpg');
@@ -960,7 +984,7 @@ canvas.ddpanorama:active {
     }
 }
 //from http://tympanus.net/Development/TextInputEffects/index2.html - manami
-.mc-field-group {
+.field-group {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -971,10 +995,10 @@ canvas.ddpanorama:active {
         margin-right: 2%;
     }
 }
-.mc-last-group {
+.last-group {
     margin-right: 0;
 }
-.mc-input {
+.input {
     width: 100%;
     background: transparent;
     padding: 0.5rem;
@@ -985,7 +1009,7 @@ canvas.ddpanorama:active {
     float: right;
     //line-height: normal;
 }
-.mc-label {
+.label {
     width: 100%;
     position: absolute;
     text-align: left;
@@ -1020,30 +1044,30 @@ canvas.ddpanorama:active {
         transition: opacity 0.3s ease-in-out;
     }
 }
-.mc-label-content {
+.label-content {
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     position: relative;
     display: block;
     width: 100%;
 
 }
-.mc-input:focus {
+.input:focus {
     outline: none;
 }
-.input-focus, .mc-input:focus{
-    &.mc-input {
+.input-focus, .input:focus{
+    &.input {
         opacity: 1;
         -webkit-transition: opacity 0s 0.3s ease-in-out;
         transition: opacity 0s 0.3s ease-in-out;
     }
-    &+.mc-label::before {
+    &+.label::before {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-    &+.mc-label::after {
+    &+.label::after {
         opacity: 0;
     }
-    &+.mc-label .mc-label-content {
+    &+.label .label-content {
         color: $dark-blue;
         -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
         transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
@@ -1054,7 +1078,7 @@ canvas.ddpanorama:active {
     font-style: italic;
     margin-bottom: 1rem;
 }
-#mc-embedded-subscribe {
+#saveForm {
     padding: 0.5em;
     background-color: $dark-blue;
     color: #fff;
@@ -1063,6 +1087,10 @@ canvas.ddpanorama:active {
     &:hover,&:focus,&:active {
         background-color: $gold;
     }
+}
+.hide {
+    display: hidden;
+    opacity: 0;
 }
 
 /* ==========================================================================

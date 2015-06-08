@@ -1,6 +1,8 @@
 <div class="fullwidth section-cover" id="contact-cover">
-	<div>
-		<h2 class="section-title"><?php echo $data->title()->html() ?></h2>
+  <h2 class="section-title"><?php echo $data->title()->html() ?></h2>
+	<div class="cover-clip">
+		<div class="cover-img">
+    </div>
 	</div>
 </div>
 <article id="Contact" class="homepage-article">
@@ -8,35 +10,40 @@
   	<?php echo $data->text()->kirbytext() ?>
   </section>
   <section>
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-      <form action="//cool-house.us11.list-manage.com/subscribe/post?u=b2ec7f81b5575c608e25383a8&amp;id=5fccc97032" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <div class="indicates-required"><span class="asterisk">*</span> <?php echo l::get('required') ?></div>
-          <div class="mc-field-group">
-            <input type="email" value="" name="EMAIL" class="required email mc-input" id="mce-EMAIL">
-            <label class="mc-label" for="mce-EMAIL"><span class="mc-label-content"><?php echo l::get('email') ?><span class="asterisk">*</span></span>
-            </label>
-          </div>
-          <div class="mc-field-group">
-            <input type="text" value="" name="FNAME" class="required mc-input" id="mce-FNAME">
-            <label class="mc-label" for="mce-FNAME"><span class="mc-label-content"><?php echo l::get('firstname') ?><span class="asterisk">*</span></span>
-            </label>
-          </div>
-          <div class="mc-field-group mc-last-group">
-            <input type="text" value="" name="LNAME" class="mc-input" id="mce-LNAME">
-            <label class="mc-label" for="mce-LNAME"><span class="mc-label-content"><?php echo l::get('lastname') ?> </label></span>
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_b2ec7f81b5575c608e25383a8_5fccc97032" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="<?php echo l::get('submit') ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-      </form>
-    </div>
 
-    <!--End mc_embed_signup-->
+    <form id="form1" name="form1" class="wufoo leftLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidateaction="https://davlstudio.wufoo.com/forms/z1ttbb0b1a5821v/#public">
+    <p class="indicates-required"><span class="asterisk">*</span> <?php echo l::get('required') ?></p>
+      <div class="field-group">
+        <input id="Field7" name="Field7" type="text" class="field text fn input" tabindex="1" required>
+        <label class="label" for="Field7">
+          <span class="label-content"><?php echo l::get('firstname') ?><span id="req_7" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group">
+        <input id="Field8" name="Field8" type="text" class="field text ln input" value="" size="14" tabindex="2" required >
+        <label class="label" for="Field8">
+          <span class="label-content"><?php echo l::get('lastname') ?><span id="req_8" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group last-group">
+        <input id="Field9" name="Field9" type="email" spellcheck="false" class="field text medium input" value="" maxlength="255" tabindex="3" required >
+        <label class="label" id="title9" for="Field9">
+          <span class="label-content"><?php echo l::get('email') ?><span id="req_9" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group">
+        <textarea id="Field11" name="Field11" class="field textarea small input" spellcheck="true" rows="10" cols="50" tabindex="4" onkeyup=""></textarea>
+        <label class="desc" id="title11" for="Field11">
+          <span class="label-content">Eventuele vraag</span>
+        </label>
+      </div>
+      <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="<?php echo l::get('submit') ?>" >
+      <div class="hide">
+        <label for="comment">Do Not Fill This Out</label>
+        <textarea name="comment" id="comment" rows="1" cols="1" class="input"></textarea>
+        <input style="position: absolute; left: -5000px; opacity: 0;" type="hidden" id="idstamp" name="idstamp" value="fXdEgTHgXdoQ7neVTO9YlidZLbSN34fSZr04q4sFCMY=" >
+      </div>
+    </form>
+
   </section>
 </article>
