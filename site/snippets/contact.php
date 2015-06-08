@@ -40,7 +40,7 @@
       <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="<?php echo l::get('submit') ?>" >
       <div class="hide">
         <label for="comment">Do Not Fill This Out</label>
-        <textarea name="comment" id="comment" rows="1" cols="1" class="input"></textarea>
+        <textarea name="comment" id="comment" rows="1" cols="1" class="hide"></textarea>
         <input style="position: absolute; left: -5000px; opacity: 0;" type="hidden" id="idstamp" name="idstamp" value="fXdEgTHgXdoQ7neVTO9YlidZLbSN34fSZr04q4sFCMY=" >
       </div>
     </form>

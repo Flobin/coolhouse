@@ -15,7 +15,13 @@ text:
 	</picture>
 </figure>
 
-De woningen van het Coolhouse zijn ideaal gesitueerd. Vlakbij kunt u uitwaaien op het strand van Scheveningen, maar u bent ook zo in de stad. Voorzieningen als een supermarkt, bank, en allerlei leuke restaurants en café’s zijn allemaal binnen loopafstand. 
+Havenlocaties zijn in de afgelopen jaren steeds populairder geworden als woonbestemming door hun unieke kwaliteiten. Het oude beeld van een haven als werkomgeving is getransformeerd tot een levendige omgeving voor wonen, recreëren en ontspannen. Het water, de kade, de vissersboten en de jachten geven de haven een romantisch karakter.
+
+Aan de haven van Scheveningen wordt momenteel flink gewerkt om naast woonruimte ook voorzieningen te creëren die ten gunste komen van de leefbaarheid van de plek. Een supermarkt, bank, en allerlei leuke restaurants en café’s zijn nu al binnen loopafstand.
+
+Met het Scheveningse strand en boulevard aan de ene kant, en het Zuiderstrand aan de andere kant is deze locatie de droom van een strand- en zeeliefhebber.
+
+Winkelstraten als de Frederik Hendriklaan en de Keizerstraat liggen op een steenworp afstand van de haven.
 
 <section class="big two-columns gallery">
 	<figure>
@@ -36,7 +42,10 @@ De woningen van het Coolhouse zijn ideaal gesitueerd. Vlakbij kunt u uitwaaien o
 	</figure>
 </section>
 
+###Locatie
+Cool-house komt te staan aan de Dr. Lelykade, naast het gemeentelijke monument van de oude visrokerij en rederij: De Rokerij. Het monumentale karakter van de Rokerij geeft het Cool-house de ruimte om een alzijdig woongebouw te worden met een uitstekende bezonning. Waar veel woningen aan de Dr. Lelykade het compromis zoeken tussen havenzicht en zon met een westelijke ligging, geniet het Cool-house van een unieke oriëntatie in combinatie met een weids uitzicht over haven en stad!
+
 ###Bereikbaarheid
-Het Coolhouse is gemakkelijk te bereiken met de auto, openbaar vervoer, en natuurlijk de fiets. Met een ondergrondse parkeergarage is er altijd voldoende parkeergelegenheid. Tramlijnen 11, 17 en buslijn 22 stoppen bijna voor de deur. Die brengen u naar de binnenstad of één van de stations waar u uw reis kunt vervolgen. En met de fiets bent u binnen een kwartier in hartje Den Haag.
+Het Cool-house is gemakkelijk te bereiken met de auto, openbaar vervoer, en natuurlijk de fiets. Met een ondergrondse parkeergarage is er altijd voldoende parkeergelegenheid. Tramlijnen 11, 17 en buslijn 22 stoppen bijna voor de deur. Die brengen u naar de binnenstad of één van de stations waar u uw reis kunt vervolgen. En met de fiets bent u binnen een kwartier in hartje Den Haag.
 
 <section class="big container"><div id="locatie-map"></div></section>

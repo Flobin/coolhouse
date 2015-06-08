@@ -2,4 +2,50 @@ title: Location
 ----
 URL-key: Location
 ----
-text: bla bla Location
+text: 
+
+<figure class="big">
+	<picture>
+	      <source media="(min-width: 1200px)" srcset="/assets/build/img/catch_haven_panorama_1680.jpg">
+	      <source media="(min-width: 1024px)" srcset="/assets/build/img/catch_haven_panorama_1200.jpg">
+	      <source  media="(min-width: 768px)" srcset="/assets/build/img/catch_haven_panorama_1024.jpg">
+	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama_768.jpg">
+	      <source  media="(max-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama.jpg">
+	      <img src="/assets/build/img/catch_haven_panorama_1024.jpg" alt="foto van de haven">
+	</picture>
+</figure>
+
+In the past years, harbor locations have become increasingly popular as residential areas, because of their unique qualities. The old view of a harbor as purely a working environment has been transformed to a lively neighborhood for living, recreation, and relaxation. The water, quay, fishing boats, and yachts give the harbor a romantic character.
+
+The Scheveningen harbor is currently being transformed—not only are new living spaces being built, but also other features that will benefit future residents. Already, a supermarket, bank, and various restaurants and cafés are all within walking distance.
+
+With the Scheveningen beach and boulevard on one side, and the southern beach on the other, this is the dream location of every sea and beach lover.
+
+Shopping streets such as the Frederik Hendriklaan and the Keizerstraat are within a stone's throw of the harbor.
+
+<section class="big two-columns gallery">
+	<figure>
+		<picture>
+		      <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_1024.jpg">
+		      <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_768.jpg">
+		      <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
+		      <img src="/assets/build/img/duin_768.jpg" alt="foto van de haven">
+		</picture>
+	</figure>
+	<figure>
+		<picture>
+		      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_1024.jpg">
+		      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_768.jpg">
+		      <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
+		      <img src="/assets/build/img/strand_768.jpg" alt="foto van het strand">
+		</picture>
+	</figure>
+</section>
+
+###Location
+The Cool-house will be situated on the Dr. Lelykade, next to the city monument of the old fish smokery and shipping company: De Rokerij. The monumental character of De Rokerij gives the Cool-house the space to become an all-sided building with an excellent orientation towards the sun. Where many homes on the Dr. Lelykade try to compromise between a view of the harbor and sunlight, the Cool-house enjoys both: a unique orientation in combination with a wide view over the harbor and city!
+
+###Getting There
+The Cool-house is easily reached by car, public transport, and, of course, bicycle. With an underground parking garage, there is always a parking space. Tram lines 11, 17, and bus line 22 stop almost in front of the door. They can take you to the inner city, or one of the stations where you can board a train to the rest of the country. And on bike, it only takes 15 minutes to get to downtown The Hague.
+
+<section class="big container"><div id="locatie-map"></div></section>

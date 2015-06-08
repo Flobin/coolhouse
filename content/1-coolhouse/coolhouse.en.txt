@@ -2,4 +2,29 @@ title: Coolhouse
 ----
 URL-key: Coolhouse
 ----
-text: Text about the Coolhouse
+text: 
+
+<figure class="fullwidth">
+	<img id="panorama" src="/assets/build/img/panorama.jpg" alt="">
+</figure>
+
+<h2 class="slab-headline"><span class="slabtext">Spacious living in the harbor of Scheveningen</span></h2>
+
+With the development of the Cool-house, The Hague will gain an addition befitting its versatile character. The former location of a refrigeration house for the fishing industry in the harbor of Scheveningen will make room for an extraordinary and modern housing complex.
+
+The qualities of the situation are used optimally by the architecture of DAVL Studio, and result in a unique building. The sensation and allure of living in the harbor will be fully realized by the Cool-house.
+
+Generous proportions, excellent orientation towards the sun, large balconies, and a panoramic view make these not just apartments, but penthouses and lofts. Freedom is the key word with Cool-house. Close co-operation with the (interior) architect ensures that future residents can receive fully personalized layouts. A unique chance to make this your dream house.
+
+Cool-house is currently under development and the start of building activities is planned for summer 2016.
+
+<figure class="big">
+	<picture>
+	      <source media="(min-width: 1200px)" srcset="/assets/build/img/section_all_1680.jpg">
+	      <source media="(min-width: 1024px)" srcset="/assets/build/img/section_all_1200.jpg">
+	      <source  media="(min-width: 768px)" srcset="/assets/build/img/section_all_1024.jpg">
+	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/section_all_768.jpg">
+	      <source  media="(max-width: 480px)"  srcset="/assets/build/img/section_all.jpg">
+	      <img src="/assets/build/img/section_all_1024.jpg" alt="rendering van een appartement">
+	</picture>
+</figure>
