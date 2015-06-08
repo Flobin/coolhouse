@@ -46,3 +46,5 @@ c::set('languages', array(
 ));
 
 c::set('markdown.extra', true);
+
+c::set('MinifyHTML', TRUE);

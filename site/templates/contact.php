@@ -6,39 +6,48 @@
       <?php echo $page->text()->kirbytext() ?>
     </article>
 
-    <article>
-      <form action="<?php echo $page->url()?>" method="post">
+    <article id="<?php echo l::get('contact') ?>" class="homepage-article">
+  <section>
+    <?php echo $data->text()->kirbytext() ?>
+  </section>
+  <section>
 
-        <label<?php e($form->hasError('_from'), ' class="erroneous"')?> for="email">E-Mail</label>
-        <input type="email" name="_from" id="email" value="<?php $form->echoValue('_from') ?>" required/>
+    <form id="form1" name="form1" class="wufoo leftLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidateaction="https://davlstudio.wufoo.com/forms/z1ttbb0b1a5821v/#public">
+    <span class="indicates-required"><span class="req">*</span> <?php echo l::get('required') ?></span>
+      <div class="field-group">
+        <input id="Field7" name="Field7" type="text" class="field text fn input" tabindex="1" required>
+        <label class="label" for="Field7">
+          <span class="label-content"><?php echo l::get('firstname') ?><span id="req_7" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group">
+        <input id="Field8" name="Field8" type="text" class="field text ln input" value="" size="14" tabindex="2" required >
+        <label class="label" for="Field8">
+          <span class="label-content"><?php echo l::get('lastname') ?><span id="req_8" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group last-group">
+        <input id="Field9" name="Field9" type="email" spellcheck="false" class="field text medium input" value="" maxlength="255" tabindex="3" required >
+        <label class="label" id="title9" for="Field9">
+          <span class="label-content"><?php echo l::get('email') ?><span id="req_9" class="req">*</span></span>
+        </label>
+      </div>
+      <div class="field-group" id="question">
+        <textarea id="Field11" name="Field11" class="field textarea small input" spellcheck="true" rows="10" cols="50" tabindex="4" onkeyup=""></textarea>
+        <label class="label" id="title11" for="Field11">
+          <span class="label-content"><?php echo l::get('question') ?></span>
+        </label>
+      </div>
+      <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="<?php echo l::get('submit') ?>" >
+      <div class="hide">
+        <label for="comment">Do Not Fill This Out</label>
+        <textarea name="comment" id="comment" rows="1" cols="1" class="hide"></textarea>
+        <input style="position: absolute; left: -5000px; opacity: 0;" type="hidden" id="idstamp" name="idstamp" value="fXdEgTHgXdoQ7neVTO9YlidZLbSN34fSZr04q4sFCMY=" >
+      </div>
+    </form>
 
-        <label for="message">Message</label>
-        <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
-
-        <label class="uniform__potty" for="website">Please leave this field blank</label>
-        <input type="text" name="website" id="website" class="uniform__potty" />
-
-        <?php if ($form->hasMessage()): ?>
-        <div class="message <?php e($form->successful(), 'success' , 'error')?>">
-          <?php $form->echoMessage() ?>
-        </div>
-        <?php endif; ?>
-
-        <button type="submit" name="_submit" value="<?php echo $form->token() ?>"<?php e($form->successful(), ' disabled')?>>Submit</button>
-
-      </form>
-    </article>
-    <article>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque risus lacus, scelerisque sit amet libero quis, mattis laoreet dolor. Vestibulum finibus a orci in pulvinar. Pellentesque iaculis efficitur suscipit. Duis faucibus ut sem eleifend congue. Pellentesque ipsum dui, vestibulum vel neque dictum, lobortis suscipit massa. Fusce pellentesque ante urna, vitae luctus justo porttitor eget. Phasellus sit amet odio odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac leo et nisi congue auctor.
-
-      <p>Vestibulum purus risus, elementum in tincidunt et, convallis a lectus. Suspendisse in venenatis mi. Cras ac felis blandit, varius augue vitae, sagittis purus. Nam nec risus dapibus arcu condimentum imperdiet at eget odio. Suspendisse scelerisque tempus nisl nec luctus. Praesent at nisi in diam viverra molestie. Nunc non sapien a magna venenatis gravida. Suspendisse ut dignissim arcu, quis aliquam ex. Aenean at orci vel lorem maximus euismod gravida vel nulla. Aliquam a libero turpis. Aenean arcu nisi, blandit vitae malesuada sed, ullamcorper eget diam. Etiam sollicitudin blandit ultricies. Donec varius ipsum sed vulputate laoreet. Aenean pretium et erat quis congue. Nunc ac lacus magna.</p>
-
-      <p>Nam venenatis euismod lectus id pulvinar. Aenean nisl eros, rutrum sed urna at, sollicitudin dignissim nisi. Quisque id mattis leo. Integer commodo id metus eget iaculis. Aliquam bibendum, massa pulvinar egestas rutrum, tellus nisl tempus augue, in molestie enim metus quis lorem. Suspendisse nunc diam, accumsan eu eros non, fringilla ornare libero. Aliquam pharetra eros purus, ut eleifend est ultrices sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas nulla justo, aliquet in congue ut, gravida non quam. Vestibulum volutpat in turpis sed pretium. In hac habitasse platea dictumst. Duis consectetur, arcu consectetur venenatis porta, nunc pulvinaus vehicula lectus, non suscipit metus felis sed augue. Curabitur hendrerit quam eget dolor pulvinar finibus. Vivamus finibus leo velit, at volutpat massa viverra a.</p>
-
-      <p>Cras sed feugiat mauris, sit amet gravida nisl. Aliquam gravida posuere leo eu semper. Etiam vel urna non elit pharetra laoreet ut nec libero. Curabitur ipsum lacus, pulvinar sit amet consequat eu, aliquet id nulla. Etiam tincidunt nunc in massa bibendum dictum. Donec condimentum vitae neque eget sollicitudin. In maximus arcu sed placerat tincidunt. Fusce aliquet, arcu ac volutpat varius, libero orci mollis ex, ornare pretium ante tortor sed urna. Nulla aliquet mi vitae odio pretium, commodo aliquet metus placerat. Sed feugiat nunc dui, in luctus justo sollicitudin facilisis. Sed sed orci ut risus eleifend bibendum. In imperdiet libero gravida iaculis finibus.</p>
-
-      <p>Ut mollis est eu feugiat condimentum. Curabitur et fringilla neque. Etiam lacus tellus, consectetur consectetur nunc vel, congue lacinia odio. Nulla efficitur placerat lacus, eget sodales nunc viverra eu. Cras porttitor sit amet sapien ac hendrerit. Fusce elit massa, tincidunt ut diam nec, commodo imperdiet ligula. Aliquam tincidunt commodo turpis, eu condimentum eros. Nam faucibus libero et consequat congue. Nulla egestas elit nec leo convallis blandit. Etiam a dapibus mauris. Etiam non nisi elementum, elementum turpis at, egestas arcu. Phasellus faucibus interdum commodo. Integer volutpat euismod finibus. Nullam sit amet nunc in leo vehicula iaculis. Cras luctus justo ac ultricies cursus.</p>
-    </article>
+  </section>
+</article>
 
   </main>
 
