@@ -13,7 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/assets/build/js/jquery-2.1.4.min.js"><\/script>')</script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3b9pBpSLNDZoC6jt-kJXadoOxm-g5Jgo&sensor=false"></script>
-  <?php echo js('/assets/build/js/production.min.js') ?>
+  <?php echo js('/assets/build/js/production.js') ?>
   <script>
     //'use strict';
     document.onreadystatechange = function () {
