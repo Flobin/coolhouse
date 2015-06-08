@@ -5,6 +5,6 @@
     	</div>
 	</div>
 </div>
-<article id="Locatie" class="homepage-article">
+<article id="<?php echo l::get('locatie') ?>" class="homepage-article">
   <?php echo $data->text()->kirbytext() ?>
 </article>

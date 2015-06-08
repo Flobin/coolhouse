@@ -1,5 +1,11 @@
 <?php
 
+l::set('coolhouse', 'Coolhouse');
+l::set('locatie', 'Location');
+l::set('woningen', 'Homes');
+l::set('nieuws', 'News');
+l::set('contact', 'Contact');
+
 l::set('contact-title', ' ');
 l::set('required', 'indicates required fields');
 l::set('email', 'Email address');

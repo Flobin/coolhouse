@@ -5,7 +5,7 @@
     </div>
   </div>
 </div>
-<article id="Nieuws" class="homepage-article">
+<article id="<?php echo l::get('nieuws') ?>" class="homepage-article">
   <section>
   <?php foreach($site->page('nieuws')->children()->visible()->flip() as $article): ?>
 

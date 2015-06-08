@@ -22,7 +22,7 @@
             menu = $('.menu'),
             article = $('.homepage-article'),
             input = $(".input"),
-            pano = $("#panorama");
+            pano = $(".panorama");
 
         $('.menu-link').click(function() {
           var href = $.attr(this, 'href');
