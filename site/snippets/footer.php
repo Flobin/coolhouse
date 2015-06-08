@@ -1,12 +1,13 @@
   <footer class="footer" role="contentinfo">
 
-    <div class="copyright">
-      <?php echo $site->copyright()->kirbytext() ?>
-    </div>
-
-    <div class="colophon">
-      <a href="http://getkirby.com/made-with-kirby-and-love"><?php echo l::get('made-with') ?></a>
-    </div>
+    <p>
+      <span class="copyright">
+        © 2015 <a href="//cool-house.nl">Cool-house</a>
+      </span>
+      <span class="to-top">
+        <a class="menu-link" href="#<?php echo l::get('coolhouse') ?>"><?php echo l::get('top') ?></a>
+      </span>
+    </p>
 
   </footer>
 
@@ -20,11 +21,12 @@
       if (document.readyState == "complete") {
         var root = $('html, body'),
             menu = $('.menu'),
+            menuLink = $('.menu-link'),
             article = $('.homepage-article'),
             input = $(".input"),
             pano = $(".panorama");
 
-        $('.menu-link').click(function() {
+        menuLink.click(function() {
           var href = $.attr(this, 'href');
           root.stop(true,true).animate({
               scrollTop: $(href).position().top

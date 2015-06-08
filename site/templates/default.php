@@ -1,1 +1,1 @@
-<?php go(url('error')) ?>
+<?php go(url('home')) ?>

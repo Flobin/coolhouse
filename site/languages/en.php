@@ -6,6 +6,8 @@ l::set('woningen', 'Homes');
 l::set('nieuws', 'News');
 l::set('contact', 'Contact');
 
+l::set('top', 'Back to top');
+
 l::set('contact-title', ' ');
 l::set('required', 'indicates required fields');
 l::set('email', 'Email address');

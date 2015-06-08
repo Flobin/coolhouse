@@ -6,6 +6,8 @@ l::set('woningen', 'Woningen');
 l::set('nieuws', 'Nieuws');
 l::set('contact', 'Contact');
 
+l::set('top', 'Terug naar boven');
+
 l::set('contact-title', ' ');
 l::set('required', 'geeft verplichte velden aan');
 l::set('email', 'Email adres');

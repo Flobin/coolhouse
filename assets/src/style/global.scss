@@ -784,6 +784,12 @@ footer {
     background-color: $dark-blue;
     color: hsla(0,0%,100%,1);
 }
+.copyright {
+    float: left;
+}
+.to-top {
+    float: right;
+}
 
 /* ==========================================================================
    #COOLHOUSE
@@ -1003,7 +1009,7 @@ canvas.ddpanorama:active {
     padding-bottom: 1.5rem;
     @include at-least($M) {
         display: inline-block;
-        width: 31%;
+        width: 32%;
         margin-right: 2%;
     }
 }
