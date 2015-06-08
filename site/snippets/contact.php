@@ -12,7 +12,7 @@
   <section>
 
     <form id="form1" name="form1" class="wufoo leftLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidateaction="https://davlstudio.wufoo.com/forms/z1ttbb0b1a5821v/#public">
-    <p class="indicates-required"><span class="asterisk">*</span> <?php echo l::get('required') ?></p>
+    <span class="indicates-required"><span class="req">*</span> <?php echo l::get('required') ?></span>
       <div class="field-group">
         <input id="Field7" name="Field7" type="text" class="field text fn input" tabindex="1" required>
         <label class="label" for="Field7">
@@ -31,10 +31,10 @@
           <span class="label-content"><?php echo l::get('email') ?><span id="req_9" class="req">*</span></span>
         </label>
       </div>
-      <div class="field-group">
+      <div class="field-group" id="question">
         <textarea id="Field11" name="Field11" class="field textarea small input" spellcheck="true" rows="10" cols="50" tabindex="4" onkeyup=""></textarea>
-        <label class="desc" id="title11" for="Field11">
-          <span class="label-content">Eventuele vraag</span>
+        <label class="label" id="title11" for="Field11">
+          <span class="label-content"><?php echo l::get('question') ?></span>
         </label>
       </div>
       <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="<?php echo l::get('submit') ?>" >

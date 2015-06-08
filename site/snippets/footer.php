@@ -21,7 +21,7 @@
         var root = $('html, body'),
             menu = $('.menu'),
             article = $('.homepage-article'),
-            input = $(".mc-input"),
+            input = $(".input"),
             pano = $("#panorama");
 
         $('.menu-link').click(function() {

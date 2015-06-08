@@ -996,9 +996,11 @@ canvas.ddpanorama:active {
 //from http://tympanus.net/Development/TextInputEffects/index2.html - manami
 .field-group {
     width: 100%;
+    height: 4rem;
     position: relative;
     overflow: hidden;
     color: $dark-blue;
+    padding-bottom: 1.5rem;
     @include at-least($M) {
         display: inline-block;
         width: 31%;
@@ -1010,6 +1012,7 @@ canvas.ddpanorama:active {
 }
 .input {
     width: 100%;
+    height: 2em;
     background: transparent;
     padding: 0.5rem;
     margin-bottom: 2rem;
@@ -1083,12 +1086,28 @@ canvas.ddpanorama:active {
         transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
     }
 }
+//this is the textarea
+#question {
+    @include at-least($M) {
+        display: inline-block;
+        width: 66%;
+        margin-right: 2%;
+    }
+}
+#Field11 {
+    resize: none;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
 .indicates-required {
     font-size: 75%;
     font-style: italic;
     margin-bottom: 1rem;
+    display: block;
 }
 #saveForm {
+    float: right;
     padding: 0.5em;
     background-color: $dark-blue;
     color: #fff;
@@ -1099,7 +1118,7 @@ canvas.ddpanorama:active {
     }
 }
 .hide {
-    display: hidden;
+    display: none;
     opacity: 0;
 }
 
