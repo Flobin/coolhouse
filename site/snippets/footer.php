@@ -24,7 +24,8 @@
             menuLink = $('.menu-link'),
             article = $('.homepage-article'),
             input = $(".input"),
-            pano = $(".panorama");
+            pano = $(".panorama"),
+            slabHeadline = $(".slab-headline");
 
         menuLink.click(function() {
           var href = $.attr(this, 'href');
@@ -40,7 +41,7 @@
         sticky(header);
 
         var slabTextHeadlines = function() {
-          $(".slab-headline").slabText({
+          slabHeadline.slabText({
             // Don't slabtext the headers if the viewport is under 380px
             "viewportBreakpoint":479
           });
@@ -50,7 +51,7 @@
         });
 
 
-        pano.ddpanorama({width:1300, height:500, loop:false, startPos:0.79, minSpeed: -10});
+        pano.ddpanorama({width:1300, height:500, loop:false, startPos:0.79, minSpeed: -10, bounceEdgeColor: '#ffffff'});
 
 
 

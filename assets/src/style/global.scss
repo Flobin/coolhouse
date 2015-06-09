@@ -1165,31 +1165,32 @@ canvas.ddpanorama:active {
     bottom: 0;
     left: 0;
     #coolhouse-logo-c, #coolhouse-logo-text, .slab-headline, .landingpage-panorama, h2, p, form {
-        width: 90vw;
+        width: 90%;
+        max-width: 400px;
         @include at-least($S) {
-            width: 80vw;
+            max-width: 450px;
         }
         @include at-least($M) {
-            width: 70vw;
+            max-width: 500px;
         }
         @include at-least($L) {
-            width: 60vw;
+            max-width: 550px;
         }
         @include at-least($XL) {
-            width: 50vw;
+            max-width: 600px;
         }
         @include at-least(1439px) {
-            width: 45vw;
+            max-width: 650px;
         }
         @include at-least(1679px) {
-            width: 40vw;
+            max-width: 700px;
         }
-        @include at-least(1919px) {
+        /*@include at-least(1919px) {
             width: 30vw;
         }
         @include at-least(2559px) {
             width: 25vw;
-        }
+        }*/
         margin-left: auto;
         margin-right: auto;
     }
@@ -1205,7 +1206,7 @@ canvas.ddpanorama:active {
         display: block;
         width: 100%;
         height: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 2rem;
     }
     .logo-c {
