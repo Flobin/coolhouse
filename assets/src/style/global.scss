@@ -1258,10 +1258,8 @@ canvas.ddpanorama:active {
         width: 66%;
     }
     .submit {
-        @include at-least($M) {
             position: relative;
             top: -4em;
-        }
         background-color: $gold;
         &:hover, &:focus, &:active {
             background-color: $dark-blue;
