@@ -1178,10 +1178,13 @@ canvas.ddpanorama:active {
         @include at-least($XL) {
             width: 50vw;
         }
-        @include at-least(1680px) {
+        @include at-least(1439px) {
+            width: 45vw;
+        }
+        @include at-least(1679px) {
             width: 40vw;
         }
-        @include at-least(1920px) {
+        @include at-least(1919px) {
             width: 30vw;
         }
         @include at-least(2559px) {
@@ -1196,6 +1199,7 @@ canvas.ddpanorama:active {
     .ddpanorama {
         margin-top: 1rem;
         width: 100%;
+        margin-bottom: 1rem;
     }
     .logo {
         display: block;
@@ -1247,6 +1251,7 @@ canvas.ddpanorama:active {
     }
     .slab-headline {
         text-align: justify;
+        margin-bottom: 1rem;
     }
     .field-group {
         margin-top: 1rem;
