@@ -1112,7 +1112,7 @@ canvas.ddpanorama:active {
     margin-bottom: 1rem;
     display: block;
 }
-#saveForm {
+.submit {
     float: right;
     padding: 0.5em;
     background-color: $dark-blue;
@@ -1151,4 +1151,109 @@ canvas.ddpanorama:active {
     }
 }
 
+/* ==========================================================================
+   #LANDING PAGE
+========================================================================== */
+#landingpage{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    #coolhouse-logo-c, #coolhouse-logo-text, .slab-headline, .landingpage-panorama, h2, p, form {
+        width: 90vw;
+        @include at-least($S) {
+            width: 80vw;
+        }
+        @include at-least($M) {
+            width: 70vw;
+        }
+        @include at-least($L) {
+            width: 60vw;
+        }
+        @include at-least($XL) {
+            width: 50vw;
+        }
+        @include at-least(1680px) {
+            width: 40vw;
+        }
+        @include at-least(1920px) {
+            width: 30vw;
+        }
+        @include at-least(2559px) {
+            width: 25vw;
+        }
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .landingpage-panorama {
+        position: relative;
+    }
+    .ddpanorama {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .logo-c {
+        display: block;
+        width: 25%;
+        height: auto;
+        margin: 2rem auto;
+    }
+    .logo-cool {
+        fill:#001730;
+        font-family:'FuturaLT';
+        font-size:263.40985px; //239.4635*1.1
+        letter-spacing:13;
+    }
+    .logo-house {
+        opacity:0.8;
+        fill:#D19A29;
+        enable-background:new;
+        font-family:'FuturaLT-Light';
+        font-size:276.17766px; //251.0706*1.1
+        letter-spacing: 18;
+    }
+    .logo-text {
+        fill: #001730;
+        font-family:'FuturaLT-Light';
+    }
+    .logo-apartments {
+        font-size:89.4973px;
+    }
+    .logo-slogan {
+        font-size: 48.792px;
+    }
+    .logo-line {
+        opacity:0.8;
+        fill:none;
+        stroke:#D19A29;
+        stroke-width:3;
+        stroke-miterlimit:10;
+        enable-background:new;
+    }
+    .logo-dots {
+        fill: #001730;
+    }
+    .slab-headline {
+        text-align: justify;
+    }
+    .field-group {
+        margin-top: 1rem;
+        width: 66%;
+    }
+    .submit {
+        @include at-least($M) {
+            position: relative;
+            top: -4em;
+        }
+        background-color: $gold;
+        &:hover, &:focus, &:active {
+            background-color: $dark-blue;
+        }
+    }
+}
 

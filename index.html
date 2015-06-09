@@ -9,44 +9,128 @@
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
+  <link rel="stylesheet" href="assets/build/style/global.css">
+
   <script>
     if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)document.cookie='HTTP_IS_RETINA=1;path=/';
+    (function(d) {
+      var config = {
+        kitId: 'buk4abp',
+        scriptTimeout: 3000
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
   </script>
 
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body,html{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    min-width: 100vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  #coolhouse_logo {
-    display: block;
-    height: 80%;
-    width: auto;
-    margin: 0 auto;
-    position: relative;
-    top: 10%;
-  }
-  </style>
-
 </head>
-<body>
+<body id="landingpage">
 
-  <img id="coolhouse_logo" alt="logo van het Coolhouse" src="assets/build/img/coolhouse_logo.jpg">
+<main id="main">
+  <figure id="coolhouse-logo-c">
+    <img class="logo-c" alt="logo van het Coolhouse" src="assets/build/img/landing_C_600.jpg">
+  </figure>
 
+  <figure id="coolhouse-logo-text">
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 153.9 1184 543" style="enable-background:new 0 153.9 1184 543;" xml:space="preserve">
+<rect y="161.6" style="fill: none;" width="1389.5" height="299.8"/>
+<text transform="matrix(1 0 0 1 4.882812e-04 374.3504)" class="logo-cool">Cool</text>
+<text transform="matrix(1 0 0 1 531.749 374.3504)" class="logo-house">house</text>
+<g>
+  <g>
+    <g>
+      <text transform="matrix(1 0 0 1 7.1387 502.1254)" class="logo-text logo-apartments">Penthouses</text>
+      <g>
+        <text transform="matrix(1 0 0 1 536.4395 502.1254)" class="logo-text logo-apartments">Lofts</text>
+      </g>
+      <g>
+        <text transform="matrix(1 0 0 1 780.1133 502.1254)" class="logo-text logo-apartments">Residences</text>
+      </g>
+    </g>
+  </g>
+  <path class="logo-dots" d="M478,479.4c0,5.4-4.4,9.8-9.8,9.8s-9.8-4.4-9.8-9.8s4.4-9.8,9.8-9.8S478,474,478,479.4z"/>
+  <path class="logo-dots" d="M753.2,479.4c0,5.4-4.4,9.8-9.8,9.8s-9.8-4.4-9.8-9.8s4.4-9.8,9.8-9.8C748.8,469.6,753.2,474,753.2,479.4z"
+    />
+</g>
+<line class="logo-line" x1="11.5" y1="568.9" x2="1173.3" y2="568.9"/>
+<text transform="matrix(1 0 0 1 7.1389 680.7932)" class="logo-text logo-slogan">WIJDS</text>
+<text transform="matrix(1 0 0 1 140.0608 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 156.3165 680.7932)" class="logo-text logo-slogan">WONEN</text>
+<text transform="matrix(1 0 0 1 359.0454 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 375.3011 680.7932)" class="logo-text logo-slogan">IN</text>
+<text transform="matrix(1 0 0 1 426.9391 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 443.1948 680.7932)" class="logo-text logo-slogan">DE</text>
+<text transform="matrix(1 0 0 1 499.6156 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 515.8712 680.7932)" class="logo-text logo-slogan">HAVEN</text>
+<text transform="matrix(1 0 0 1 675.0896 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 691.3469 680.7932)" class="logo-text logo-slogan">VAN</text>
+<text transform="matrix(1 0 0 1 790.7985 680.7932)" class="logo-text logo-slogan"> </text>
+<text transform="matrix(1 0 0 1 807.0542 680.7932)" class="logo-text logo-slogan">SCHEVENINGEN</text>
+</svg>
+  </figure>
 
+  <figure class="landingpage-panorama">
+    <img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
+  </figure>
+
+  <h2 class="slab-headline"><span class="slabtext">Binnenkort op deze plek!</span></h2>
+  <p>Interesse? Laat uw email achter en we houden u op de hoogte.</p>
+
+  <!-- Begin MailChimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form action="//cool-house.us11.list-manage.com/subscribe/post?u=b2ec7f81b5575c608e25383a8&amp;id=5fccc97032" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+    
+        <div class="field-group">
+          <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL">
+          <label for="mce-EMAIL" class="label"><span class="label-content">Email Adres</span></label>
+        </div>
+        <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_b2ec7f81b5575c608e25383a8_5fccc97032" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Aanmelden" name="subscribe" id="mc-embedded-subscribe" class="submit button"></div>
+      </div>
+    </form>
+  </div>
+
+  <!--End mc_embed_signup-->
+</main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/assets/build/js/jquery-2.1.4.min.js"><\/script>')</script>
+  <script src="/assets/build/js/production.min.js"></script>
   <script>
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        var input = $(".input"),
+            pano = $(".panorama");
+
+        var slabTextHeadlines = function() {
+          $(".slab-headline").slabText({
+            // Don't slabtext the headers if the viewport is under 380px
+            "viewportBreakpoint":479
+          });
+        }
+        Typekit.load({
+          active: slabTextHeadlines()
+        });
+
+        pano.ddpanorama({width:1300, height:500, loop:false, startPos:0.79, minSpeed: -10});
+
+        input.focus(function() {
+          $(this).addClass("input-focus");
+        });
+        input.blur(function() {
+          if ($(this).val() == '') {
+            $(this).removeClass("input-focus");
+          }
+        });
+      };
+    };
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
