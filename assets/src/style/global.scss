@@ -36,7 +36,7 @@ $XL:  1200px;
     }
 }
 $serif-font-family: 'adelle', serif;
-$sans-font-family: 'Futura PT', Futura, 'freight-sans-pro', sans-serif;
+$sans-font-family: 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', Arial, sans-serif;
 $base-font-size: 14px;
 $M-font-size: 16px;
 $L-font-size: 18px;
@@ -1123,11 +1123,12 @@ canvas.ddpanorama:active {
 .submit, .form-submit-button {
     float: right;
     padding: 0.5em 0;
+    height: calc(2.5rem + 2px);
     background-color: $dark-blue;
     color: #fff;
     text-transform: lowercase;
     position: relative;
-    top: calc(-4.5rem + 4px);
+    top: calc(-4.5rem);
     width: 4rem;
     text-align: center;
     @include transition(background-color, 0.3s, ease-in-out);
@@ -1244,7 +1245,7 @@ html {
     }
     .logo-cool {
         fill:#001730;
-        font-family:'FuturaLT';
+        font-family:$sans-font-family;
         font-size:263.40985px; //239.4635*1.1
         letter-spacing:13;
     }
@@ -1252,13 +1253,13 @@ html {
         opacity:0.8;
         fill:#D19A29;
         enable-background:new;
-        font-family:'FuturaLT-Light';
+        font-family:$sans-font-family;
         font-size:276.17766px; //251.0706*1.1
         letter-spacing: 18;
     }
     .logo-text {
         fill: #001730;
-        font-family:'FuturaLT-Light';
+        font-family:$sans-font-family;
     }
     .logo-apartments {
         font-size:89.4973px;

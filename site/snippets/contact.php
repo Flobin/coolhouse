@@ -20,14 +20,14 @@
         <div id="cid_7" class="form-input jf-required">
           <input type="text" class="input form-textbox" data-type="input-textbox" id="input_7" name="q7_voornaam" size="20" value="" />
         </div>
-        <label class="form-label form-label-left form-label-auto label" id="label_7" for="input_7"><span class="label-content">Voornaam</span></label>
+        <label class="form-label form-label-left form-label-auto label" id="label_7" for="input_7"><span class="label-content"><?php echo l::get('firstname') ?></span></label>
       </li>
 
       <li class="form-line field-group" data-type="control_textbox" id="id_8">
         <div id="cid_8" class="form-input jf-required">
           <input type="text" class="input form-textbox" data-type="input-textbox" id="input_8" name="q8_achternaam" size="20" value="" />
         </div>
-        <label class="form-label form-label-left form-label-auto label" id="label_8" for="input_8"><span class="label-content">Achternaam</span></label>
+        <label class="form-label form-label-left form-label-auto label" id="label_8" for="input_8"><span class="label-content"><?php echo l::get('lastname') ?></span></label>
       </li>
 
       <li class="form-line jf-required field-group last-group" data-type="control_email" id="id_6">
@@ -36,7 +36,7 @@
         </div>
         <label class="form-label form-label-left form-label-auto label" id="label_6" for="input_6">
           <span class="label-content">
-            Email <span class="form-required">*</span>
+            <?php echo l::get('email') ?> <span class="form-required"><?php echo l::get('required') ?></span>
           </span>
         </label>
       </li>
@@ -45,14 +45,14 @@
         <div id="cid_4" class="form-input jf-required">
           <textarea id="input_4" class="input form-textarea" name="q4_vraag" cols="40" rows="6"></textarea>
         </div>
-        <label class="form-label form-label-left form-label-auto label" id="label_4" for="input_4"><span class="label-content">Vraag</span></label>
+        <label class="form-label form-label-left form-label-auto label" id="label_4" for="input_4"><span class="label-content"><?php echo l::get('question') ?></span></label>
       </li>
 
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide">
           <div class="form-buttons-wrapper">
             <button id="input_2" type="submit" class="form-submit-button">
-              Submit
+              <?php echo l::get('submit') ?>
             </button>
           </div>
         </div>

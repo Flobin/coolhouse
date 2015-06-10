@@ -5,7 +5,7 @@ URL-key: Coolhouse
 text: 
 
 <figure class="fullwidth">
-	<img id="panorama" src="/assets/build/img/panorama.jpg" alt="">
+	<img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
 </figure>
 
 <h2 class="slab-headline"><span class="slabtext">Spacious living in the harbor of Scheveningen</span></h2>
