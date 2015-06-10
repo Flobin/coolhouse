@@ -14,30 +14,33 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/assets/build/js/jquery-2.1.4.min.js"><\/script>')</script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3b9pBpSLNDZoC6jt-kJXadoOxm-g5Jgo&sensor=false"></script>
+  <script src="https://secure.jotformeu.com/static/prototype.forms.js" type="text/javascript"></script>
+  <script src="https://secure.jotformeu.com/static/jotform.forms.js?3.3.7431" type="text/javascript"></script>
   <?php echo js('/assets/build/js/production.min.js') ?>
   <script>
     //'use strict';
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
-        var root = $('html, body'),
-            menu = $('.menu'),
-            menuLink = $('.menu-link'),
-            article = $('.homepage-article'),
-            input = $(".input"),
-            pano = $(".panorama"),
-            slabHeadline = $(".slab-headline");
+        var jq = jQuery.noConflict();
+        var root = jq('html, body'),
+            menu = jq('.menu'),
+            menuLink = jq('.menu-link'),
+            article = jq('.homepage-article'),
+            input = jq(".input"),
+            pano = jq(".panorama"),
+            slabHeadline = jq(".slab-headline");
 
         menuLink.click(function() {
-          var href = $.attr(this, 'href');
+          var href = jq.attr(this, 'href');
           root.stop(true,true).animate({
-              scrollTop: $(href).position().top
+              scrollTop: jq(href).position().top
           }, 500, function () {
               window.location.hash = href;
           });
           return false;
         });
 
-        var header = document.getElementById('site-header')
+        var header = document.getElementById('site-header');
         sticky(header);
 
         var slabTextHeadlines = function() {
@@ -45,7 +48,7 @@
             // Don't slabtext the headers if the viewport is under 380px
             "viewportBreakpoint":479
           });
-        }
+        };
         Typekit.load({
           active: slabTextHeadlines()
         });
@@ -56,12 +59,12 @@
 
 
         article.on('scrollSpy:enter', function() {
-          console.log('enter:', $(this).attr('id'));
-          $('.active').removeClass('active');
+          console.log('enter:', jq(this).attr('id'));
+          jq('.active').removeClass('active');
           menu.find('a[href="#' + this.id + '"]').addClass('active');
         });
         article.on('scrollSpy:exit', function() {
-          console.log('exit:', $(this).attr('id'));
+          console.log('exit:', jq(this).attr('id'));
         });
         article.scrollSpy();
 
@@ -83,12 +86,16 @@
         initMap();
 
         input.focus(function() {
-          $(this).addClass("input-focus");
+          jq(this).parent().addClass("input-focus");
         });
         input.blur(function() {
-          if ($(this).val() == '') {
-            $(this).removeClass("input-focus");
+          if (jq(this).val() == '') {
+            jq(this).parent.removeClass("input-focus");
           }
+        });
+
+        JotForm.init(function(){
+          JotForm.onSubmissionError="jumpToSubmit";
         });
 
       };
@@ -103,6 +110,10 @@
     
   </script>
   <script src="//localhost:35729/livereload.js"></script>
+
+<script type="text/javascript">
+   
+</script>
 
 </body>
 </html>
