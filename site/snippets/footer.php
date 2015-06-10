@@ -90,7 +90,7 @@
         });
         input.blur(function() {
           if (jq(this).val() == '') {
-            jq(this).parent.removeClass("input-focus");
+            jq(this).parent().removeClass("input-focus");
           }
         });
 
