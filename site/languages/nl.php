@@ -1,6 +1,7 @@
 <?php
 
 l::set('coolhouse', 'Coolhouse');
+l::set('omgeving', 'Omgeving');
 l::set('locatie', 'Locatie');
 l::set('woningen', 'Woningen');
 l::set('nieuws', 'Nieuws');

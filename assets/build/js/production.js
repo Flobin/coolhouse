@@ -2255,10 +2255,12 @@ function makeArray( obj ) {
     
     window.onscroll = function(event) {
       if (getWindowScroll().top > originalRect.top - requiredTop) {
+        el.className = 'stuck header';
         for (key in styles) {
           el.style[key] = styles[key];
         }
       } else {
+        el.className = 'header';
         for (key in originalStyles) {
           el.style[key] = originalStyles[key];
         }

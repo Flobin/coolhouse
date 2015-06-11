@@ -59,12 +59,12 @@
 
 
         article.on('scrollSpy:enter', function() {
-          console.log('enter:', jq(this).attr('id'));
+          //console.log('enter:', jq(this).attr('id'));
           jq('.active').removeClass('active');
           menu.find('a[href="#' + this.id + '"]').addClass('active');
         });
         article.on('scrollSpy:exit', function() {
-          console.log('exit:', jq(this).attr('id'));
+          //console.log('exit:', jq(this).attr('id'));
         });
         article.scrollSpy();
 
