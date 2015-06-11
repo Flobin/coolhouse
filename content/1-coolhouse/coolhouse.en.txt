@@ -8,7 +8,7 @@ text:
 	<img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
 </figure>
 
-<h2 class="slab-headline"><span class="slabtext">Spacious living in the harbor of Scheveningen</span></h2>
+<h2 class="slab-headline" id="slogan"><span class="slabtext">Spacious living in the harbor of Scheveningen</span></h2>
 
 With the development of the Cool-house, The Hague will gain an addition befitting its versatile character. The former location of a refrigeration house for the fishing industry in the harbor of Scheveningen will make room for an extraordinary and modern housing complex.
 

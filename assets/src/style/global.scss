@@ -176,57 +176,57 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
     @include at-least($M) {
-        font-size: $M-font-size * 3.157;
+        font-size: $M-font-size * 2.5;
     }
     @include at-least($L) {
-        font-size: $L-font-size * 3.157;
+        font-size: $L-font-size * 2.5;
     }
     @include at-least($XL) {
-        font-size: $XL-font-size * 3.157;
+        font-size: $XL-font-size * 2.5;
     }
 }
 h2 {
     @include at-least($M) {
-        font-size: $M-font-size * 2.369;
+        font-size: $M-font-size * 2;
     }
     @include at-least($L) {
-        font-size: $L-font-size * 2.369;
+        font-size: $L-font-size * 2;
     }
     @include at-least($XL) {
-        font-size: $XL-font-size * 2.369;
+        font-size: $XL-font-size * 2;
     }
 }
 h3 {
     @include at-least($M) {
-        font-size: $M-font-size * 1.777;
+        font-size: $M-font-size * 1.6;
     }
     @include at-least($L) {
-        font-size: $L-font-size * 1.777;
+        font-size: $L-font-size * 1.6;
     }
     @include at-least($XL) {
-        font-size: $XL-font-size * 1.777;
+        font-size: $XL-font-size * 1.6;
     }
 }
 h4 {
     @include at-least($M) {
-        font-size: $M-font-size * 1.333;
+        font-size: $M-font-size * 1.3;
     }
     @include at-least($L) {
-        font-size: $L-font-size * 1.333;
+        font-size: $L-font-size * 1.3;
     }
     @include at-least($XL) {
-        font-size: $XL-font-size * 1.333;
+        font-size: $XL-font-size * 1.3;
     }
 }
 h5 {
     @include at-least($M) {
-        font-size: $M-font-size * 1.25;
+        font-size: $M-font-size * 1.1;
     }
     @include at-least($L) {
-        font-size: $L-font-size * 1.25;
+        font-size: $L-font-size * 1.1;
     }
     @include at-least($XL) {
-        font-size: $XL-font-size * 1.25;
+        font-size: $XL-font-size * 1.1;
     }
 }
 h6 {
@@ -822,6 +822,10 @@ footer {
 .slab-headline {
     @extend .container;
 }
+.home #main #slogan {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 .logo-h-1 {
     fill: $dark-blue;
 }
@@ -830,9 +834,11 @@ footer {
 }
 #Coolhouse .big {
     margin-top: 3rem;
+    &:first-child {
+        margin-top: 0;
+    }
 }
 #Coolhouse .fullwidth {
-    margin-top: 3rem;
     text-align: center;
     @include until($S) {
         max-height: 205px;
@@ -852,6 +858,9 @@ footer {
     @include at-least(1875px) {
         max-height: 560px;
     }
+    &:first-child {
+        margin-bottom: 0;
+    }
 }
 canvas.ddpanorama {
    //cursor: url(./images/openhand.cur), e-resize you need a default here for this to work
@@ -869,6 +878,9 @@ canvas.ddpanorama {
    overflow: hidden;
    max-height: 500px;
    //@extend %vertical-align;
+   &:first-child {
+     margin-bottom: 0;
+   }
 }
 canvas.ddpanorama:active {
    //cursor: url(./images/closedhand.cur), e-resize;

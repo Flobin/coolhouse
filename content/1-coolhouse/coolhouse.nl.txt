@@ -8,7 +8,7 @@ text:
 	<img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
 </figure>
 
-<h2 class="slab-headline"><span class="slabtext">Wijds wonen in de haven van Scheveningen</span></h2>
+<h2 class="slab-headline" id="slogan"><span class="slabtext">Wijds wonen in de haven van Scheveningen</span></h2>
 
 Veelzijdig Den Haag krijgt met de ontwikkeling van het Cool-house een passende aanvulling op hoog niveau. De voormalige locatie van een koelhuis voor de visserij aan de haven van Scheveningen maakt ruimte voor een bijzonder en eigentijds wooncomplex.
 
