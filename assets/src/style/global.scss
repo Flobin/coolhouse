@@ -173,8 +173,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    color: #555;
 }
-h1 {
+h1, .h1 {
     @include at-least($M) {
         font-size: $M-font-size * 2.5;
     }
@@ -185,7 +186,7 @@ h1 {
         font-size: $XL-font-size * 2.5;
     }
 }
-h2 {
+h2, .h2 {
     @include at-least($M) {
         font-size: $M-font-size * 2;
     }
@@ -196,7 +197,7 @@ h2 {
         font-size: $XL-font-size * 2;
     }
 }
-h3 {
+h3, .h3 {
     @include at-least($M) {
         font-size: $M-font-size * 1.6;
     }
@@ -207,7 +208,7 @@ h3 {
         font-size: $XL-font-size * 1.6;
     }
 }
-h4 {
+h4, .h4 {
     @include at-least($M) {
         font-size: $M-font-size * 1.3;
     }
@@ -218,7 +219,7 @@ h4 {
         font-size: $XL-font-size * 1.3;
     }
 }
-h5 {
+h5, .h5 {
     @include at-least($M) {
         font-size: $M-font-size * 1.1;
     }
@@ -229,7 +230,7 @@ h5 {
         font-size: $XL-font-size * 1.1;
     }
 }
-h6 {
+h6, .h6 {
     @include at-least($M) {
         font-size: $M-font-size;
     }
@@ -367,6 +368,7 @@ p+p {
     height: 3rem;
     padding: 0 1rem;
     background-color: $dark-blue;
+    //opacity: 0.5;
     color: $gold;
     /*position: absolute;
     top: 0;
@@ -379,6 +381,7 @@ p+p {
     right: 0;
     left: 0;
     bottom: 0;
+    top: calc(100vh - 3rem);
 }
 .stuck {
   position:fixed;
@@ -585,6 +588,7 @@ nav {
     //position: absolute;
     //top: 100vh;
     padding-top: 100vh;
+    //background-color: #fff;
     main {
         min-height: 100vh;
     }
@@ -599,10 +603,6 @@ main {
     article {
         //@extend .container;
     }
-}
-#responsive-headline {
-    display: inline-block;
-    width: 100%;
 }
 .right {
     //margin: 0 1em 1em 1em;
@@ -653,8 +653,8 @@ main {
 .two-columns {
     figure, iframe {
         display: inline-block;
-        width: 49%;
-        margin-right: 2%;
+        width: 47%;
+        margin-right: 4%;
         &:nth-child(even) {
             margin-right: 0;
         }
@@ -674,16 +674,16 @@ main {
     figure, iframe {
         @include until($M) {
             display: inline-block;
-            width: 49%;
-            margin-right: 2%;
+            width: 47%;
+            margin-right: 4%;
             &:nth-child(even) {
                 margin-right: 0;
             }
         }
         @include at-least($M) {
             display: inline-block;
-            width: 23.5%;
-            margin-right: 2%;
+            width: 22.5%;
+            margin-right: 4%;
             &:nth-child(4n) {
                 margin-right: 0;
             }
@@ -806,6 +806,14 @@ footer {
     background-color: $dark-blue;
     color: hsla(0,0%,100%,1);
 }
+footer.footer-item {
+    display: inline-block;
+    width: 32%;
+    margin-right: 2%;
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+}
 .copyright {
     float: left;
 }
@@ -820,7 +828,8 @@ footer {
 //    padding-top: 1rem;
 //}
 .slab-headline {
-    @extend .container;
+    //@extend .container;
+    color: $dark-blue;
 }
 .home #main #slogan {
     margin-top: 1rem;
@@ -913,20 +922,29 @@ canvas.ddpanorama:active {
         background-image: url('/assets/build/img/balkon_wide_2223.jpg');
     }
 }
+#overview {
+    margin-top: 3rem;
+}
 .unit {
     opacity: 0;
     &:hover {
         opacity: 0.5;
     }
 }
-.overview-0 {
+.overview-bg {
+    fill: #BDC9D8;
+}
+.overview-building-bg {
+    fill: #fff;
+}
+.overview-dark {
     fill: $dark-blue;
 
 }
-.overview-1 {
+.overview-light {
     fill:$light-blue;
 }
-.overview-2 {
+.overview-lines {
     fill:none;
     stroke:$dark-blue;
     stroke-width:0.5;
@@ -945,9 +963,9 @@ canvas.ddpanorama:active {
     stroke-linejoin:round;
     stroke-miterlimit:10;
 }
-.overview-5 {
+.overview-text {
     //font-family:'FuturaPT-Book';
-    font-size: 17;
+    font-size: 0.75rem;
 }
 #Woningen .big {
     margin-top: 2rem;
@@ -956,24 +974,48 @@ canvas.ddpanorama:active {
    #OMGEVING
 ========================================================================== */
 #omgeving-cover .cover-img {
-    background-image: url('/assets/build/img/haven.jpg');
+    background-position: bottom center;
+    background-image: url('/assets/build/img/haven_cover.jpg');
     @media screen and (orientation:portrait) {
-        background-image: url('/assets/build/img/haven_portrait_480.jpg');
+        background-image: url('/assets/build/img/haven_cover_portrait_480.jpg');
     }
     @include at-least($S) {
-        background-image: url('/assets/build/img/haven_768.jpg');
+        background-image: url('/assets/build/img/haven_cover_768.jpg');
         @media screen and (orientation:portrait) {
-            background-image: url('/assets/build/img/haven_portrait_768.jpg');
+            background-image: url('/assets/build/img/haven_cover_portrait_768.jpg');
         }
     }
     @include at-least($M) {
-        background-image: url('/assets/build/img/haven_1024.jpg');
+        background-image: url('/assets/build/img/haven_cover_1024.jpg');
     }
     @include at-least($L) {
-        background-image: url('/assets/build/img/haven_1200.jpg');
+        background-image: url('/assets/build/img/haven_cover_1200.jpg');
     }
     @include at-least($XL) {
-        background-image: url('/assets/build/img/haven_1632.jpg');
+        background-image: url('/assets/build/img/haven_cover_1440.jpg');
+    }
+    @include at-least(1440px) {
+        background-image: url('/assets/build/img/haven_cover_1632.jpg');
+    }
+    @include at-least(1632px) {
+        background-image: url('/assets/build/img/haven_cover_1920.jpg');
+    }
+    @include at-least(1920px) {
+        background-image: url('/assets/build/img/haven_cover_2560.jpg');
+    }
+    @include at-least(2560px) {
+        background-image: url('/assets/build/img/haven_cover_1632@2x.jpg');
+    }
+    @media
+    (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (   min--moz-device-pixel-ratio: 2),
+    (min-width: 1200px) and (     -o-min-device-pixel-ratio: 2/1),
+    (min-width: 1200px) and (        min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (                min-resolution: 192dpi),
+    (min-width: 1200px) and (                min-resolution: 2dppx) { 
+      
+      background-image: url('/assets/build/img/haven_cover_1632.jpg');
+
     }
 }
 
@@ -999,7 +1041,30 @@ canvas.ddpanorama:active {
         background-image: url('/assets/build/img/straatview_orig_1200.jpg');
     }
     @include at-least($XL) {
+        background-image: url('/assets/build/img/straatview_orig_1440.jpg');
+    }
+    @include at-least(1440px) {
         background-image: url('/assets/build/img/straatview_orig_1734.jpg');
+    }
+    @include at-least(1734px) {
+        background-image: url('/assets/build/img/straatview_orig_1920.jpg');
+    }
+    @include at-least(1920px) {
+        background-image: url('/assets/build/img/straatview_orig_2560.jpg');
+    }
+    @include at-least(2560px) {
+        background-image: url('/assets/build/img/straatview_orig_1734@2x.jpg');
+    }
+    @media
+    (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (   min--moz-device-pixel-ratio: 2),
+    (min-width: 1200px) and (     -o-min-device-pixel-ratio: 2/1),
+    (min-width: 1200px) and (        min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (                min-resolution: 192dpi),
+    (min-width: 1200px) and (                min-resolution: 2dppx) { 
+      
+      background-image: url('/assets/build/img/straatview_orig_1734@2x.jpg');
+
     }
 }
 #locatie-map {

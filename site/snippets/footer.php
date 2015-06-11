@@ -1,9 +1,16 @@
   <footer class="footer" role="contentinfo">
 
-    <p>
+    <p class="footer-item">
       <span class="copyright">
         © 2015 <a href="//cool-house.nl">Cool-house</a>
       </span>
+    </p>
+    <div class="footer-item">
+      <a href="//www.facebook.com/CoolHouseScheveningen">
+        <?php echo l::get('facebook') ?>
+      </a>
+    </div>
+    <p class="footer-item">
       <span class="to-top">
         <a class="menu-link" href="#<?php echo l::get('coolhouse') ?>"><?php echo l::get('top') ?></a>
       </span>

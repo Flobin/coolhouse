@@ -11,7 +11,7 @@ text:
 	      <source  media="(min-width: 768px)" srcset="/assets/build/img/catch_haven_panorama_1024.jpg">
 	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama_768.jpg">
 	      <source  media="(max-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama.jpg">
-	      <img src="/assets/build/img/catch_haven_panorama_1024.jpg" alt="foto van de haven">
+	      <img src="/assets/build/img/catch_haven_panorama.jpg" srcset="/assets/build/img/catch_haven_panorama_768.jpg 768w, /assets/build/img/catch_haven_panorama_1024.jpg 1024w, /assets/build/img/catch_haven_panorama_1200.jpg 1200w, /assets/build/img/catch_haven_panorama_1680.jpg 1680w" alt="foto van de haven">
 	</picture>
 </figure>
 

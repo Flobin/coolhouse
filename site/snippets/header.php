@@ -27,6 +27,20 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <meta property="og:title" content="CoolHouse Scheveningen" />
+  <meta property="og:site_name" content="CoolHouse"/>
+  <meta property="og:url" content="http://cool-house.nl/" />
+  <meta property="og:description" content="" />
+  <meta property="article:author" content="https://www.facebook.com/CoolHouseScheveningen" />
+  <meta property="article:publisher" content="https://www.facebook.com/CoolHouseScheveningen" />
+  <meta property="og:image" content="http://cool-house.nl/assets/build/img/balkon_wide_1200.jpg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CoolHouse Scheveningen" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="http://cool-house.nl/assets/build/img/balkon_wide_1200.jpg" />
+
+  
   <script>
     if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)document.cookie='HTTP_IS_RETINA=1;path=/';
     (function(d) {
@@ -38,7 +52,10 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";if(window.sessionStorage){sessionStorage.setItem("useTypekit","false")}},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
-  </script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
 
   <?php echo css('assets/build/style/global.css') ?>
 

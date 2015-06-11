@@ -6,12 +6,14 @@ text:
 
 <figure class="big">
 	<picture>
-	      <source media="(min-width: 1200px)" srcset="/assets/build/img/catch_haven_panorama_1680.jpg">
-	      <source media="(min-width: 1024px)" srcset="/assets/build/img/catch_haven_panorama_1200.jpg">
-	      <source  media="(min-width: 768px)" srcset="/assets/build/img/catch_haven_panorama_1024.jpg">
-	      <source  media="(min-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama_768.jpg">
-	      <source  media="(max-width: 480px)"  srcset="/assets/build/img/catch_haven_panorama.jpg">
-	      <img src="/assets/build/img/catch_haven_panorama_1024.jpg" alt="foto van de haven">
+		<!--[if IE 9]><video style="display: none;"><![endif]-->
+	    <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_1632.jpg">
+	    <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_1200.jpg">
+	    <source  media="(min-width: 768px)" srcset="/assets/build/img/haven_1024.jpg">
+	    <source  media="(min-width: 480px)"  srcset="/assets/build/img/haven_768.jpg">
+	    <source  media="(max-width: 480px)"  srcset="/assets/build/img/haven.jpg">
+	    <!--[if IE 9]></video><![endif]-->
+	    <img src="/assets/build/img/haven.jpg" srcset="/assets/build/img/haven_768.jpg 768w, /assets/build/img/haven_1024.jpg 1024w, /assets/build/img/haven_1200.jpg 1200w, /assets/build/img/haven_1632.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de haven">
 	</picture>
 </figure>
 
