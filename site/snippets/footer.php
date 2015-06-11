@@ -1,20 +1,22 @@
   <footer class="footer" role="contentinfo">
 
-    <p class="footer-item">
-      <span class="copyright">
-        © 2015 <a href="//cool-house.nl">Cool-house</a>
-      </span>
-    </p>
-    <div class="footer-item">
-      <a href="//www.facebook.com/CoolHouseScheveningen">
-        <?php echo l::get('facebook') ?>
-      </a>
+    <div class="container">
+      <p class="footer-item">
+        <span class="copyright">
+          © 2015 <a href="//cool-house.nl">CoolHouse</a>
+        </span>
+      </p>
+      <p class="footer-item">
+        <a href="//www.facebook.com/CoolHouseScheveningen">
+          <?php echo l::get('facebook') ?>
+        </a>
+      </p>
+      <p class="footer-item">
+        <span class="to-top">
+          <a class="menu-link" href="#<?php echo l::get('coolhouse') ?>"><?php echo l::get('top') ?></a>
+        </span>
+      </p>
     </div>
-    <p class="footer-item">
-      <span class="to-top">
-        <a class="menu-link" href="#<?php echo l::get('coolhouse') ?>"><?php echo l::get('top') ?></a>
-      </span>
-    </p>
 
   </footer>
 
@@ -28,19 +30,34 @@
     //'use strict';
     document.onreadystatechange = function () {
       if (document.readyState == "complete") {
-        var jq = jQuery.noConflict();
-        var root = jq('html, body'),
+        var jq = jQuery.noConflict(),
+            viewport = jq(window),
+            root = jq('html, body'),
             menu = jq('.menu'),
             menuLink = jq('.menu-link'),
             article = jq('.homepage-article'),
             input = jq(".input"),
             pano = jq(".panorama"),
-            slabHeadline = jq(".slab-headline");
+            slabHeadline = jq(".slab-headline"),
+            offset;
+
+        if (viewport.width() <= 480) {
+          offset = 84;
+        } else if (viewport.width() <= 768) {
+          offset = 96;
+        } else if (viewport.width() <= 1024) {
+          offset = 108;
+        } else {
+          offset = 120;
+        }
 
         menuLink.click(function() {
           var href = jq.attr(this, 'href');
+          if (href ==="#Coolhouse") {
+            offset = 0;
+          }
           root.stop(true,true).animate({
-              scrollTop: jq(href).position().top
+              scrollTop: jq(href).position().top-offset+'px'
           }, 500, function () {
               window.location.hash = href;
           });
@@ -49,12 +66,18 @@
 
         var header = document.getElementById('site-header');
         sticky(header);
+        if (/^#*/.test(window.location.hash)) {
+          header.style.position = "fixed";
+          header.style.top = 0;
+          header.style.left = 0;
+          header.style.zIndex = 9999;
+        }
 
         var slabTextHeadlines = function() {
           slabHeadline.slabText({
-            // Don't slabtext the headers if the viewport is under 380px
-            "viewportBreakpoint":479
+            "viewportBreakpoint":319
           });
+          window.dispatchEvent(new Event('resize'));
         };
         Typekit.load({
           active: slabTextHeadlines()

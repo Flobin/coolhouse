@@ -1,4 +1,4 @@
-Title: Coolhouse Scheveningen
+Title: CoolHouse Scheveningen
 
 ----
 
@@ -10,8 +10,8 @@ Description: Wijds wonen in Scheveningen
 
 ----
 
-Keywords: Scheveningen apartments
+Keywords: Scheveningen apartments real estate
 
 ----
 
-Copyright: © (date: Year) (link: http://cool-house.nl text: Coolhouse)
+Copyright: © (date: Year) (link: http://cool-house.nl text: CoolHouse)

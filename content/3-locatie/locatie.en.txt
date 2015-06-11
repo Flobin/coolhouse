@@ -4,9 +4,9 @@ URL-key: Location
 ----
 text: 
 
-The Cool-house will be situated on the Dr. Lelykade, next to the city monument of the old fish smokery and shipping company: De Rokerij. The monumental character of De Rokerij gives the Cool-house the space to become an all-sided building with an excellent orientation towards the sun. Where many homes on the Dr. Lelykade try to compromise between a view of the harbor and sunlight, the Cool-house enjoys both: a unique orientation in combination with a wide view over the harbor and city!
+The CoolHouse will be situated on the Dr. Lelykade, next to the city monument of the old fish smokery and shipping company: De Rokerij. The monumental character of De Rokerij gives the CoolHouse the space to become an all-sided building with an excellent orientation towards the sun. Where many homes on the Dr. Lelykade try to compromise between a view of the harbor and sunlight, the CoolHouse enjoys both: a unique orientation in combination with a wide view over the harbor and city!
 
 ###Getting There
-The Cool-house is easily reached by car, public transport, and, of course, bicycle. With an underground parking garage, there is always a parking space. Tram lines 11, 17, and bus line 22 stop almost in front of the door. They can take you to the inner city, or one of the stations where you can board a train to the rest of the country. And on bike, it only takes 15 minutes to get to downtown The Hague.
+The CoolHouse is easily reached by car, public transport, and, of course, bicycle. With an underground parking garage, there is always a parking space. Tram lines 11, 17, and bus line 22 stop almost in front of the door. They can take you to the inner city, or one of the stations where you can board a train to the rest of the country. And on bike, it only takes 15 minutes to get to downtown The Hague.
 
 <section class="big container"><div id="locatie-map"></div></section>

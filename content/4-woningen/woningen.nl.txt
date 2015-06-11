@@ -4,7 +4,7 @@ URL-key: Woningen
 ----
 text: 
 
-Het Cool-house biedt royale penthouses van ca. 300 m2 en lofts van ca. 150 m2 verdeeld over zeven verdiepingen. De appartementen met rondom buitenruimte zijn volledig vrij indeelbaar om er voor te zorgen dat de toekomstige bewoners ruimte krijgen om hun droomhuis te bewerkstellen. In een nauwe samenwerking met de (interieur-)architect zullen er in een vroeg stadium van de ontwikkeling de persoonlijke plattegronden worden gedefinieerd. Cool-house is hierdoor een unieke kans om uw wensen, eisen en behoeften op een appartement te projecteren.
+Het CoolHouse biedt royale penthouses van ca. 300 m2 en lofts van ca. 150 m2 verdeeld over zeven verdiepingen. De appartementen met rondom buitenruimte zijn volledig vrij indeelbaar om er voor te zorgen dat de toekomstige bewoners ruimte krijgen om hun droomhuis te bewerkstellen. In een nauwe samenwerking met de (interieur-)architect zullen er in een vroeg stadium van de ontwikkeling de persoonlijke plattegronden worden gedefinieerd. CoolHouse is hierdoor een unieke kans om uw wensen, eisen en behoeften op een appartement te projecteren.
 
 Het project beschikt tevens over vier bijzondere grondgebonden woningen aan de Koppelstokstraat van elk ca. 300m2.
 
@@ -5444,7 +5444,7 @@ Het project beschikt tevens over vier bijzondere grondgebonden woningen aan de K
 		<polyline class="overview-lines" points="148.1,157.9 148,157.9 139.9,154.6 		"/>
 		<line class="overview-lines" x1="142" y1="170.3" x2="134.4" y2="167"/>
 		<line class="overview-lines" x1="428.6" y1="157.9" x2="428.6" y2="158"/>
-		<polyline class="overview-lines" points="172.1,132.7 163.6,129.5 163.5,129.5 		"/>
+		<polyline class="overview-lines" points="172.1,132.7 163.6,C129.5 163.5,129.5 		"/>
 		<line class="overview-lines" x1="131.4" y1="132.8" x2="131.2" y2="132.7"/>
 		<line class="overview-lines" x1="446.6" y1="194.9" x2="461.1" y2="190.8"/>
 		<polyline class="overview-lines" points="128.3,182 128.2,182 128.1,181.9 		"/>

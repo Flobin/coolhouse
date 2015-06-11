@@ -8,6 +8,4 @@ URL-Key: contact
 
 Text:
 
-###Stuur ons een berichtje!
-
 Als u interesse in één van de woningen, of een vraag over het project heeft, vul het formulier in en dan houden we u op de hoogte.

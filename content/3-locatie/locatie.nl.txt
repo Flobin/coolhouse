@@ -4,9 +4,9 @@ URL-key: Locatie
 ----
 text: 
 
-Cool-house komt te staan aan de Dr. Lelykade, naast het gemeentelijke monument van de oude visrokerij en rederij: De Rokerij. Het monumentale karakter van de Rokerij geeft het Cool-house de ruimte om een alzijdig woongebouw te worden met een uitstekende bezonning. Waar veel woningen aan de Dr. Lelykade het compromis zoeken tussen havenzicht en zon met een westelijke ligging, geniet het Cool-house van een unieke oriëntatie in combinatie met een weids uitzicht over haven en stad!
+CoolHouse komt te staan aan de Dr. Lelykade, naast het gemeentelijke monument van de oude visrokerij en rederij: De Rokerij. Het monumentale karakter van de Rokerij geeft het CoolHouse de ruimte om een alzijdig woongebouw te worden met een uitstekende bezonning. Waar veel woningen aan de Dr. Lelykade het compromis zoeken tussen havenzicht en zon met een westelijke ligging, geniet het CoolHouse van een unieke oriëntatie in combinatie met een weids uitzicht over haven en stad!
 
 ###Bereikbaarheid
-Het Cool-house is gemakkelijk te bereiken met de auto, openbaar vervoer, en natuurlijk de fiets. Met een ondergrondse parkeergarage is er altijd voldoende parkeergelegenheid. Tramlijnen 11, 17 en buslijn 22 stoppen bijna voor de deur. Die brengen u naar de binnenstad of één van de stations waar u uw reis kunt vervolgen. En met de fiets bent u binnen een kwartier in hartje Den Haag.
+Het CoolHouse is gemakkelijk te bereiken met de auto, openbaar vervoer, en natuurlijk de fiets. Met een ondergrondse parkeergarage is er altijd voldoende parkeergelegenheid. Tramlijnen 11, 17 en buslijn 22 stoppen bijna voor de deur. Die brengen u naar de binnenstad of één van de stations waar u uw reis kunt vervolgen. En met de fiets bent u binnen een kwartier in hartje Den Haag.
 
 <section class="big container"><div id="locatie-map"></div></section>
