@@ -17,5 +17,7 @@ l::set('firstname', 'Voornaam');
 l::set('lastname', 'Achternaam');
 l::set('question', 'Als u een vraag heeft, kunt u die hier stellen');
 l::set('submit', 'Verstuur');
+l::set('jotform-prototype', 'https://secure.jotformeu.com/static/prototype.forms.js');
+l::set('jotform', 'https://secure.jotformeu.com/static/jotform.forms.js?3.3.7431');
 
 l::set('readmore', 'Lees  verder…');

@@ -17,5 +17,7 @@ l::set('firstname', 'First name');
 l::set('lastname', 'Last name');
 l::set('question', 'If you have a question, ask us here');
 l::set('submit', 'Submit');
+l::set('jotform-prototype', 'https://d2g9qbzl5h49rh.cloudfront.net/static/prototype.forms.js');
+l::set('jotform', 'https://d2g9qbzl5h49rh.cloudfront.net/static/jotform.forms.js?3.3.7492');
 
 l::set('readmore', 'Read more…');

@@ -23,8 +23,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/assets/build/js/jquery-2.1.4.min.js"><\/script>')</script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3b9pBpSLNDZoC6jt-kJXadoOxm-g5Jgo&sensor=false"></script>
-  <script src="https://secure.jotformeu.com/static/prototype.forms.js" type="text/javascript"></script>
-  <script src="https://secure.jotformeu.com/static/jotform.forms.js?3.3.7431" type="text/javascript"></script>
+  <script src="<?php echo l::get('jotform-prototype') ?>" type="text/javascript"></script>
+  <script src="<?php echo l::get('jotform') ?>" type="text/javascript"></script>
   <?php echo js('/assets/build/js/production.min.js') ?>
   <script>
     //'use strict';

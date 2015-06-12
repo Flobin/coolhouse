@@ -1181,15 +1181,15 @@ canvas.ddpanorama:active {
 //from http://tympanus.net/Development/TextInputEffects/index2.html - manami
 .field-group {
     width: 100%;
-    height: 4rem;
-    position: relative;
-    overflow: hidden;
     color: $dark-blue;
-    padding-bottom: 1.5rem;
     @include at-least($M) {
+        height: 4rem;
         display: inline-block;
         width: 32%;
         margin-right: 2%;
+        padding-bottom: 1.5rem;
+        position: relative;
+        overflow: hidden;
     }
 }
 .last-group {
@@ -1200,55 +1200,68 @@ canvas.ddpanorama:active {
     height: 2em;
     //background: transparent;
     padding: 0.5rem;
-    margin-bottom: 2rem;
     color: $dark-blue;
     z-index: 100;
     opacity: 1;
-    background-color: hsla(215,48%,13%,0);
+    background-color: hsla(215,48%,13%,1);
     float: right;
     //line-height: normal;
+    @include at-least($M) {
+        opacity: 0;
+        background-color: hsla(215,48%,13%,0);
+        margin-bottom: 2rem;
+    }
 }
 .label {
-    width: 100%;
-    position: absolute;
-    text-align: left;
-    padding: 0.5em 0;
-    //pointer-events: none;
-    font-size: 1em;
-    z-index: -1;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100%;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    @include at-least($M) {
+        margin: 0;
+        display: inline;
         width: 100%;
-        background: $dark-blue;
-        -webkit-transform: translate3d(0, -105%, 0);
-        transform: translate3d(0, -105%, 0);
-        -webkit-transition: -webkit-transform 0.3s ease-in-out;
-        transition: transform 0.3s ease-in-out;
-    }
-    &::after {
-        content: '';
         position: absolute;
-        width: 100%;
-        left: 0;
-        top: 100%;
-        height: 2px;
-        background: $dark-blue;
-        -webkit-transition: opacity 0.3s ease-in-out;
-        transition: opacity 0.3s ease-in-out;
+        text-align: left;
+        padding: 0.5em 0;
+        //pointer-events: none;
+        font-size: 1em;
+        z-index: -1;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: $dark-blue;
+            -webkit-transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -105%, 0);
+            /*-webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;*/
+            @include transition(all 0.3s ease-in-out);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            height: 2px;
+            background: $dark-blue;
+            -webkit-transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
+        }
     }
 }
 .label-content {
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    position: relative;
-    display: block;
-    width: 100%;
-
+    @include at-least($M) {
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
 }
 .input:focus {
     outline: none;
@@ -1257,30 +1270,36 @@ canvas.ddpanorama:active {
     .input {
         background: $dark-blue;
         color: #fff;
-    }
-    &.input {
         opacity: 1;
-        -webkit-transition: opacity 0s 0.3s ease-in-out;
-        transition: opacity 0s 0.3s ease-in-out;
     }
-    &+.label::before {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    &+.label::after {
-        opacity: 0;
-    }
-    &+.label .label-content {
-        color: $dark-blue;
-        -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
-        transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
+    @include at-least($M) {
+        &.input {
+            opacity: 1;
+            -webkit-transition: opacity 0s 0.3s ease-in-out;
+            transition: opacity 0s 0.3s ease-in-out;
+        }
+        &+.label::before {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            background-color: hsla(215,48%,13%,1);
+            opacity: 1;
+        }
+        &+.label::after {
+            opacity: 0;
+        }
+        &+.label .label-content {
+            -webkit-transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
+            transform: translateY(2.1em) scale3d(0.65, 0.65, 1);
+        }
     }
 }
 //this is the textarea
 #question, #id_4 {
-    display: inline-block;
-    width: calc(98% - 4rem);
-    margin-right: 2%;
+    @include at-least($M) {
+        display: inline-block;
+        width: calc(98% - 4rem);
+        margin-right: 2%;
+    }
 }
 #Field11, #input_4 {
     resize: none;
@@ -1295,16 +1314,23 @@ canvas.ddpanorama:active {
     display: block;
 }
 .submit, .form-submit-button {
-    float: right;
-    padding: 0.5em 0;
-    height: calc(2.5rem + 2px);
+    padding: 0.5em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: $dark-blue;
     color: #fff;
     text-transform: lowercase;
-    position: relative;
-    top: calc(-4.5rem);
-    width: 4rem;
-    text-align: center;
+    @include at-least($M) {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        float: right;
+        height: calc(2.5rem + 2px);
+        position: relative;
+        top: calc(-4.5rem);
+        width: 4rem;
+        text-align: center;
+    }
     @include transition(background-color, 0.3s, ease-in-out);
     &:hover,&:focus,&:active {
         background-color: $gold;
