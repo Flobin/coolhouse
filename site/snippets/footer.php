@@ -32,27 +32,31 @@
       if (document.readyState == "complete") {
         var jq = jQuery.noConflict(),
             viewport = jq(window),
+            html = jq('html'),
             root = jq('html, body'),
             menu = jq('.menu'),
             menuLink = jq('.menu-link'),
             article = jq('.homepage-article'),
             input = jq(".input"),
             pano = jq(".panorama"),
-            slabHeadline = jq(".slab-headline"),
-            offset;
+            slabHeadline = jq(".slab-headline");
 
-        if (viewport.width() <= 480) {
-          offset = 84;
-        } else if (viewport.width() <= 768) {
-          offset = 96;
-        } else if (viewport.width() <= 1024) {
-          offset = 108;
-        } else {
-          offset = 120;
-        }
+        var browserName = bowser.name.replace(/\s+/g, '');
+        console.log(browserName);
+        html.addClass(browserName);
 
         menuLink.click(function() {
+          var offset;
           var href = jq.attr(this, 'href');
+          if (viewport.width() <= 480) {
+            offset = 84;
+          } else if (viewport.width() <= 768) {
+            offset = 96;
+          } else if (viewport.width() <= 1024) {
+            offset = 108;
+          } else {
+            offset = 120;
+          }
           if (href ==="#Coolhouse") {
             offset = 0;
           }
@@ -66,7 +70,6 @@
 
         var header = document.getElementById('site-header');
         sticky(header);
-        console.log(window.location.hash);
         if (/^#/.test(window.location.hash)) {
           header.className = "stuck header";
         }
@@ -75,7 +78,13 @@
           slabHeadline.slabText({
             "viewportBreakpoint":319
           });
-          window.dispatchEvent(new Event('resize'));
+          if (document.createEvent) { // W3C
+              var ev = document.createEvent('Event');
+              ev.initEvent('resize', true, true);
+              window.dispatchEvent(ev);
+          } else { // IE
+              document.fireEvent('onresize');
+          }
         };
         Typekit.load({
           active: slabTextHeadlines()

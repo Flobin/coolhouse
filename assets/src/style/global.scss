@@ -375,6 +375,7 @@ p+p {
     left: 0;
     right: 0;*/
     @extend %float-vertical;
+    z-index: 9999;
 }
 .home .header {
     position: absolute;
@@ -387,7 +388,7 @@ p+p {
   position:fixed;
   top:0;
   left: 0;
-  z-index: 9999;
+  //z-index: 9999;
 }
 #header-logo-img {
     height: 2rem;
@@ -724,7 +725,7 @@ figure img, figure picture {
 .homepage-article {
     @extend %float-vertical;
     position: relative;
-    z-index: 9999;
+    z-index: 999;
 }
 div.section-cover {
     height: 75vh;
@@ -755,6 +756,7 @@ h2.section-title {
     height: 100%;
     width: 100%;
     clip: rect(auto,auto,auto,auto);
+    clip-path: rect(auto,auto,auto,auto);
     -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
 }
 .cover-img {
@@ -769,6 +771,19 @@ h2.section-title {
     width: 100%;
     height: 100%;
     -webkit-transform-style: preserve-3d;
+}
+.InternetExplorer, .Safari, .Firefox {
+    .cover-clip {
+        position: absolute;
+        clip: none;
+        clip-path: none;
+        //-webkit-mask-image: none;
+    }
+    .cover-img {
+        position: absolute;
+        background-attachment: fixed;
+        //-webkit-transform-style: none;
+    }
 }
 .row {
     @extend .clearfix;
@@ -812,14 +827,23 @@ main {
 footer {
     background-color: $dark-blue;
     color: hsla(0,0%,100%,1);
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 footer .footer-item {
     display: inline-block;
     width: 32%;
     margin-right: 2%;
+    margin-top: 0;
+    font-size: 0.75rem;
+    font-weight: 400;
     &:nth-child(3) {
         margin-right: 0;
+    }
+    a {
+        color: $gold;
+        &:hover,&:active,&:focus {
+            color: $light-blue;
+        }
     }
 }
 
@@ -926,6 +950,30 @@ canvas.ddpanorama:active {
 }
 #overview {
     margin-top: 3rem;
+}
+.InternetExplorer {
+    #overview svg {
+        padding-bottom: 92%;
+        height: 1px;
+        overflow: visible; 
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        /*height: auto;
+        max-width: 452px;
+        @include at-least($S) {
+            max-width: 736px;
+        }
+        @include at-least($M) {
+            max-width: 973px;
+        }
+        @include at-least($L) {
+            max-width: 960px;
+        }
+        @include at-least($XL) {
+            max-width: 1300px;
+        }*/
+    }
 }
 .unit {
     opacity: 0;

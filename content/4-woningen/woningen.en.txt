@@ -4,9 +4,9 @@ URL-key: Homes
 ----
 text: 
 
-The CoolHouse offers spacious penthouses of ca. 300m2 and lofts of ca. 150m2, spread across seven floors. The apartments, which are surrounded by balconies, can be completely custom designed to ensure that future residents can live in their dream house. By closely cooperating with the (interior) architect personal layouts will be defined in an early stage. This makes the CoolHouse a unique chance to put your personal wishes and needs into the home. 
+The CoolHouse offers spacious penthouses of ca. 320m&#178; and lofts of ca. 160m&#178;, spread across seven floors. The apartments, which are surrounded by balconies, can be completely custom designed to ensure that future residents can live in their dream house. By closely cooperating with the (interior) architect personal layouts will be defined in an early stage. This makes the CoolHouse a unique chance to put your personal wishes and needs into the home. 
 
-The project also contains four fantastic houses on the Koppelstokstraat of ca. 300m2 each.
+The project also contains four fantastic houses on the Koppelstokstraat of ca. 160m&#178; each.
 
 <figure class="big" id="overview">
 		
@@ -5894,14 +5894,14 @@ The project also contains four fantastic houses on the Koppelstokstraat of ca. 3
 			339.5,108.3 339.7,116 240.4,136 107.2,90.4 108.3,102.9 108.9,109.4 		"/>
 		<polygon class="overview-dark" points="429.9,101.8 429.6,117.4 396.1,125 379.4,120.3 215.1,154.8 182.2,143 181.5,136.1 108.9,109.4 
 			108.3,102.9 96.2,104.8 96.8,119.3 149.6,139.8 150.6,153 204.4,174.6 367.2,138.4 383.3,143.3 463.8,124.9 463.3,110.2 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 7   /   Penthouse   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 7   /   Penthouse   /   320 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="243.2,197.2 310.4,180.7 310.3,171.4 429,143.3 429.2,132.8 383.3,143.3 367.2,138.4 204.4,174.6 
 			150.6,153 149.6,139.8 110.3,124.5 111.3,135.8 111.9,143 		"/>
 		<polygon class="overview-dark" points="461.7,135.5 442.1,129.8 429.2,132.8 429,143.3 310.3,171.4 310.4,180.7 243.2,197.2 111.9,143 
 			111.3,135.8 99.4,138 99.8,152 243.7,214 340.2,189.4 340.1,179.9 462.1,149.6 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 6   /   Penthouse   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 6   /   Penthouse   /   320 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="186.1,208.1 186.4,213.3 222.4,230 378.8,189 390.2,193 430.9,182.1 428,181.1 428.4,166.6 
@@ -5909,35 +5909,35 @@ The project also contains four fantastic houses on the Koppelstokstraat of ca. 3
 		<polygon class="overview-dark" points="460.9,176.7 428.4,166.6 428,181.1 430.9,182.1 390.2,193 378.8,189 222.4,230 186.4,213.3 
 			186.1,208.1 114.9,175.8 114.2,167.8 102.4,170.3 102.9,184 155.8,209 154.9,209.2 156.1,224.4 208.6,250.2 366.9,207 
 			382.5,212.8 461.1,190.7 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 5   /   Penthouse   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 5   /   Penthouse   /   320 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="337.9,214.9 208.6,250.2 156.1,224.4 154.9,209.2 155.8,209 116.2,190.3 117,199.3 117.7,207.9 
 			240.5,268.6 311.5,247.9 311.4,241.4 339,233.4 338.5,233.5 		"/>
 		<polygon class="overview-dark" points="340.6,259 340.5,247.8 340.6,233 339,233.4 311.4,241.4 311.5,247.9 240.5,268.6 117.7,207.9 
 			117,199.3 105.4,201.9 105.8,215.3 246.8,287.6 339.3,259.3 339.3,259.3 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 4   /   Loft   /   Type A   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 4   /   Loft   /   Type A   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="246.8,287.6 119,222 119.7,229.9 120.5,239.1 190.4,276.5 190.7,280.1 229,300.8 339.5,266.4 
 			339.3,259.3 		"/>
 		<polygon class="overview-dark" points="229,300.8 190.7,280.1 190.4,276.5 120.5,239.1 119.7,229.9 108.2,232.7 108.7,245.8 164.4,276.5 
 			160.1,277.7 161.2,292.1 212.7,321.7 340,280.8 339.5,266.4 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 3   /   Loft   /   Type A   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 3   /   Loft   /   Type A   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="161.1,291.5 160.1,277.7 164.4,276.5 121.9,253.2 122.4,259.9 123.3,269.7 		"/>
 		<polygon class="overview-light" points="213.5,321.5 241.4,337.4 312.6,313.4 312.5,307.9 340.5,298.5 340,280.8 		"/>
 		<polygon class="overview-dark" points="312.5,307.9 312.6,313.4 241.4,337.4 213.5,321.5 212.7,321.7 161.2,292.1 161.1,291.5 
 			123.3,269.7 122.4,259.9 111,262.8 111.5,275.6 249.8,357.3 340.9,325 340.9,312.5 341,312.4 340.5,298.5 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 2   /   Loft   /   Type A   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 2   /   Loft   /   Type A   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="340.9,312.5 340.9,325 249.8,357.3 124.6,283.5 125,289.1 126,299.5 194.6,341.4 194.7,343.6 
 			234.3,367.9 341.5,329.6 341,312.4 		"/>
 		<polygon class="overview-dark" points="234.3,367.9 194.7,343.6 194.6,341.4 126,299.5 125,289.1 113.8,292.2 114.3,304.8 171.5,340.7 
 			165,342.8 166,356.5 216.5,389.4 341.9,343.3 341.5,329.6 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 1   /   Loft   /   Type A   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 1   /   Loft   /   Type A   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="163.6,335.8 171.5,340.7 165,342.8 166,356.5 216.5,389.4 366.4,334.3 381.2,341.7 414.4,329.2 
@@ -5948,46 +5948,46 @@ The project also contains four fantastic houses on the Koppelstokstraat of ca. 3
 	<g class="unit">
 		<polygon class="overview-light" points="422.6,201.6 382.5,212.8 366.9,207 337.9,214.9 338.5,233.5 339,233.4 422.4,209.5 		"/>
 		<polygon class="overview-dark" points="340.5,247.8 459.6,212.4 459,199 446.7,194.8 422.6,201.6 422.4,209.5 340.6,233 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 4   /   Loft   /   Type B   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 4   /   Loft   /   Type B   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="386.3,257.7 428.7,244.2 426.3,243.1 426.7,228.5 426.9,222.1 340.5,247.8 340.6,259 339.3,259.3 
 			339.5,266.4 378.2,254.4 		"/>
 		<polygon class="overview-dark" points="381.9,278.8 458.7,253.5 458.1,240.1 426.7,228.5 426.3,243.1 428.7,244.2 386.3,257.7 
 			378.2,254.4 339.5,266.4 340,280.8 366.6,272.2 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 3   /   Loft   /   Type B   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 3   /   Loft   /   Type B   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="421,266.1 381.9,278.8 366.6,272.2 340,280.8 340.5,298.5 420.8,271.5 		"/>
 		<polygon class="overview-dark" points="457,259.6 449.9,256.6 421,266.1 420.8,271.5 340.5,298.5 341,312.4 457.2,272.4 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 2   /   Loft   /   Type B   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 2   /   Loft   /   Type B   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="383.2,319.3 427.5,303.4 424.7,302.2 425.1,287.6 425,283.6 341,312.4 341.5,329.6 377.7,316.6 		
 			"/>
 		<polygon class="overview-dark" points="381.2,341.7 456.3,313.4 455.9,300.5 425.1,287.6 424.7,302.2 427.5,303.4 383.2,319.3 
 			377.7,316.6 341.5,329.6 341.9,343.3 366.4,334.3 		"/>
-		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 1   /   Loft   /   Type B   /   150 m²</text>
+		<text transform="matrix(1 0 0 1 106.3691 539.2523)" class="overview-text">Laag 1   /   Loft   /   Type B   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="523.4,159.8 517.6,161.4 486.9,152.7 461.9,159.1 430.3,167.2 460.9,176.7 461.1,190.7 
 			446.7,194.8 459,199 459.6,212.4 426.9,222.1 426.7,228.5 458.1,240.1 458.7,247.5 465.4,250.1 468.1,186.9 544.4,165.6 		"/>
-		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="465.4,250.1 520.5,270.8 524.7,204.9 595.2,183.2 565.8,174.9 566,171.7 544.4,165.6 468.1,186.9 
 					"/>
-		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="520.5,270.8 581.4,293.7 587.4,224.8 663.4,198.8 638.1,191.8 632.3,193.7 595.2,183.2 
 			524.7,204.9 		"/>
-		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   160 m²</text>
 	</g>
 	<g class="unit">
 		<polygon class="overview-light" points="649.1,319.1 717.2,288.4 726.8,220.3 689.3,209.7 689.8,206.2 663.4,198.8 587.4,224.8 
 			581.4,293.7 		"/>
-		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   300 m²</text>
+		<text transform="matrix(1 0 0 1 106.369 539.2521)" class="overview-text">Residence   /   160 m²</text>
 	</g>
 </g>
 </svg>
