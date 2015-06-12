@@ -66,11 +66,9 @@
 
         var header = document.getElementById('site-header');
         sticky(header);
-        if (/^#*/.test(window.location.hash)) {
-          header.style.position = "fixed";
-          header.style.top = 0;
-          header.style.left = 0;
-          header.style.zIndex = 9999;
+        console.log(window.location.hash);
+        if (/^#/.test(window.location.hash)) {
+          header.className = "stuck header";
         }
 
         var slabTextHeadlines = function() {

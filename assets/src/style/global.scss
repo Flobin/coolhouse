@@ -386,6 +386,8 @@ p+p {
 #site-header.stuck {
   position:fixed;
   top:0;
+  left: 0;
+  z-index: 9999;
 }
 #header-logo-img {
     height: 2rem;
