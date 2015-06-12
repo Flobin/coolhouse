@@ -867,14 +867,15 @@ footer .footer-item {
 .logo-h-2 {
     fill: $gold;
 }
-#Coolhouse .big {
+/*#Coolhouse .big {
     margin-top: 3rem;
     &:first-child {
         margin-top: 0;
     }
-}
+}*/
 #Coolhouse .fullwidth {
     text-align: center;
+    overflow: hidden;
     @include until($S) {
         max-height: 205px;
     }
@@ -898,21 +899,32 @@ footer .footer-item {
     }
 }
 canvas.ddpanorama {
-   //cursor: url(./images/openhand.cur), e-resize you need a default here for this to work
-   cursor:-webkit-grab;
-   cursor: -moz-grab;
-   cursor: grab;                    // some future proofing
-   -webkit-user-select: none;
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   height: auto;
-   @extend .big;
-   overflow: hidden;
-   max-height: 500px;
-   //@extend %vertical-align;
+    //cursor: url(./images/openhand.cur), e-resize you need a default here for this to work
+    cursor:-webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;                    // some future proofing
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: auto;
+    @extend .big;
+    overflow: hidden;
+    max-height: 500px;
+    //@extend %vertical-align;
+    position: relative;
+    @include at-least($L) {
+        top: -10%;
+    }
+    @include at-least($XL) {
+        top: 0;
+    }
+
+  //-webkit-transform: translateY(-50%);
+  //-ms-transform: translateY(-50%);
+  //transform: translateY(-50%);
    &:first-child {
      margin-bottom: 0;
    }
