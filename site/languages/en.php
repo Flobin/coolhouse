@@ -7,7 +7,7 @@ l::set('woningen', 'Homes');
 l::set('nieuws', 'News');
 l::set('contact', 'Contact');
 
-l::set('facebook', 'Find us on Facebook');
+l::set('facebook', ' Find us on Facebook');
 l::set('top', 'Back to top');
 
 l::set('contact-title', ' ');

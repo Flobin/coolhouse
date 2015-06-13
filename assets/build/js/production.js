@@ -298,7 +298,6 @@ document.onreadystatechange = function () {
             slabHeadline = jq(".slab-headline");
 
         var browserName = bowser.name.replace(/\s+/g, '');
-        console.log(browserName);
         html.addClass(browserName);
 
         menuLink.click(function() {
@@ -338,8 +337,10 @@ document.onreadystatechange = function () {
               var ev = document.createEvent('Event');
               ev.initEvent('resize', true, true);
               window.dispatchEvent(ev);
+              //console.log("W3C resize fired");
           } else { // IE
               document.fireEvent('onresize');
+              //console.log("IE resize fired");
           }
         };
         Typekit.load({

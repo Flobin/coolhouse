@@ -1,0 +1,14 @@
+title: Thank you
+----
+URL-key: Thankyou
+----
+text: 
+
+<figure id="coolhouse-logo-c">
+  <img class="logo" alt="logo van het Coolhouse" src="/assets/build/img/landing_logo.png">
+</figure>
+
+<h2 class="h3">Bedankt!</h2>
+<p>We have successfully received your submission. We will email you to confirm.</p>
+<p>Kind regards from the CoolHouse team.</p>
+<p><a href="/en/">Click here to go back to the homepage</a></p>

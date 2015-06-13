@@ -377,14 +377,14 @@ p+p {
     @extend %float-vertical;
     z-index: 9999;
 }
-.home .header {
+.header {
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
     top: calc(100vh - 3rem);
 }
-#site-header.stuck {
+#site-header.stuck, .thankyou #site-header {
   position:fixed;
   top:0;
   left: 0;
@@ -703,7 +703,7 @@ figure img, figure picture {
     display: block;
     max-width: 100%;
 }
-.home {
+body {
     p, form {
         @extend .container;
     }
@@ -846,6 +846,19 @@ footer .footer-item {
         }
     }
 }
+#facebook-link {
+    #facebook-logo {
+        @include transition(fill 0.3s ease-in-out);
+        height: 1rem;
+        width: auto;
+        fill: $gold;
+    }
+    &:hover, &:focus, &:active {
+        #facebook-logo{
+            fill: $light-blue;
+        }
+    }
+}
 
 /* ==========================================================================
    #COOLHOUSE
@@ -857,7 +870,7 @@ footer .footer-item {
     //@extend .container;
     color: $dark-blue;
 }
-.home #main #slogan {
+#main #slogan {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -1309,7 +1322,7 @@ canvas.ddpanorama:active {
 #question, #id_4 {
     @include at-least($M) {
         display: inline-block;
-        width: calc(98% - 4rem);
+        width: calc(98% - 6.5rem);
         margin-right: 2%;
     }
 }
@@ -1340,7 +1353,7 @@ canvas.ddpanorama:active {
         height: calc(2.5rem + 2px);
         position: relative;
         top: calc(-4.5rem);
-        width: 4rem;
+        width: 6.5rem;
         text-align: center;
     }
     @include transition(background-color, 0.3s, ease-in-out);
@@ -1389,6 +1402,20 @@ html {
     /*.toggle, nav[role=navigation], .contactform-button, .contactform-label, .home #filters .button, .button, h1, h2, h3, h4, h5, h6 {
         font-family: $sans-font-family;
     }*/
+}
+
+/* ==========================================================================
+   #THANKYOU PAGE
+========================================================================== */
+.thankyou {
+    #coolhouse-logo-c {
+        width: 25%;
+        height: auto;
+        margin: 6rem auto 1rem auto;
+    }
+    .h3 {
+        @extend .container;
+    }
 }
 
 /* ==========================================================================
