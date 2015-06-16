@@ -8,12 +8,14 @@ Het CoolHouse biedt royale penthouses van ca. 320 m&#178; en lofts van ca. 160 m
 
 Het project beschikt tevens over vier bijzondere grondgebonden woningen aan de Koppelstokstraat van elk ca. 160m&#178;.
 
+<p class="text-mobile">Selecteer hieronder het appartement waarin u bent geïnteresseerd om meer informatie te zien.</p>
+
 <figure class="big" id="overview">
 		
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 789.3 553.9" style="enable-background:new 0 0 789.3 563.444;" xml:space="preserve" preserveAspectRatio="xMidYMin slice">
 <g id="Layer_2">
 	<rect y="0" class="overview-bg" width="789.3" height="259.1"/>
-	<rect y="515" class="overview-bg" width="789.3" height="48.444"/>
+	<rect y="515" class="overview-bg overview-bottom-bar" width="789.3" height="48.444"/>
 	<path class="overview-building-bg" d="M726.9,220.1l-37.3-10.5l0.4-3.3c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0-0.1,0
 		c0,0,0,0-0.1,0c0,0,0,0,0,0l-26.4-7.3c0,0,0,0,0,0l-25.3-7.1c0,0,0,0-0.1,0c0,0,0,0-0.1,0l-5.7,1.9l-37-10.4h0l-29.2-8.2l0.2-3.1
 		c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0-0.1,0c0,0,0,0,0,0l-21.7-6h0l-20.9-5.8c0,0,0,0-0.1,0

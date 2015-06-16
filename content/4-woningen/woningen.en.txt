@@ -8,6 +8,8 @@ The CoolHouse offers spacious penthouses of ca. 320m&#178; and lofts of ca. 160m
 
 The project also contains four fantastic houses on the Koppelstokstraat of ca. 160m&#178; each.
 
+<p class="text-mobile">Tap an apartment below to see more information.</p>
+
 <figure class="big" id="overview">
 		
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 789.3 553.9" style="enable-background:new 0 0 789.3 563.444;" xml:space="preserve" preserveAspectRatio="xMidYMin slice">

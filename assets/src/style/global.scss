@@ -241,7 +241,7 @@ h6, .h6 {
         font-size: $XL-font-size;
     }
 }
-.small {
+small, .small {
     font-size: $base-font-size * 0.75;
     @include at-least($M) {
         font-size: $M-font-size * 0.75;
@@ -284,7 +284,11 @@ p+p {
 .slabtextdone .slabtext {
     display:block;
 }
-
+.mobile-text {
+    @include at-least($M) {
+        display: none;
+    }
+}
 /* ==========================================================================
    #HEADER
 ========================================================================== */
@@ -1012,6 +1016,11 @@ canvas.ddpanorama:active {
 .overview-bg {
     fill: #BDC9D8;
 }
+.overview-bottom-bar {
+    /*@include until($M) {
+        @include transform(scale(1.25));
+    }*/
+}
 .overview-building-bg {
     fill: #fff;
 }
@@ -1044,6 +1053,13 @@ canvas.ddpanorama:active {
 .overview-text {
     //font-family:'FuturaPT-Book';
     font-size: 0.75rem;
+    @include until($M) {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    @include until($S) {
+        font-size: 1.5rem;
+    }
 }
 #Woningen .big {
     margin-top: 2rem;
