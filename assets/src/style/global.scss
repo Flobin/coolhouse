@@ -284,7 +284,7 @@ p+p {
 .slabtextdone .slabtext {
     display:block;
 }
-.mobile-text {
+.text-mobile {
     @include at-least($M) {
         display: none;
     }
