@@ -5,8 +5,7 @@
   <ul class="menu">
     <?php foreach($pages->visible() as $p): ?>
     <li class="parent">
-      <a class="menu-link" href="#<?php echo $p->title() ?>"><?php echo $p->title()->html() ?></a>
-
+      <a class="menu-link" href="<?php echo url(); e($site->language()->default(), '/#', '/en/#'); echo $p->title() ?>"><?php echo $p->title()->html() ?></a>
     </li>
     <?php endforeach ?>
     <?php foreach($site->languages() as $language): ?>

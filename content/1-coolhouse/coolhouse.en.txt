@@ -19,5 +19,5 @@ Generous proportions, excellent orientation towards the sun, large balconies, an
 CoolHouse is currently under development and the start of building activities is planned for summer 2016.
 
 <figure class="fullwidth">
-	<img class="panorama" src="/assets/build/img/section_all_panorama.jpg" alt="">
+	<img class="panorama" src="/assets/build/img/section_all_panorama@2x.jpg" alt="">
 </figure>

@@ -1,4 +1,4 @@
-Title: Error
+Title: Sorry! Something went wrong
 ----
 URL-key: Error
 

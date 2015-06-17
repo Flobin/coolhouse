@@ -1,7 +1,7 @@
-Title: Fout
+Title: Sorry! Er is iets fout gegaan
 ----
 URL-key: fout
 
 ----
 
-Text: Die Seite konnte nicht gefunden werden
+Text: De pagina die u zocht bestaat niet. Waarschijnlijk kunt u het best [terug naar de startpagina](//cool-house.nl)

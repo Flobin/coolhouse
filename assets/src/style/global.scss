@@ -388,7 +388,7 @@ p+p {
     bottom: 0;
     top: calc(100vh - 3rem);
 }
-#site-header.stuck, .thankyou #site-header {
+#site-header.stuck, .thankyou #site-header, .error #site-header {
   position:fixed;
   top:0;
   left: 0;
@@ -840,8 +840,12 @@ footer .footer-item {
     margin-top: 0;
     font-size: 0.75rem;
     font-weight: 400;
+    &:nth-child(2) {
+        text-align: center;
+    }
     &:nth-child(3) {
         margin-right: 0;
+        text-align: right;
     }
     a {
         color: $gold;
@@ -1396,6 +1400,13 @@ canvas.ddpanorama:active {
 }
 .post main {
     padding-top: 3rem;
+}
+
+/* ==========================================================================
+   #ERROR
+========================================================================== */
+.error article {
+    margin-top: 3rem;
 }
 
 /* ==========================================================================
