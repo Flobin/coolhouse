@@ -30,14 +30,16 @@
   <meta property="og:title" content="CoolHouse Scheveningen" />
   <meta property="og:site_name" content="CoolHouse"/>
   <meta property="og:url" content="http://cool-house.nl/" />
-  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="<?php echo $site->locale() ?>" />
+  <meta property="og:description" content="<?php echo $site->description()->html() ?>" />
   <meta property="article:author" content="https://www.facebook.com/CoolHouseScheveningen" />
   <meta property="article:publisher" content="https://www.facebook.com/CoolHouseScheveningen" />
   <meta property="og:image" content="http://cool-house.nl/assets/build/img/balkon_wide_1200.jpg" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="CoolHouse Scheveningen" />
-  <meta name="twitter:description" content="" />
+  <meta name="twitter:description" content="<?php echo $site->description()->html() ?>" />
   <meta name="twitter:image" content="http://cool-house.nl/assets/build/img/balkon_wide_1200.jpg" />
 
   
