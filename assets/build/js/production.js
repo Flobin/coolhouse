@@ -292,6 +292,7 @@ document.onreadystatechange = function () {
             root = jq('html, body'),
             menu = jq('.menu'),
             menuLink = jq('.menu-link'),
+            hasLink = jq(".menu-link[href*='#']"),
             article = jq('.homepage-article'),
             input = jq(".input"),
             pano = jq(".panorama"),
@@ -351,16 +352,16 @@ document.onreadystatechange = function () {
         pano.ddpanorama({width:1300, height:500, loop:false, startPos:0.79, minSpeed: -10, bounceEdgeColor: '#ffffff'});
 
 
-
+        article.scrollSpy();
         article.on('scrollSpy:enter', function() {
-          //console.log('enter:', jq(this).attr('id'));
+          console.log('enter:', jq(this).attr('id'));
           jq('.active').removeClass('active');
-          menu.find('a[href="#' + this.id + '"]').addClass('active');
+          menu.find("a[href*='#" + this.id + "']" ).addClass('active');
         });
         article.on('scrollSpy:exit', function() {
-          //console.log('exit:', jq(this).attr('id'));
+          console.log('exit:', jq(this).attr('id'));
         });
-        article.scrollSpy();
+        
 
         var initMap = function() {
           var mapOptions = {

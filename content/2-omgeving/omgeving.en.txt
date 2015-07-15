@@ -1,6 +1,6 @@
-title: Location
+title: Area
 ----
-URL-key: Location
+URL-key: Area
 ----
 text: 
 

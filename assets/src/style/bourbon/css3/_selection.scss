@@ -1,9 +1,9 @@
 @mixin selection {
   $before-colons: "";
 
-  @if & {
+  /*@if & {
     $before-colons: "&"
-  }
+  }*/
 
   #{$before-colons}::selection {
     @content;

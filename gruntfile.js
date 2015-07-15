@@ -33,7 +33,8 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'assets/build/style/global.css': 'assets/src/style/global.scss'
+                    'assets/build/style/global.css': 'assets/src/style/global.scss',
+                    'assets/build/style/svg.css': 'assets/src/style/svg.scss'
                 }
             } 
         },
