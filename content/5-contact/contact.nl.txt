@@ -10,7 +10,7 @@ Text:
 
 <p>Mocht u onze nieuwsbrief willen ontvangen, een vraag hebben over het project, of om een andere reden contact willen opnemen, dan kunt u het onderstaande formulier gebruiken.</p>
 
-<p>Heeft u interesse in één van de woningen en wilt u langskomen om over de mogelijkheden te praten, zie dan het <a href="http://cool-house.nl/2015-07-21_inschrijfformulier_nl.pdf">inschrijfformulier</a>. Deze kunt u invullen en opsturen—dan nemen wij contact met u om een afspraak in te plannen.</p>
+<p>Heeft u interesse in één van de woningen en wilt u langskomen om over de mogelijkheden te praten, zie dan het <a href="http://cool-house.nl/inschrijfformulier.pdf">inschrijfformulier</a>. Deze kunt u invullen en opsturen—dan nemen wij contact met u om een afspraak in te plannen.</p>
 
 </section>
 <section>
