@@ -31,7 +31,7 @@ The popular shopping street Frederik Hendriklaan is within a stone’s throw of 
 		      <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_1024.jpg">
 		      <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_768.jpg">
 		      <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
-		      <img src="/assets/build/img/duin_768.jpg" alt="foto van de haven">
+		      <img src="/assets/build/img/duin.jpg" srcset="/assets/build/img/duin_768.jpg 768w, /assets/build/img/duin_1024.jpg 1024w, /assets/build/img/duin_1200.jpg 1200w, /assets/build/img/duin_1680.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the dunes">
 		</picture>
 	</figure>
 	<figure>
@@ -39,7 +39,7 @@ The popular shopping street Frederik Hendriklaan is within a stone’s throw of 
 		      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_1024.jpg">
 		      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_768.jpg">
 		      <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
-		      <img src="/assets/build/img/strand_768.jpg" alt="foto van het strand">
+		      <img src="/assets/build/img/strand.jpg" srcset="/assets/build/img/strand_768.jpg 768w, /assets/build/img/strand_1024.jpg 1024w, /assets/build/img/strand_1200.jpg 1200w, /assets/build/img/strand_1680.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the beach">
 		</picture>
 	</figure>
 </section>
