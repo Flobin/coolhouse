@@ -36,7 +36,7 @@ $XL:  1200px;
     }
 }
 $serif-font-family: 'adelle', serif;
-$sans-font-family: 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', Arial, sans-serif;
+$sans-font-family: 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
 $base-font-size: 14px;
 $M-font-size: 16px;
 $L-font-size: 18px;
@@ -1368,7 +1368,7 @@ html {
 }
 .wf-inactive {
     opacity: 1;
-    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-family: Futura, 'Trebuchet MS', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
 }
 .wf-active {
     opacity: 1;

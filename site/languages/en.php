@@ -5,7 +5,7 @@ l::set('omgeving', 'Area');
 l::set('locatie', 'Location');
 l::set('woningen', 'Homes');
 l::set('nieuws', 'News');
-l::set('contact', 'Contact');
+l::set('contact', 'Register');
 
 l::set('facebook', ' Find us on Facebook');
 l::set('top', 'Back to top');
