@@ -8,9 +8,11 @@ Het CoolHouse biedt royale penthouses van ca. 308 m&#178; en lofts van ca. 154m&
 
 Het project beschikt tevens over vier bijzondere grondgebonden woningen aan de Koppelstokstraat van elk ca. 226 m&#178;.
 
+Hieronder ziet u welke woningen beschikbaar zijn (in het wit/lichtblauw) en welke woningen al onder optie zijn (in donkerblauw).
+
 <p class="text-mobile">Selecteer hieronder het appartement waarin u bent geïnteresseerd om meer informatie te zien.</p>
 
-<figure class="big">
+<figure class="big" id="overview">
 	<object type="image/svg+xml" data="/assets/build/img/overview.svg">
 		<img class="svgfallback" src="/assets/build/img/overview_fallback_1680.png" alt="de woningen">
 	</object>
