@@ -4892,8 +4892,8 @@
 		<polygon class="home-light" points="356,467.5 356.4,474.2 406.3,495.5 555.6,458.1 555.6,445 434,474.1 275.5,412.8 276.7,426.9 
 			277.4,434.7 		"/>
 	</g>
-	<g class="unit">
-		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Loft - 154 m² - available</text>
+	<g class="reserved">
+		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Loft - under option</text>
 		<polygon class="home-light" points="586.5,450.3 602.6,455.2 648.9,443.2 649.2,424.8 649.3,412.6 555.5,434.5 555.6,458.1 		"/>
 		<polygon class="home-dark" points="649.2,424.8 648.9,443.2 602.6,455.2 586.5,450.3 555.6,458.1 555.6,476.9 573.9,472 593.6,478.6 
 			688.6,452.5 689,435.2 		"/>
@@ -4942,9 +4942,9 @@
 		<polygon class="home-light" points="853.5,380.1 769.8,400.7 767,467.1 844.4,488.2 848.7,417.8 930.7,394.4 		"/>
 		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - under option</text>
 	</g>
-	<g class="unit">
+	<g class="reserved">
 		<polygon class="home-light" points="930.7,394.4 848.7,417.8 844.4,488.2 932.5,512.3 1010.9,479.3 1017.9,410.6 		"/>
-		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - 226 m² - available - available</text>
+		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - under option</text>
 	</g>
 </g>
 </svg>
