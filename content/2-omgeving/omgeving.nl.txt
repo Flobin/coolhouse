@@ -4,18 +4,19 @@ URL-key: Omgeving
 ----
 text:
 
-<figure class="big">
-	<picture>
-		<!--[if IE 9]><video style="display: none;"><![endif]-->
-	    <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_xxl.jpg">
-	    <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_xl.jpg">
-	    <source  media="(min-width: 768px)" srcset="/assets/build/img/haven_l.jpg">
-	    <source  media="(min-width: 480px)"  srcset="/assets/build/img/haven_m.jpg">
-	    <source  media="(max-width: 480px)"  srcset="/assets/build/img/haven.jpg">
-	    <!--[if IE 9]></video><![endif]-->
-	    <img src="/assets/build/img/haven.jpg" srcset="/assets/build/img/haven_m.jpg 768w, /assets/build/img/haven_l.jpg 1024w, /assets/build/img/haven_xl.jpg 1200w, /assets/build/img/haven_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de haven">
-	</picture>
-</figure>
+<a rel="gallery-1" href="/assets/build/img/haven_" class="swipebox">
+    <figure class="big">
+    	<picture>
+    		<!--[if IE 9]><video style="display: none;"><![endif]-->
+    	    <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_xxl.jpg">
+    	    <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_xl.jpg">
+    	    <source  media="(min-width: 768px)" srcset="/assets/build/img/haven_l.jpg">
+    	    <source  media="(min-width: 480px)" srcset="/assets/build/img/haven_m.jpg">
+    	    <source  media="(max-width: 480px)" srcset="/assets/build/img/haven.jpg">
+    	    <img src="/assets/build/img/haven.jpg" srcset="/assets/build/img/haven_m.jpg 768w, /assets/build/img/haven_l.jpg 1024w, /assets/build/img/haven_xl.jpg 1200w, /assets/build/img/haven_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de haven">
+    	</picture>
+    </figure>
+</a>
 
 Havenlocaties zijn in de afgelopen jaren steeds populairder geworden als woonbestemming door hun unieke kwaliteiten. Het oude beeld van een haven als werkomgeving is getransformeerd tot een levendige omgeving voor wonen, recreëren en ontspannen. Het water, de kade, de vissersboten en de jachten geven de haven een romantisch karakter.
 
@@ -26,24 +27,28 @@ Met het Scheveningse strand en boulevard aan de ene kant van de haven, en het Zu
 De populaire winkelstraat Frederik Hendriklaan ligt op een steenworp afstand van de haven.
 
 <section class="big two-columns gallery">
-	<figure>
-		<picture>
-			<!--[if IE 9]><video style="display: none;"><![endif]-->
-		    <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_l.jpg">
-		    <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_m.jpg">
-		    <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
-		    <!--[if IE 9]></video><![endif]-->
-		    <img src="/assets/build/img/duin.jpg" srcset="/assets/build/img/duin_m.jpg 768w, /assets/build/img/duin_l.jpg 1024w, /assets/build/img/duin_xl.jpg 1200w, /assets/build/img/duin_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de duinen">
-		</picture>
-	</figure>
-	<figure>
-		<picture>
-			<!--[if IE 9]><video style="display: none;"><![endif]-->
-		    <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_l.jpg">
-		    <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_m.jpg">
-		    <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
-		    <!--[if IE 9]></video><![endif]-->
-		    <img src="/assets/build/img/strand.jpg" srcset="/assets/build/img/strand_m.jpg 768w, /assets/build/img/strand_l.jpg 1024w, /assets/build/img/strand_xl.jpg 1200w, /assets/build/img/strand_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van het strand">
-		</picture>
-	</figure>
+    <a rel="gallery-1" href="/assets/build/img/duin_" class="swipebox">
+    	<figure>
+    		<picture>
+    			<!--[if IE 9]><video style="display: none;"><![endif]-->
+    		    <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_l.jpg">
+    		    <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_m.jpg">
+    		    <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
+    		    <!--[if IE 9]></video><![endif]-->
+    		    <img src="/assets/build/img/duin.jpg" srcset="/assets/build/img/duin_m.jpg 768w, /assets/build/img/duin_l.jpg 1024w, /assets/build/img/duin_xl.jpg 1200w, /assets/build/img/duin_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de duinen">
+    		</picture>
+    	</figure>
+    </a>
+    <a rel="gallery-1" href="/assets/build/img/strand_" class="swipebox">
+    	<figure>
+    		<picture>
+    			<!--[if IE 9]><video style="display: none;"><![endif]-->
+    		    <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_l.jpg">
+    		    <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_m.jpg">
+    		    <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
+    		    <!--[if IE 9]></video><![endif]-->
+    		    <img src="/assets/build/img/strand.jpg" srcset="/assets/build/img/strand_m.jpg 768w, /assets/build/img/strand_l.jpg 1024w, /assets/build/img/strand_xl.jpg 1200w, /assets/build/img/strand_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van het strand">
+    		</picture>
+    	</figure>
+    </a>
 </section>
