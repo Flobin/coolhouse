@@ -4852,8 +4852,8 @@
 	<polyline class="line" points="1014.2,447 935.6,477 659.2,410.8 	"/>
 </g>
 <g id="homes">
-	<g class="unit">
-		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Penthouse - 308 m² - beschikbaar</text>
+	<g class="reserved">
+		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Penthouse - onder optie</text>
 		<polygon class="home-light" points="345.3,285.3 345.8,294 377.3,300.2 586,277.5 607.3,280.3 651.1,275.3 651.3,266.1 651.5,246.5
 			553.7,255 553.8,259.3 425.9,270.8 262.8,246.5 264.3,267 264.7,270.5 		"/>
 		<polygon class="home-dark" points="651.3,266.1 651.1,275.3 607.3,280.3 586,277.5 377.3,300.2 345.8,294 345.3,285.3 264.7,270.5

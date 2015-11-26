@@ -2,20 +2,20 @@ title: Area
 ----
 URL-key: Area
 ----
-text: 
+text:
 
-<figure class="big">
-	<picture>
-		<!--[if IE 9]><video style="display: none;"><![endif]-->
-	    <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_1632.jpg">
-	    <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_1200.jpg">
-	    <source  media="(min-width: 768px)" srcset="/assets/build/img/haven_1024.jpg">
-	    <source  media="(min-width: 480px)"  srcset="/assets/build/img/haven_768.jpg">
-	    <source  media="(max-width: 480px)"  srcset="/assets/build/img/haven.jpg">
-	    <!--[if IE 9]></video><![endif]-->
-	    <img src="/assets/build/img/haven.jpg" srcset="/assets/build/img/haven_768.jpg 768w, /assets/build/img/haven_1024.jpg 1024w, /assets/build/img/haven_1200.jpg 1200w, /assets/build/img/haven_1632.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de haven">
-	</picture>
-</figure>
+<a rel="gallery-1" href="/assets/build/img/haven_" class="swipebox">
+    <figure class="big">
+    	<picture>
+    	    <source media="(min-width: 1200px)" srcset="/assets/build/img/haven_xxl.jpg">
+    	    <source media="(min-width: 1024px)" srcset="/assets/build/img/haven_xl.jpg">
+    	    <source  media="(min-width: 768px)" srcset="/assets/build/img/haven_l.jpg">
+    	    <source  media="(min-width: 480px)"  srcset="/assets/build/img/haven_m.jpg">
+    	    <source  media="(max-width: 480px)"  srcset="/assets/build/img/haven.jpg">
+    	    <img src="/assets/build/img/haven.jpg" srcset="/assets/build/img/haven_m.jpg 768w, /assets/build/img/haven_l.jpg 1024w, /assets/build/img/haven_xl.jpg 1200w, /assets/build/img/haven_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="foto van de haven">
+    	</picture>
+    </figure>
+</a>
 
 In the past years, harbor locations have become increasingly popular as residential areas, because of their unique qualities. The old view of a harbor as purely a working environment has been transformed to a lively neighborhood for living, recreation, and relaxation. The water, quay, fishing boats, and yachts give the harbor a romantic character.
 
@@ -26,20 +26,24 @@ With the Scheveningen beach and boulevard on one side of the harbor, and the sou
 The popular shopping street Frederik Hendriklaan is within a stone’s throw of the harbor.
 
 <section class="big two-columns gallery">
-	<figure>
-		<picture>
-		      <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_1024.jpg">
-		      <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_768.jpg">
-		      <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
-		      <img src="/assets/build/img/duin.jpg" srcset="/assets/build/img/duin_768.jpg 768w, /assets/build/img/duin_1024.jpg 1024w, /assets/build/img/duin_1200.jpg 1200w, /assets/build/img/duin_1680.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the dunes">
-		</picture>
-	</figure>
-	<figure>
-		<picture>
-		      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_1024.jpg">
-		      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_768.jpg">
-		      <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
-		      <img src="/assets/build/img/strand.jpg" srcset="/assets/build/img/strand_768.jpg 768w, /assets/build/img/strand_1024.jpg 1024w, /assets/build/img/strand_1200.jpg 1200w, /assets/build/img/strand_1680.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the beach">
-		</picture>
-	</figure>
+    <a rel="gallery-1" href="/assets/build/img/duin_" class="swipebox">
+    	<figure>
+    		<picture>
+    		      <source media="(min-width: 1200px)" srcset="/assets/build/img/duin_l.jpg">
+    		      <source media="(min-width: 1024px)" srcset="/assets/build/img/duin_m.jpg">
+    		      <source media="(max-width: 480px)" srcset="/assets/build/img/duin.jpg">
+    		      <img src="/assets/build/img/duin.jpg" srcset="/assets/build/img/duin_m.jpg 768w, /assets/build/img/duin_l.jpg 1024w, /assets/build/img/duin_1200.jpg 1200w, /assets/build/img/duin_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the dunes">
+    		</picture>
+    	</figure>
+    </a>
+    <a rel="gallery-1" href="/assets/build/img/strand_" class="swipebox">
+    	<figure>
+    		<picture>
+    		      <source media="(min-width: 1200px)" srcset="/assets/build/img/strand_l.jpg">
+    		      <source media="(min-width: 1024px)" srcset="/assets/build/img/strand_m.jpg">
+    		      <source media="(max-width: 480px)" srcset="/assets/build/img/strand.jpg">
+    		      <img src="/assets/build/img/strand.jpg" srcset="/assets/build/img/strand_m.jpg 768w, /assets/build/img/strand_l.jpg 1024w, /assets/build/img/strand_1200.jpg 1200w, /assets/build/img/strand_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="photo of the beach">
+    		</picture>
+    	</figure>
+    </a>
 </section>

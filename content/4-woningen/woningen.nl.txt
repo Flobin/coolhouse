@@ -4,6 +4,29 @@ URL-key: Woningen
 ----
 text:
 
+<section class="big two-columns gallery">
+    <a rel="gallery-2" href="/assets/build/img/koppelstok_voor_" class="swipebox">
+    	<figure>
+    		<picture>
+    		      <source media="(min-width: 1200px)" srcset="/assets/build/img/koppelstok_voor_l.jpg">
+    		      <source media="(min-width: 1024px)" srcset="/assets/build/img/koppelstok_voor_m.jpg">
+    		      <source media="(max-width: 480px)" srcset="/assets/build/img/koppelstok_voor_s.jpg">
+    		      <img src="/assets/build/img/koppelstok_voor_s.jpg" srcset="/assets/build/img/koppelstok_voor_m.jpg 768w, /assets/build/img/koppelstok_voor_l.jpg 1024w, /assets/build/img/koppelstok_voor_xl.jpg 1200w, /assets/build/img/koppelstok_voor_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering van de Residences in het CoolHouse">
+    		</picture>
+    	</figure>
+    </a>
+    <a rel="gallery-2" href="/assets/build/img/koppelstok_achter_" class="swipebox">
+    	<figure>
+    		<picture>
+    		      <source media="(min-width: 1200px)" srcset="/assets/build/img/koppelstok_achter_l.jpg">
+    		      <source media="(min-width: 1024px)" srcset="/assets/build/img/koppelstok_achter_m.jpg">
+    		      <source media="(max-width: 480px)" srcset="/assets/build/img/koppelstok_achter_s.jpg">
+    		      <img src="/assets/build/img/koppelstok_achter_s.jpg" srcset="/assets/build/img/koppelstok_achter_m.jpg 768w, /assets/build/img/koppelstok_achter_l.jpg 1024w, /assets/build/img/koppelstok_achter_xl.jpg 1200w, /assets/build/img/koppelstok_achter_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering van de Residences in het CoolHouse gezien vanuit de Koppelstokstraat">
+    		</picture>
+    	</figure>
+    </a>
+</section>
+
 Het CoolHouse biedt royale penthouses van ca. 308m&#178; en lofts van ca. 154m&#178; verdeeld over zeven verdiepingen. De appartementen met rondom buitenruimte zijn volledig vrij indeelbaar om er voor te zorgen dat de toekomstige bewoners ruimte krijgen om hun droomhuis te bewerkstellen. In een nauwe samenwerking met de (interieur-)architect zullen er in een vroeg stadium van de ontwikkeling de persoonlijke plattegronden worden gedefinieerd. CoolHouse is hierdoor een unieke kans om uw wensen, eisen en behoeften op een appartement te projecteren.
 
 Het project beschikt tevens over vier bijzondere grondgebonden woningen aan de Koppelstokstraat van elk ca. 170m&#178;.
@@ -14,6 +37,6 @@ Hieronder ziet u welke woningen beschikbaar zijn (in het wit/lichtblauw) en welk
 
 <figure class="big" id="overview">
 	<object type="image/svg+xml" data="/assets/build/img/overview.svg">
-		<img class="svgfallback" src="/assets/build/img/overview_fallback_1680.png" alt="de woningen">
+		<img class="svgfallback" src="/assets/build/img/overview_fallback_xxl.png" alt="de woningen">
 	</object>
 </figure>
