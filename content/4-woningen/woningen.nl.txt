@@ -5,6 +5,26 @@ URL-key: Woningen
 text:
 
 <section class="big two-columns gallery">
+    <a rel="gallery-2" href="/assets/build/img/straatview_3op2_" class="swipebox">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/straatview_3op2_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/straatview_3op2_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/straatview_3op2_s.jpg">
+                  <img src="/assets/build/img/straatview_3op2_s.jpg" srcset="/assets/build/img/straatview_3op2_m.jpg 768w, /assets/build/img/straatview_3op2_l.jpg 1024w, /assets/build/img/straatview_3op2_xl.jpg 1200w, /assets/build/img/straatview_3op2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering van het CoolHouse">
+            </picture>
+        </figure>
+    </a>
+    <a rel="gallery-2" href="/assets/build/img/balkon_3op2_" class="swipebox">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/balkon_3op2_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/balkon_3op2_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/balkon_3op2_s.jpg">
+                  <img src="/assets/build/img/balkon_3op2_s.jpg" srcset="/assets/build/img/balkon_3op2_m.jpg 768w, /assets/build/img/balkon_3op2_l.jpg 1024w, /assets/build/img/balkon_3op2_xl.jpg 1200w, /assets/build/img/balkon_3op2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering van een balkon op het CoolHouse">
+            </picture>
+        </figure>
+    </a>
     <a rel="gallery-2" href="/assets/build/img/koppelstok_voor_" class="swipebox">
     	<figure>
     		<picture>
