@@ -1005,17 +1005,6 @@ canvas.ddpanorama:active {
     @include at-least(2560px) {
         background-image: url('/assets/build/img/haven_cover_xxl@2x.jpg');
     }
-    @media
-    (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-    (min-width: 1200px) and (   min--moz-device-pixel-ratio: 2),
-    (min-width: 1200px) and (     -o-min-device-pixel-ratio: 2/1),
-    (min-width: 1200px) and (        min-device-pixel-ratio: 2),
-    (min-width: 1200px) and (                min-resolution: 192dpi),
-    (min-width: 1200px) and (                min-resolution: 2dppx) {
-
-      background-image: url('/assets/build/img/haven_cover_1632.jpg');
-
-    }
 }
 
 /* ==========================================================================
