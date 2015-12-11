@@ -4934,9 +4934,9 @@
 			689,435.2 688.9,445.8 698.7,448.5 700.3,385.7 784.7,367.4 		"/>
 		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - 170 m² - available - available</text>
 	</g>
-	<g class="unit">
+	<g class="reserved">
 		<polygon class="home-light" points="784.7,367.4 700.3,385.7 698.7,448.5 767,467.1 769.8,400.7 853.5,380.1 		"/>
-		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - 170 m² - available - available</text>
+		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Residence - under option</text>
 	</g>
 	<g class="reserved">
 		<polygon class="home-light" points="853.5,380.1 769.8,400.7 767,467.1 844.4,488.2 848.7,417.8 930.7,394.4 		"/>
