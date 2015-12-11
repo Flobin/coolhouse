@@ -4910,8 +4910,8 @@
 		<polygon class="home-light" points="638.9,476.7 639.2,466.1 593.6,478.6 573.9,472 555.6,476.9 556,500.2 		"/>
 		<polygon class="home-dark" points="668.6,458.1 639.2,466.1 638.9,476.7 556,500.2 556.4,518.4 686.3,479.6 686.7,463.2 		"/>
 	</g>
-	<g class="unit">
-		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Loft - 154 m² - beschikbaar</text>
+	<g class="reserved">
+		<text transform="matrix(1 0 0 1 160.3619 819.7551)" class="text">Loft - onder optie</text>
 		<polygon class="home-dark" points="415.8,585.9 361.2,556.8 360.9,552.9 283.3,512.2 282.5,502.5 270.1,505.4 271.4,521.8 329.9,554
 			324.1,555.6 325.4,574 393.2,613.5 556.3,559.4 556.3,541.5 		"/>
 		<polygon class="home-light" points="360.9,552.9 361.2,556.8 415.8,585.9 556.3,541.5 556.3,532 437.7,568.7 281.6,490.9 282.5,502.5
