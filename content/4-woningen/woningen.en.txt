@@ -52,12 +52,15 @@ The CoolHouse offers spacious penthouses of ca. 308m&#178; and lofts of ca. 154m
 
 The project also contains four fantastic houses on the Koppelstokstraat of ca. 185m&#178; each.
 
-In the image below you can see which homes are still available (in white/light blue) and which have been reserved (in dark blue).
+In the image below you can see which homes are still available (in dark blue) and which have been reserved (in golden yellow).
 
-<p class="text-mobile">Tap an apartment below to see more information.</p>
-
-<figure class="big" id="overview">
-    <object type="image/svg+xml" data="/assets/build/img/overview-en.svg">
-		<img class="svgfallback" src="/assets/build/img/overview_fallback_xxl.png" alt="de woningen">
-	</object>
+<figure class="big">
+    <picture>
+        <source media="(min-width: 1200px)" srcset="/assets/build/img/coolhouse_availability_xxl.png">
+        <source media="(min-width: 1024px)" srcset="/assets/build/img/coolhouse_availability_xl.png">
+        <source  media="(min-width: 768px)" srcset="/assets/build/img/coolhouse_availability_l.png">
+        <source  media="(min-width: 480px)" srcset="/assets/build/img/coolhouse_availability_m.png">
+        <source  media="(max-width: 480px)" srcset="/assets/build/img/coolhouse_availability_s.png">
+        <img src="/assets/build/img/coolhouse_availability_s.png" srcset="/assets/build/img/coolhouse_availability_m.png 768w, /assets/build/img/coolhouse_availability_l.png 1024w, /assets/build/img/coolhouse_availability_xl.png 1200w, /assets/build/img/coolhouse_availability_xxl.png 1608w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="picture of the availability of the CoolHouse">
+    </picture>
 </figure>

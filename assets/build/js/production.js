@@ -380,8 +380,6 @@ document.onreadystatechange = function () {
         }
         initMap();
 
-
-        console.log(typeof(swipebox));
         function addImageToHref(size) {
             var href = jq(this).attr("href");
             jq(this).attr("href", href + size + '.jpg');
