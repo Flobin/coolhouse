@@ -1,5 +1,6 @@
 .DS_Store
 /site/accounts
+/site/config/config.php
 /assets/avatars
 /thumbs/*
 /node_modules
@@ -7,4 +8,4 @@
 *.css.map
 /kirby
 /panel
-/assets/src
+/assets
