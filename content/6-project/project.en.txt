@@ -1,0 +1,52 @@
+title: Project
+----
+URL-key: Project
+----
+text:
+
+<section class="text">
+<div class="leftcolumn">
+<h3>The result of an extraordinary collaboration</h3>
+<p>
+A sunny day in the Scheveningen harbor inspired the architects of DAVLstudio to design the spacious, open, and transparent Coolhouse. Still without a commission, which came later, when they presented their plans. Owner of the plot, Simonis, was charmed by the design, and developer/builder BAM was immediately enthusiastic. They joined forces. In close cooperation they are creating the architectural qualities that make Coolhouse so special. With their passion and commitment they ensure that the spectacular Coolhouse will be the icon of the Scheveningen harbor.
+</p>
+</div>
+<div class="rightcolumn">
+<h3>Comfortable and energy efficient</h3>
+<p>
+Naturally the most modern requirements and insights regarding sustainability and comfort apply to Coolhouse. Good insulation and the use of sustainable techniques (like solar panels) to supply living spaces with warmth and electricity are just a few examples. With energy label A++ you’ll notice this in your energy bill.
+</p>
+<p>
+Below Coolhouse is a spacious, private parking garage, plus space for storage units and a bicycle garage.
+</p>
+</div>
+</section>
+<section class="big gallery three-columns">
+    <a href="http://davlstudio.com" title="logo DAVLstudio">
+        <figure>
+            <picture>
+                <object type="image/svg+xml" data="/assets/build/img/logo_davl.svg">
+                    <img class="svgfallback" src="/assets/build/img/logo_davl.png" alt="DAVLstudio logo">
+                </object>
+            </picture>
+        </figure>
+    </a>
+    <a href="http://bamwoningbouw.nl" title="logo BAM">
+        <figure>
+            <picture>
+                <object type="image/svg+xml" data="/assets/build/img/logo_bam.svg">
+                    <img class="svgfallback" src="/assets/build/img/logo_davl.png" alt="BAM logo">
+                </object>
+            </picture>
+        </figure>
+    </a>
+    <a href="http://frisiamakelaars.nl" title="logo Frisia">
+        <figure>
+            <picture>
+                <object type="image/svg+xml" data="/assets/build/img/logo_frisia.svg">
+                    <img class="svgfallback" src="/assets/build/img/logo_davl.png" alt="Frisia logo">
+                </object>
+            </picture>
+        </figure>
+    </a>
+</section>

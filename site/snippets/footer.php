@@ -3,7 +3,7 @@
     <div class="container">
       <p class="footer-item">
         <span class="copyright">
-          © 2015 <a href="//cool-house.nl">CoolHouse</a>
+          © 2015 - 2016 <a href="//cool-house.nl">Coolhouse</a>
         </span>
       </p>
       <p class="footer-item">
@@ -28,7 +28,7 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3b9pBpSLNDZoC6jt-kJXadoOxm-g5Jgo&sensor=false"></script>
   <script src="<?php echo l::get('jotform-prototype') ?>" type="text/javascript"></script>
   <script src="<?php echo l::get('jotform') ?>" type="text/javascript"></script>
-  <script src="/assets/build/js/production.min.js"></script>
+  <script src="/assets/build/js/production.js"></script>
   <script src="//localhost:35729/livereload.js"></script>
   <!-- Facebook Conversion Code for Registrations - CoolHouse -->
   <script>(function() {

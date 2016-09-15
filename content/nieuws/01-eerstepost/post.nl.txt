@@ -1,5 +1,0 @@
-title: Eerste post
-----
-Date: 2015-05-20
-----
-text: Dit is de eerste post

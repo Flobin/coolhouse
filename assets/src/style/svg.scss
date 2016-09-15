@@ -1,0 +1,75 @@
+$dark-blue: hsla(215,48%,13%,1); //111E30
+$light-blue: hsla(213,49%,48%,1); //3E75B7
+
+$S:  480px;
+$M:  768px;
+$L:  1024px;
+$XL:  1200px;
+
+@mixin at-least($device-width) {
+    @media screen and (min-width: $device-width) {
+        @content
+    }
+}
+
+@mixin until($device-width) {
+    @media screen and (max-width: $device-width - 1) {
+        @content
+    }
+}
+
+.unit {
+    opacity: 0;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.reserved {
+    opacity: 0.35;
+    .home-dark {
+        fill: $dark-blue;
+
+    }
+    .home-light {
+        fill:$dark-blue;
+    }
+    .text {
+        opacity: 0;
+    }
+    &:hover {
+        opacity: 0.5;
+        .text {
+            opacity: 1;
+        }
+    }
+}
+.bg {
+    fill: #BDC9D8;
+}
+.home-dark {
+    fill: $light-blue;
+
+}
+.home-light {
+    fill:$light-blue;
+}
+.line {
+    fill:none;
+    stroke:#000000;
+    stroke-width:0.25;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+.text {
+    font-family: 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    @include until($M) {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    @include until($S) {
+        font-size: 32px;
+    }
+
+}

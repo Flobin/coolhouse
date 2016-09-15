@@ -1,0 +1,92 @@
+title: Inspiratie
+----
+URL-key: Inspiratie
+----
+text:
+
+<section class="text">
+<div class="leftcolumn">
+<p>
+    De woningen in Coolhouse worden standaard afgewerkt opgeleverd volgens een basisindeling. Daarbij horen gestucte wanden en plafond, plus hoogwaardig sanitair en keuken met inbouwapparatuur. Dankzij de kopersbegeleiding van de architect zijn de woningen naar wens in te delen. Dat betekent dat toekomstige bewoners hun droomhuis kunnen creëren.
+</p>
+<p>
+    Daarnaast beschikt iedere woning over een berging en twee parkeerplaatsen.
+</p>
+</div>
+<div class="rightcolumn">
+<p>
+    Qua interieur kunt u uw fantasie de vrije loop laten gaan. Een voorbeeld: Verdiepingshoge deuren worden standaard geleverd, maar u zou ook kunnen kiezen voor mooie schuifdeuren.
+</p>
+<p>
+    Voor het sanitair en de keuken zijn er showrooms gecontracteerd waar u in diverse segmenten een keuze kan maken. Hieronder ziet u een aantal voorbeelden ter inspiratie.
+</p>
+</div>
+</section>
+<section class="big three-columns gallery">
+    <a rel="gallery-3" href="/assets/build/img/int_4_" class="swipebox" title="impressie Rimadesio">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_4_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_4_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_4_s.jpg">
+                  <img src="/assets/build/img/int_4_s.jpg" srcset="/assets/build/img/int_4_m.jpg 768w, /assets/build/img/int_4_l.jpg 1024w, /assets/build/img/int_4_xl.jpg 1200w, /assets/build/img/int_4_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="impressie van een interieur van Rimadesio">
+            </picture>
+        </figure>
+        <figcaption>impressie Rimadesio</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_5_" class="swipebox" title="impressie Rimadesio">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_5_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_5_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_5_s.jpg">
+                  <img src="/assets/build/img/int_5_s.jpg" srcset="/assets/build/img/int_5_m.jpg 768w, /assets/build/img/int_5_l.jpg 1024w, /assets/build/img/int_5_xl.jpg 1200w, /assets/build/img/int_5_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="impressie van een interieur van Rimadesio">
+            </picture>
+        </figure>
+        <figcaption>impressie Rimadesio</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_6_" class="swipebox" title="impressie Rimadesio">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_6_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_6_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_6_s.jpg">
+                  <img src="/assets/build/img/int_6_s.jpg" srcset="/assets/build/img/int_6_m.jpg 768w, /assets/build/img/int_6_l.jpg 1024w, /assets/build/img/int_6_xl.jpg 1200w, /assets/build/img/int_6_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interieur van een Loft in het CoolHouse">
+            </picture>
+        </figure>
+        <figcaption>impressie Rimadesio</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_7_" class="swipebox" title="impressie Rimadesio">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_7_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_7_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_7_s.jpg">
+                  <img src="/assets/build/img/int_7_s.jpg" srcset="/assets/build/img/int_7_m.jpg 768w, /assets/build/img/int_7_l.jpg 1024w, /assets/build/img/int_7_xl.jpg 1200w, /assets/build/img/int_7_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="impressie van een interieur van Rimadesio">
+            </picture>
+        </figure>
+        <figcaption>impressie Rimadesio</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_8_" class="swipebox" title="impressie Tortu">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_8_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_8_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_8_s.jpg">
+                  <img src="/assets/build/img/int_8_s.jpg" srcset="/assets/build/img/int_8_m.jpg 768w, /assets/build/img/int_8_l.jpg 1024w, /assets/build/img/int_8_xl.jpg 1200w, /assets/build/img/int_8_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="impressie Tortu">
+            </picture>
+        </figure>
+        <figcaption>impressie Tortu</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_9_" class="swipebox" title="impressie Next125">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_9_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_9_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_9_s.jpg">
+                  <img src="/assets/build/img/int_9_s.jpg" srcset="/assets/build/img/int_9_m.jpg 768w, /assets/build/img/int_9_l.jpg 1024w, /assets/build/img/int_9_xl.jpg 1200w, /assets/build/img/int_9_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interieur Next125">
+            </picture>
+        </figure>
+        <figcaption>impressie Next125</figcaption>
+    </a>
+</section>

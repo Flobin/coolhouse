@@ -50,3 +50,6 @@ c::set('markdown.extra', true);
 c::set('MinifyHTML', TRUE);
 
 c::set('cache.driver', 'memcached');
+
+c::set('relativedate.fuzzy', true);
+c::set('relativedate.length', 1);

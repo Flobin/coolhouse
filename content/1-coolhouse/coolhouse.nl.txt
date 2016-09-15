@@ -2,22 +2,36 @@ title: Coolhouse
 ----
 URL-key: Coolhouse
 ----
-text: 
+text:
 
 <figure class="fullwidth">
+
 	<img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
 </figure>
 
-<h2 class="slab-headline" id="slogan"><span class="slabtext">Weids wonen in de haven van Scheveningen</span></h2>
+<h2 class="slab-headline" id="slogan"><span class="slabtext">HET PANORAMA VAN ZEE, STAD EN HAVEN</span></h2>
 
-Veelzijdig Den Haag krijgt met de ontwikkeling van het CoolHouse een passende aanvulling op hoog niveau. De voormalige locatie van een koelhuis voor de visserij aan de haven van Scheveningen maakt ruimte voor een bijzonder en eigentijds wooncomplex.
-
-De kwaliteiten van de ligging worden door de architectuur van DAVL Studio volledig benut en tot een uniek resultaat gebracht. Wonen aan de haven krijgt in CoolHouse de allure en het gevoel waar deze locatie om vraagt.
-
-Royale afmetingen, ultieme zon-oriëntatie, grote terrassen en panorama-breed uitzicht maken van deze woningen penthouses en lofts. Vrijheid is het sleutelwoord bij CoolHouse. Door middel van een nauwe samenwerking met de architect kunnen toekomstige bewoners van het CoolHouse volledig gepersonaliseerde indelingen waarmaken. Een unieke kans om hier uw droomhuis van te maken.
-
-De ontwikkeling van CoolHouse is in volle gang en de start van de bouw staat gepland voor begin 2017.
-
+<section class="text">
+<div class="leftcolumn">
+<p>
+    Veelzijdig Den Haag krijgt met de ontwikkeling van Coolhouse een passende aanvulling op hoog niveau. De plek aan de jachthaven, waar ooit een koelhuis stond maakt ruimte voor Coolhouse: state of the art penthouses, lofts en residences. Het zicht op de jachthaven, de zee en de skyline van de stad is fenomenaal!
+</p>
+<h3>Riant en mondain</h3>
+<p>
+    Royale afmetingen, ultieme zon-oriëntatie, grote terrassen en panorama-breed uitzicht en tot in detail afgewerkt met de mooiste materialen. De kwaliteiten van de ligging worden door de architectuur van de DAVL Studio volledig benut en tot een uniek resultaat gebracht. Coolhouse wordt dé eyecatcher van de haven!
+</p>
+</div>
+<div class="rightcolumn">
+<h3>Ultieme vrijheid</h3>
+<p>
+    Dankzij de nauwe samenwerking met de architecten van DAVLstudio kunnen toekomstige bewoners volledig gepersonaliseerde indelingen waarmaken. Een unieke kans om hier uw droomhuis van te maken.
+</p>
+<p>
+    De ontwikkeling van Coolhouse is in volle gang en de start van de bouw staat gepland voor begin 2017.
+</p>
+</div>
+</section>
+<h3 class="pullquote">‘Wonen aan de haven krijgt in Coolhouse de allure en het gevoel waar deze locatie om vraagt.’</h3>
 <figure class="fullwidth">
 	<img class="panorama" src="/assets/build/img/section_all_panorama@2x.jpg" alt="">
 </figure>

@@ -2,22 +2,33 @@ title: Coolhouse
 ----
 URL-key: Coolhouse
 ----
-text: 
+text:
 
 <figure class="fullwidth">
 	<img class="panorama" src="/assets/build/img/panorama.jpg" alt="">
 </figure>
 
-<h2 class="slab-headline" id="slogan"><span class="slabtext">Spacious living in the harbor of Scheveningen</span></h2>
+<h2 class="slab-headline" id="slogan"><span class="slabtext">The panorama of sea, beach and city</span></h2>
 
-With the development of the CoolHouse, The Hague will gain an addition befitting its versatile character. The former location of a refrigeration house for the fishing industry in the harbor of Scheveningen will make room for an extraordinary and modern housing complex.
-
-The qualities of the situation are used optimally by the architecture of DAVL Studio, and result in a unique building. The sensation and allure of living in the harbor will be fully realized by the CoolHouse.
-
-Generous proportions, excellent orientation towards the sun, large balconies, and a panoramic view make these not just apartments, but penthouses and lofts. Freedom is the key word with CoolHouse. Close co-operation with the (interior) architect ensures that future residents can receive fully personalized layouts. A unique chance to make this your dream house.
-
-CoolHouse is currently under development and the start of building activities is planned for the beginning of 2017.
-
+<section class="text">
+<div class="leftcolumn">
+    <p>
+        With the development of the CoolHouse, The Hague will gain an addition befitting its versatile character. The former location of a refrigeration house for the fishing industry in the harbor of Scheveningen will make room for an extraordinary and modern housing complex.
+    </p>
+    <p>
+        The qualities of the situation are used optimally by the architecture of DAVL Studio, and result in a unique building. The sensation and allure of living in the harbor will be fully realized by the CoolHouse.
+    </p>
+</div>
+<div class="rightcolumn">
+    <p>
+        Generous proportions, excellent orientation towards the sun, large balconies, and a panoramic view make these not just apartments, but penthouses and lofts. Freedom is the key word with CoolHouse. Close co-operation with the (interior) architect ensures that future     residents can receive fully personalized layouts. A unique chance to make this your dream house.
+    </p>
+    <p>
+        Coolhouse is currently under development and the start of building activities is planned for the beginning of 2017.
+    </p>
+</div>
+</section>
+<h3 class="pullquote en">‘Coolhouse will give living in the harbor the allure and atmosphere that this location demands.’</h3>
 <figure class="fullwidth">
 	<img class="panorama" src="/assets/build/img/section_all_panorama@2x.jpg" alt="">
 </figure>

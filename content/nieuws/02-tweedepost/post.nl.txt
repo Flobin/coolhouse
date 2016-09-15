@@ -1,5 +1,0 @@
-title: Tweede post
-----
-Date: 2015-05-26
-----
-text: Dit is de tweede post

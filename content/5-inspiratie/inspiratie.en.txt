@@ -1,0 +1,92 @@
+title: Inspiration
+----
+URL-key: Inspiration
+----
+text:
+
+<section class="text">
+<div class="leftcolumn">
+<p>
+    The homes in Coolhouse are finished according to a standard layout. This includes stucco-ed walls and ceiling, plus high quality bathrooms and a kitchen with built-in appliances. Thanks to the buyers’ counsel from the architect, the homes can be layed out according to your wishes. That means that future residents can create their dream house.
+</p>
+<p>
+    Furthermore, every home comes with seperate storage and two parking spaces.
+</p>
+</div>
+<div class="rightcolumn">
+<p>
+    In terms of interior design you can let your imagination run wild. An example: Floor-to-ceiling-height doors are included in the standard layout, but you could also choose to have beautiful sliding doors.
+</p>
+<p>
+    There are two showrooms for the bathrooms and kitchens where you can choose your bathrooms and kitchen from various segments. Below are some inspirational examples.
+</p>
+</div>
+</section>
+<section class="big three-columns gallery">
+    <a rel="gallery-3" href="/assets/build/img/int_4_" class="swipebox" title="Rimadesio sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_4_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_4_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_4_s.jpg">
+                  <img src="/assets/build/img/int_4_s.jpg" srcset="/assets/build/img/int_4_m.jpg 768w, /assets/build/img/int_4_l.jpg 1024w, /assets/build/img/int_4_xl.jpg 1200w, /assets/build/img/int_4_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="Rimadesio sample">
+            </picture>
+        </figure>
+        <figcaption>Rimadesio sample</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_5_" class="swipebox" title="Rimadesio sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_5_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_5_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_5_s.jpg">
+                  <img src="/assets/build/img/int_5_s.jpg" srcset="/assets/build/img/int_5_m.jpg 768w, /assets/build/img/int_5_l.jpg 1024w, /assets/build/img/int_5_xl.jpg 1200w, /assets/build/img/int_5_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="Rimadesio sample">
+            </picture>
+        </figure>
+        <figcaption>Rimadesio sample</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_6_" class="swipebox" title="Rimadesio sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_6_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_6_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_6_s.jpg">
+                  <img src="/assets/build/img/int_6_s.jpg" srcset="/assets/build/img/int_6_m.jpg 768w, /assets/build/img/int_6_l.jpg 1024w, /assets/build/img/int_6_xl.jpg 1200w, /assets/build/img/int_6_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interieur van een Loft in het CoolHouse">
+            </picture>
+        </figure>
+        <figcaption>Rimadesio sample</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_7_" class="swipebox" title="Rimadesio sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_7_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_7_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_7_s.jpg">
+                  <img src="/assets/build/img/int_7_s.jpg" srcset="/assets/build/img/int_7_m.jpg 768w, /assets/build/img/int_7_l.jpg 1024w, /assets/build/img/int_7_xl.jpg 1200w, /assets/build/img/int_7_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="Rimadesio sample">
+            </picture>
+        </figure>
+        <figcaption>Rimadesio sample</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_8_" class="swipebox" title="Tortu sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_8_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_8_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_8_s.jpg">
+                  <img src="/assets/build/img/int_8_s.jpg" srcset="/assets/build/img/int_8_m.jpg 768w, /assets/build/img/int_8_l.jpg 1024w, /assets/build/img/int_8_xl.jpg 1200w, /assets/build/img/int_8_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="Tortu sample">
+            </picture>
+        </figure>
+        <figcaption>Tortu sample</figcaption>
+    </a>
+    <a rel="gallery-3" href="/assets/build/img/int_9_" class="swipebox" title="Next125 sample">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_9_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_9_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_9_s.jpg">
+                  <img src="/assets/build/img/int_9_s.jpg" srcset="/assets/build/img/int_9_m.jpg 768w, /assets/build/img/int_9_l.jpg 1024w, /assets/build/img/int_9_xl.jpg 1200w, /assets/build/img/int_9_xxl.jpg 1680w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="Next125 sample">
+            </picture>
+        </figure>
+        <figcaption>Next125 sample</figcaption>
+    </a>
+</section>

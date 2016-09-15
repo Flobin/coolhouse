@@ -36,16 +36,48 @@ $XL:  1200px;
         @content
     }
 }
-$serif-font-family: 'adelle', serif;
-$sans-font-family: 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
+
+@font-face{
+	font-family: 'QuestaRegular';
+	src: url('/assets/build/fonts/questa-regular.eot');
+	src: url('/assets/build/fonts/questa-regular.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/build/fonts/questa-regular.woff') format('woff'),
+	     url('/assets/build/fonts/questa-regular.ttf') format('truetype'),
+	     url('/assets/build/fonts/questa-regular.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'QuestaSans';
+	src: url('/assets/build/fonts/questa-sans-regular.eot');
+	src: url('/assets/build/fonts/questa-sans-regular.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/build/fonts/questa-sans-regular.woff') format('woff'),
+	     url('/assets/build/fonts/questa-sans-regular.ttf') format('truetype'),
+	     url('/assets/build/fonts/questa-sans-regular.svg#webfont') format('svg');
+    font-weight: normal;
+}
+@font-face{
+	font-family: 'QuestaSans';
+	src: url('/assets/build/fonts/questa-sans-light.eot');
+	src: url('/assets/build/fonts/questa-sans-light.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/build/fonts/questa-sans-light.woff') format('woff'),
+	     url('/assets/build/fonts/questa-sans-light.ttf') format('truetype'),
+	     url('/assets/build/fonts/questa-sans-light.svg#webfont') format('svg');
+    font-weight: 300;
+}
+
+
+$serif-font-family: 'QuestaRegular', 'adelle', serif;
+$sans-font-family: 'QuestaSans', 'futura-pt', Futura, 'Century Gothic', CenturyGothic, AppleGothic, 'Trebuchet MS', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
+$gill: 'Gill Sans', 'Gill Sans MT', "prenton", Calibri, sans-serif;
 $base-font-size: 14px;
 $M-font-size: 16px;
 $L-font-size: 18px;
 $XL-font-size: 20px;
 $base-background-color: hsla(0,0%,100%,1);
-$dark-blue: hsla(215,48%,13%,1); //111E30
-$light-blue: hsla(213,49%,48%,1); //3E75B7
-$gold: hsla(43,90%,44%,1); //D79E0B
+$dark-blue: hsla(210,60%,20%,1); //143351
+//$light-blue: hsla(213,49%,48%,1); //3E75B7
+$light-blue: hsla(186,52%,54%,1); //4CBBC7
+$gold: hsla(43,71%,55%,1); //DDAF39
 $alt-color: lighten($dark-blue, 25%);//#63C6FF RGB: 99 198 255
 $alt-color-dark: darken($alt-color, 25%);
 $base-border-radius: 0.25rem;
@@ -171,9 +203,10 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1;
     font-weight: 500;
     margin-bottom: 0.5em;
-    letter-spacing: 0.1em;
+    // letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #555;
+    font-family: $serif-font-family;
 }
 h1, .h1 {
     @include at-least($M) {
@@ -259,12 +292,116 @@ small, .small {
 .wf-active {
     visibility: visible;
 }
+article .text {
+    @extend .container;
+    @include at-least($M) {
+        text-align: justify;
+    }
+    p {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+    p, h3 {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    h3 {
+        margin-top: 1.5rem;
+        color: $dark-blue;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    &.two-columns {
+        @include at-least($M) {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-width: 15rem;
+            -moz-column-width: 15rem;
+            column-width: 15rem;
+            -webkit-column-gap: 4em;
+            -moz-column-gap: 4em;
+            column-gap: 4em;
+        }
+        figure, figure a {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .leftcolumn {
+        @include at-least($M) {
+            width: 47%;
+            display: block;
+            float: left;
+            margin-right: 4%;
+        }
+        &>h3:first-child {
+            margin-top: 0;
+        }
+    }
+    .rightcolumn {
+        @include at-least($M) {
+            width: 47%;
+            display: block;
+            float: right;
+            &>*:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .leftcolumn + .rightcolumn {
+        @include until($M) {
+            margin-top: 1.5rem;
+        }
+    }
 
+}
+// Disable this if not using two column layout
+.text + h3.pullquote, .text + form, .text + .gallery {
+    padding-top: 3rem;
+}
+h3.pullquote, form {
+    clear: both;
+}
+h3.pullquote {
+    @extend .container;
+    padding: 1rem 4.5rem;
+    font-family: $gill;
+    font-style: italic;
+    font-weight: 500;
+    color: $light-blue;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    font-size: 2rem;
+    @include until ($S) {
+        font-size: 1.5rem;
+    }
+    @include until ($M) {
+        font-size: 2rem;
+    }
+    // border-top: 1px solid $dark-blue;
+    // border-bottom: 1px solid $dark-blue;
+    // &::before {
+    //     content: '“';
+    //     position: absolute;
+    //     left: -1rem;
+    // }
+    // &::after {
+    //     content: '”';
+    //     position: absolute;
+    //     bottom: -0.75rem;
+    //     right: -1rem;
+    // }
+}
 p, main {
     //font-weight: 300;
 }
 p+p {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .slabtexted .slabtext {
@@ -302,19 +439,66 @@ p+p {
     left: 0;
     z-index: -2;
     overflow: hidden;
-    background-color: #fff;
+    background-color: $dark-blue;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('/assets/build/img/cover_480.jpg');
+    @include at-least($S) {
+        background-image: url('/assets/build/img/cover_768.jpg');
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/cover_1024.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/cover_1200.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/cover_1680.jpg');
+    }
+    @include at-least(1680px) {
+        background-image: url('/assets/build/img/cover_2880.jpg')
+    }
 }
 #cover-logo {
+    // @extend %vertical-parent;
+    // position: absolute;
+    // top: 25%;
+    // left: 0;
+    // right: 0;
+    // bottom: 25%;
+    // max-height: 50vh;
+    // @include at-least($M) {
+    //     @media screen and (max-height: $M) {
+    //         top: 0%;
+    //         bottom: 50%;
+    //         max-height: 25vh;
+    //     }
+    //     @media screen and (max-height: $L) {
+    //         top: 10%;
+    //         bottom: 40%;
+    //         max-height: 30vh;
+    //     }
+    // }
     width: 100%;
     height: 100%;
     @extend %vertical-parent;
 }
 #cover-logo-img {
-    height: 50vh;
-    width: auto;
+    // @extend .container;
+    // margin: 0 auto;
+    // display: block;
     margin: 0 auto;
     display: block;
     @extend %vertical-align;
+    @media screen and (orientation: landscape) {
+        width: 50vw;
+        height: auto;
+    }
+    @media screen and (orientation: portrait) {
+        width: 90vw;
+        height: auto;
+    }
 }
 .logo-0 {
     fill: $dark-blue;
@@ -346,11 +530,13 @@ p+p {
     left: 0;
     bottom: 0;
     top: calc(100vh - 3rem);
+    border-top: 1px solid #fff;
 }
-#site-header.stuck, .thankyou #site-header, .error #site-header {
+#site-header.stuck, .thankyou #site-header, .error #site-header, .news .header, .post .header {
   position:fixed;
   top:0;
   left: 0;
+  border-top: none;
 }
 #header-logo-img {
     height: 2rem;
@@ -388,21 +574,22 @@ nav {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 0.75rem;
-    margin-right: 0.375rem;
+    margin-right: 0.15rem;
+    position: relative;
     @include at-least($M) {
         padding-top: 1rem;
-        margin-right: 0.5rem;
+        margin-right: 0.25rem;
     }
     @include at-least($L) {
-        margin-right: 0.75rem;
+        margin-right: 0.35rem;
     }
     @include at-least($XL) {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
-    &:last-child {
-        margin-right: 0;
-    }
-    &:nth-last-child(3):after {
+    &::after {
+        &:last-child {
+            margin-right: 0;
+        }
         @include until($M) {
             content: '';
             color: $alt-color;
@@ -416,28 +603,42 @@ nav {
         @include at-least($M) {
             //margin-left: 0.5rem;
         }
-        @include at-least($M) {
+        @include at-least(875px) {
             font-weight: 300;
-            content: '|';
+            content: '/';
             color: #fff;
-            margin-left: 0.75rem;
+            margin-left: 0.25rem;
+            font-size: 0.5em;
+            position: relative;
+            bottom: 0.35em;
+        }
+        @include at-least($L) {
+            font-size: 1em;
+            bottom: 0;
         }
         @include at-least($XL) {
-            margin-left: 1rem;
+            margin-left: 0.5rem;
+        }
+    }
+    &:last-child:after{
+        @include at-least($M) {
+            content: '';
+            display: none;
         }
     }
     a {
-        font-weight: 500;
-        color: $gold;
+        font-weight: 300;
+        color: #fff;
         padding: 0.5rem 0;
         &:hover {
-            color: $light-blue;
+            color: $gold;
         }
     }
     .active {
-        color: #fff;
+        color: $light-blue;
+        font-family: $serif-font-family;
         &:hover {
-            color: $light-blue;
+            color: $gold;
         }
     }
 }
@@ -473,9 +674,9 @@ nav {
     border-top-left-radius: $base-border-radius;
     border-top-right-radius: $base-border-radius;
     position: absolute;
-    top: calc(-15rem + 1px);
+    top: calc(-18rem + 1px);
     right: 0;
-    height: 15rem;
+    height: 18rem;
     z-index: 9999;
     @extend %float-vertical-upsidedown;
     .parent {
@@ -550,24 +751,13 @@ nav {
    #MAIN
 ========================================================================== */
 .home {
-    //position: absolute;
-    //top: 100vh;
     padding-top: 100vh;
-    //background-color: #fff;
     main {
         min-height: 100vh;
     }
 }
 main {
     background-color: $base-background-color;
-    //background-image: url('/assets/build/img/bg.jpg');
-   // background-attachment: fixed;
-    //background-size: contain;
-    //background-position: top center;
-    //background-repeat: no-repeat;
-    article {
-        //@extend .container;
-    }
 }
 .right {
     //margin: 0 1em 1em 1em;
@@ -617,25 +807,25 @@ main {
     iframe {
         float: left;
     }
+    a {
+        color: $dark-blue;
+        &:hover {
+            color: $gold;
+        }
+    }
 }
 .two-columns {
-    figure, iframe {
+    figure, iframe, a {
         display: inline-block;
         width: 47%;
         margin-right: 4%;
         margin-bottom: 3rem;
+        vertical-align:top;
         &:nth-child(even) {
             margin-right: 0;
         }
     }
     a {
-        display: inline-block;
-        width: 47%;
-        margin-right: 4%;
-        margin-bottom: 3rem;
-        &:nth-child(even) {
-            margin-right: 0;
-        }
         figure {
             display: block;
             width: 100%;
@@ -645,12 +835,34 @@ main {
     }
 }
 .three-columns {
-    figure, iframe {
-        display: inline-block;
-        width: 32%;
-        margin-right: 2%;
-        &:nth-child(3n) {
-            margin-right: 0;
+    figure, iframe, a {
+        @include until ($M){
+            display: inline-block;
+            width: 47%;
+            margin-right: 4%;
+            vertical-align:top;
+            margin-bottom: 1.5rem;
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+        @include at-least ($M) {
+            display: inline-block;
+            width: 30%;
+            margin-right: 4%;
+            margin-bottom: 3rem;
+            vertical-align:top;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+    a {
+        figure {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
     }
 }
@@ -660,6 +872,7 @@ main {
             display: inline-block;
             width: 47%;
             margin-right: 4%;
+            vertical-align:top;
             &:nth-child(even) {
                 margin-right: 0;
             }
@@ -684,8 +897,13 @@ figure img, figure picture {
     display: block;
     max-width: 100%;
 }
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
 body {
-    p, form {
+    form, h3 {
         @extend .container;
     }
     #main > article {
@@ -696,10 +914,6 @@ body {
         background-color: #fff;
         &:last-child {
             margin-bottom: 0;
-        }
-        h2, h3 {
-            margin-top: 3rem;
-            @extend .container;
         }
     }
 }
@@ -769,9 +983,26 @@ h2.section-title {
 .row {
     @extend .clearfix;
 }
-figure img {
+figure img, figure object {
     width: 100%;
     height: auto;
+}
+.big, .fullwidth {
+    position: relative;
+}
+.lines {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/build/img/lijnen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+}
+.lines.flipped {
+    right: 0;
+    transform: rotate(180deg);
 }
 /* ==========================================================================
    #FOOTER
@@ -853,11 +1084,12 @@ footer .footer-item {
 //}
 .slab-headline {
     //@extend .container;
-    color: $dark-blue;
+    color: $gold;
 }
 #main #slogan {
     margin-top: 1rem;
     margin-bottom: 2rem;
+    @extend .container;
 }
 .logo-h-1 {
     fill: $dark-blue;
@@ -950,9 +1182,22 @@ canvas.ddpanorama:active {
     @include at-least($XL) {
         background-image: url('/assets/build/img/balkon_wide_xxl.jpg');
     }
+    @include at-least(1680px) {
+        background-image: url('/assets/build/img/balkon_wide_xxxl.jpg')
+    }
 }
 #overview {
-    margin-top: 3rem;
+    padding: 2rem 2rem 0 2rem;
+    margin: 0 auto;
+    @include at-least($M) {
+        padding: 3rem 3rem 0 3rem;
+    }
+    @include at-least($L) {
+        padding: 4rem 4rem 0 4rem;
+    }
+    @include at-least($XL) {
+        padding: 5rem 5rem 0 5rem;
+    }
 }
 .InternetExplorer {
     #overview svg {
@@ -965,8 +1210,8 @@ canvas.ddpanorama:active {
     }
 }
 
-#Woningen .big {
-    margin-top: 2rem;
+#Woningen .big, #Homes .big {
+    margin-top: 1.5rem;
 }
 /* ==========================================================================
    #OMGEVING
@@ -1010,7 +1255,7 @@ canvas.ddpanorama:active {
    #LOCATIE
 ========================================================================== */
 #locatie-cover .cover-img{
-    background-position: bottom center;
+    background-position: center center;
     background-image: url('/assets/build/img/straatview_square_s.jpg');
     @media screen and (orientation:portrait) {
         background-image: url('/assets/build/img/straatview_portrait_s.jpg');
@@ -1022,19 +1267,16 @@ canvas.ddpanorama:active {
         }
     }
     @include at-least($M) {
-        background-image: url('/assets/build/img/straatview_orig_l.jpg');
+        background-image: url('/assets/build/img/straatview_square_l.jpg');
     }
     @include at-least($L) {
-        background-image: url('/assets/build/img/straatview_orig_xl.jpg');
+        background-image: url('/assets/build/img/straatview_square_xl.jpg');
     }
     @include at-least($XL) {
-        background-image: url('/assets/build/img/straatview_orig_1440.jpg');
-    }
-    @include at-least(1440px) {
-        background-image: url('/assets/build/img/straatview_orig_1734.jpg');
+        background-image: url('/assets/build/img/straatview_square_xxl.jpg');
     }
     @include at-least(2560px) {
-        background-image: url('/assets/build/img/straatview_orig_1734@2x.jpg');
+        background-image: url('/assets/build/img/straatview_square_xxl@2x.jpg');
     }
 }
 #locatie-map {
@@ -1044,27 +1286,101 @@ canvas.ddpanorama:active {
 }
 
 /* ==========================================================================
-   #CONTACT
+   #INSPIRATIE
 ========================================================================== */
-#contact-cover .cover-img {
-    background-image: url('/assets/build/img/section_169_s.jpg');
+#inspiratie-cover .cover-img {
+    background-position: bottom center;
+    background-image: url('/assets/build/img/inspiratie_cover_s.jpg');
     @media screen and (orientation:portrait) {
-        background-image: url('/assets/build/img/section_portrait_s.jpg');
+        background-image: url('/assets/build/img/inspiratie_cover_square_s.jpg');
     }
     @include at-least($S) {
-        background-image: url('/assets/build/img/section_169_m.jpg');
+        background-image: url('/assets/build/img/inspiratie_cover_m.jpg');
         @media screen and (orientation:portrait) {
-            background-image: url('/assets/build/img/section_portrait_m.jpg');
+            background-image: url('/assets/build/img/inspiratie_cover_square_m.jpg');
         }
     }
     @include at-least($M) {
-        background-image: url('/assets/build/img/section_169_l.jpg');
+        background-image: url('/assets/build/img/inspiratie_cover_l.jpg');
     }
     @include at-least($L) {
-        background-image: url('/assets/build/img/section_169_xl.jpg');
+        background-image: url('/assets/build/img/inspiratie_cover_xl.jpg');
     }
     @include at-least($XL) {
-        background-image: url('/assets/build/img/section_169_xxl.jpg');
+        background-image: url('/assets/build/img/inspiratie_cover_xxl.jpg');
+    }
+    @include at-least(2560px) {
+        background-image: url('/assets/build/img/inspiratie_cover_xxxl.jpg');
+    }
+}
+
+/* ==========================================================================
+   #PROJECT
+========================================================================== */
+#project-cover .cover-img {
+    background-position: bottom center;
+    background-image: url('/assets/build/img/entree_s.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/entree_square_s.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/entree_m.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/entree_square_m.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/entree_l.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/entree_xl.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/entree_xxl.jpg');
+    }
+    @include at-least(2560px) {
+        background-image: url('/assets/build/img/entree_xxxl.jpg');
+    }
+}
+#Project .gallery figure {
+    padding: 0 2rem;
+    @include at-least($M) {
+        padding: 0 3rem;
+    }
+    @include at-least($L) {
+        padding: 0 4rem;
+    }
+    @include at-least($XL) {
+        padding: 0 5rem;
+    }
+
+}
+
+/* ==========================================================================
+   #CONTACT
+========================================================================== */
+#contact-cover .cover-img {
+    background-image: url('/assets/build/img/int_3_s.jpg');
+    @media screen and (orientation:portrait) {
+        background-image: url('/assets/build/img/int_3_portrait_s.jpg');
+    }
+    @include at-least($S) {
+        background-image: url('/assets/build/img/int_3_m.jpg');
+        @media screen and (orientation:portrait) {
+            background-image: url('/assets/build/img/int_3_portrait_m.jpg');
+        }
+    }
+    @include at-least($M) {
+        background-image: url('/assets/build/img/int_3_l.jpg');
+    }
+    @include at-least($L) {
+        background-image: url('/assets/build/img/int_3_xl.jpg');
+    }
+    @include at-least($XL) {
+        background-image: url('/assets/build/img/int_3_xxl.jpg');
+    }
+    @include at-least(1440px) {
+        background-image: url('/assets/build/img/int_3_xxxl.jpg');
     }
 }
 .jotform-form {
@@ -1098,12 +1414,12 @@ canvas.ddpanorama:active {
     color: $dark-blue;
     z-index: 100;
     opacity: 1;
-    background-color: hsla(215,48%,13%,1);
+    background-color: $dark-blue;
     float: right;
     //line-height: normal;
     @include at-least($M) {
         opacity: 0;
-        background-color: hsla(215,48%,13%,0);
+        background-color: $dark-blue;
         margin-bottom: 2rem;
     }
 }
@@ -1176,7 +1492,7 @@ canvas.ddpanorama:active {
         &+.label::before {
             -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-            background-color: hsla(215,48%,13%,1);
+            background-color: $dark-blue;
             opacity: 1;
         }
         &+.label::after {
@@ -1240,13 +1556,46 @@ canvas.ddpanorama:active {
 }
 
 /* ==========================================================================
-   #BLOG
+   #NEWS
 ========================================================================== */
-.post article {
+.news {
+    h1 {
+        @extend .container;
+        margin-top: 1rem;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    .post-date {
+        margin: 0.5rem 0;
+    }
+}
+.single-post {
     @extend .container;
 }
-.post main {
-    padding-top: 3rem;
+body #main > .single-post {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* ==========================================================================
+   #POST
+========================================================================== */
+.post-footer {
+    background-color: transparent;
+    color: #444;
+}
+.post-date {
+    font-size: 0.8em;
+}
+
+/* ==========================================================================
+   #BREADCRUMBS
+========================================================================== */
+nav.breadcrumb {
+    float: none;
+    @extend .container;
+    margin-top: 5rem;
+    font-size: 0.8em;
 }
 
 /* ==========================================================================
@@ -1292,121 +1641,5 @@ html {
     }
     .h3 {
         @extend .container;
-    }
-}
-
-/* ==========================================================================
-   #LANDING PAGE
-========================================================================== */
-#landingpage{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    min-width: 100vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    #coolhouse-logo-c, #coolhouse-logo-text, .slab-headline, .landingpage-panorama, h2, p, form {
-        width: 90%;
-        max-width: 400px;
-        @include at-least($S) {
-            max-width: 450px;
-        }
-        @include at-least($M) {
-            max-width: 500px;
-        }
-        @include at-least($L) {
-            max-width: 550px;
-        }
-        @include at-least($XL) {
-            max-width: 600px;
-        }
-        @include at-least(1439px) {
-            max-width: 650px;
-        }
-        @include at-least(1679px) {
-            max-width: 700px;
-        }
-        /*@include at-least(1919px) {
-            width: 30vw;
-        }
-        @include at-least(2559px) {
-            width: 25vw;
-        }*/
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .landingpage-panorama {
-        position: relative;
-    }
-    .ddpanorama {
-        margin-top: 1rem;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    .logo {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-    .logo-c {
-        display: block;
-        width: 25%;
-        height: auto;
-        margin: 2rem auto;
-    }
-    .logo-cool {
-        fill:#001730;
-        font-family:$sans-font-family;
-        font-size:263.40985px; //239.4635*1.1
-        letter-spacing:13;
-    }
-    .logo-house {
-        opacity:0.8;
-        fill:#D19A29;
-        enable-background:new;
-        font-family:$sans-font-family;
-        font-size:276.17766px; //251.0706*1.1
-        letter-spacing: 18;
-    }
-    .logo-text {
-        fill: #001730;
-        font-family:$sans-font-family;
-    }
-    .logo-apartments {
-        font-size:89.4973px;
-    }
-    .logo-slogan {
-        font-size: 48.792px;
-    }
-    .logo-line {
-        opacity:0.8;
-        fill:none;
-        stroke:#D19A29;
-        stroke-width:3;
-        stroke-miterlimit:10;
-        enable-background:new;
-    }
-    .logo-dots {
-        fill: #001730;
-    }
-    .slab-headline {
-        margin-bottom: 1rem;
-    }
-    .field-group {
-        margin-top: 1rem;
-        width: 66%;
-    }
-    .submit {
-            position: relative;
-            top: -4em;
-        background-color: $gold;
-        &:hover, &:focus, &:active {
-            background-color: $dark-blue;
-        }
     }
 }

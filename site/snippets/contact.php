@@ -8,8 +8,6 @@
 	</div>
 </div>
 <article id="<?php echo l::get('contact') ?>" class="homepage-article">
-  <section>
   	<?php echo $data->text()->kirbytext() ?>
-  </section>
-  
+
 </article>

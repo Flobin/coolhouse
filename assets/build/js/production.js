@@ -295,8 +295,9 @@ document.onreadystatechange = function () {
             article = jq('.homepage-article'),
             input = jq(".input"),
             pano = jq(".panorama"),
-            slabHeadline = jq(".slab-headline")
-            swipebox = jq(".swipebox");
+            slabHeadline = jq(".slab-headline"),
+            swipebox = jq(".swipebox"),
+            unit = jq(".unit");
 
         var browserName = bowser.name.replace(/\s+/g, '');
         html.addClass(browserName);
@@ -368,7 +369,7 @@ document.onreadystatechange = function () {
               zoom: 17,
               center: new google.maps.LatLng(52.096875, 4.2679705),
               scrollwheel: false,
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#006bff"},{"lightness":"-3"}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"visibility":"on"},{"hue":"#006bff"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#fffefe"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"simplified"},{"hue":"#006bff"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.line","elementType":"geometry.fill","stylers":[{"hue":"#006bff"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#3e75b7"},{"visibility":"on"}]}]
+              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"simplified"},{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#e2e2e2"},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"hue":"#008bff"}]},{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45},{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.station.rail","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#4d88c2"},{"visibility":"simplified"}]}]
           };
           var mapElement = document.getElementById('locatie-map');
           var map = new google.maps.Map(mapElement, mapOptions);
@@ -411,6 +412,33 @@ document.onreadystatechange = function () {
                 loopAtEnd: true,
             }
         );
+
+        // unit.on("click", function() {
+        //     unit.removeClass("unitfocus");
+        //     $(this).addClass("unitfocus");
+        // })
+
+
+        var overview = document.getElementById("overview-svg");
+    	// Get the SVG document inside the Object tag
+    	var svg = overview.contentDocument;
+    	// Get the SVG elements by class
+    	var units = svg.getElementsByClassName("unit");
+        // make them an array
+        var unitsAsArray = Array.prototype.slice.call(units);
+
+        var lastClicked = svg.getElementById("P8");
+
+        unitsAsArray.forEach(function(element){
+            element.addEventListener("click", function() {
+                console.log("unit clicked");
+                //remove class from last focused unit
+                lastClicked.classList.remove("unitfocus");
+                //add class to this units
+                element.classList.add("unitfocus");
+                lastClicked = element;
+            })
+        }, this)
 
 
         input.focus(function() {

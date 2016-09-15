@@ -1,5 +1,0 @@
-title: First post
-----
-Date: 2015-05-20
-----
-text: This is the first post

@@ -9,23 +9,14 @@
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=aljgvmny2p">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=aljgvmny2p" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=aljgvmny2p" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v=aljgvmny2p">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=aljgvmny2p" color="#ddaf39">
+  <link rel="shortcut icon" href="/favicon.ico?v=aljgvmny2p">
+  <meta name="theme-color" content="#ddaf39">
 
   <meta property="og:title" content="CoolHouse Scheveningen" />
   <meta property="og:site_name" content="CoolHouse"/>
@@ -42,7 +33,7 @@
   <meta name="twitter:description" content="<?php echo $site->description()->html() ?>" />
   <meta name="twitter:image" content="http://cool-house.nl/assets/build/img/balkon_wide_1200.jpg" />
 
-  
+
   <script>
     if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)document.cookie='HTTP_IS_RETINA=1;path=/';
     (function(d) {
@@ -66,7 +57,7 @@
 
   <header class="header" role="banner" id="site-header">
     <a class="logo" href="<?php echo $site->language()->url() ?>">
-      <img src="<?php echo url('assets/build/img/logo_c.svg') ?>" alt="<?php echo $site->title()->html() ?>" id="header-logo-img" />
+      <img src="<?php echo url('assets/build/img/logo_coolhouse_header.svg') ?>" alt="<?php echo $site->title()->html() ?>" id="header-logo-img" />
     </a>
     <?php snippet('menu') ?>
   </header>

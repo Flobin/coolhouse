@@ -4,63 +4,89 @@ URL-key: Homes
 ----
 text:
 
-<section class="big two-columns gallery">
-    <a rel="gallery-2" href="/assets/build/img/straatview_3op2_" class="swipebox">
+<section class="big three-columns gallery">
+    <a rel="gallery-2" href="/assets/build/img/int_1_" class="swipebox" title="living room of a Penthouse">
         <figure>
             <picture>
-                  <source media="(min-width: 1200px)" srcset="/assets/build/img/straatview_3op2_l.jpg">
-                  <source media="(min-width: 1024px)" srcset="/assets/build/img/straatview_3op2_m.jpg">
-                  <source media="(max-width: 480px)" srcset="/assets/build/img/straatview_3op2_s.jpg">
-                  <img src="/assets/build/img/straatview_3op2_s.jpg" srcset="/assets/build/img/straatview_3op2_m.jpg 768w, /assets/build/img/straatview_3op2_l.jpg 1024w, /assets/build/img/straatview_3op2_xl.jpg 1200w, /assets/build/img/straatview_3op2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of the CoolHouse">
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_1_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_1_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_1_s.jpg">
+                  <img src="/assets/build/img/int_1_s.jpg" srcset="/assets/build/img/int_1_m.jpg 768w, /assets/build/img/int_1_l.jpg 1024w, /assets/build/img/int_1_xl.jpg 1200w, /assets/build/img/int_1_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interior of a Penthouse in Coolhouse">
             </picture>
         </figure>
     </a>
-    <a rel="gallery-2" href="/assets/build/img/balkon_3op2_" class="swipebox">
+    <a rel="gallery-2" href="/assets/build/img/int_2_" class="swipebox" title="living room of a Residence">
         <figure>
             <picture>
-                  <source media="(min-width: 1200px)" srcset="/assets/build/img/balkon_3op2_l.jpg">
-                  <source media="(min-width: 1024px)" srcset="/assets/build/img/balkon_3op2_m.jpg">
-                  <source media="(max-width: 480px)" srcset="/assets/build/img/balkon_3op2_s.jpg">
-                  <img src="/assets/build/img/balkon_3op2_s.jpg" srcset="/assets/build/img/balkon_3op2_m.jpg 768w, /assets/build/img/balkon_3op2_l.jpg 1024w, /assets/build/img/balkon_3op2_xl.jpg 1200w, /assets/build/img/balkon_3op2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of a balcony on the CoolHouse">
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_2_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_2_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_2_s.jpg">
+                  <img src="/assets/build/img/int_2_s.jpg" srcset="/assets/build/img/int_2_m.jpg 768w, /assets/build/img/int_2_l.jpg 1024w, /assets/build/img/int_2_xl.jpg 1200w, /assets/build/img/int_2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interior of a Penthouse in Coolhouse">
             </picture>
         </figure>
     </a>
-    <a rel="gallery-2" href="/assets/build/img/koppelstok_voor_" class="swipebox">
+    <a rel="gallery-2" href="/assets/build/img/int_3_3op2_" class="swipebox" title="interior of a Loft">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/int_3_3op2_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/int_3_3op2_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/int_3_3op2_s.jpg">
+                  <img src="/assets/build/img/int_3_3op2_s.jpg" srcset="/assets/build/img/int_3_3op2_m.jpg 768w, /assets/build/img/int_3_3op2_l.jpg 1024w, /assets/build/img/int_3_3op2_xl.jpg 1200w, /assets/build/img/int_3_3op2_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="interior of a Loft in Coolhouse">
+            </picture>
+        </figure>
+    </a>
+    <a rel="gallery-2" href="/assets/build/img/koppelstok_voor_" class="swipebox" title="view of the Residences and entrance to the parking garage from the Koppelstokstraat">
     	<figure>
     		<picture>
     		      <source media="(min-width: 1200px)" srcset="/assets/build/img/koppelstok_voor_l.jpg">
     		      <source media="(min-width: 1024px)" srcset="/assets/build/img/koppelstok_voor_m.jpg">
     		      <source media="(max-width: 480px)" srcset="/assets/build/img/koppelstok_voor_s.jpg">
-    		      <img src="/assets/build/img/koppelstok_voor_s.jpg" srcset="/assets/build/img/koppelstok_voor_m.jpg 768w, /assets/build/img/koppelstok_voor_l.jpg 1024w, /assets/build/img/koppelstok_voor_xl.jpg 1200w, /assets/build/img/koppelstok_voor_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of the Residences in the CoolHouse">
+    		      <img src="/assets/build/img/koppelstok_voor_s.jpg" srcset="/assets/build/img/koppelstok_voor_m.jpg 768w, /assets/build/img/koppelstok_voor_l.jpg 1024w, /assets/build/img/koppelstok_voor_xl.jpg 1200w, /assets/build/img/koppelstok_voor_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of the Residences in Coolhouse from the Koppelstokstraak">
     		</picture>
     	</figure>
     </a>
-    <a rel="gallery-2" href="/assets/build/img/koppelstok_achter_" class="swipebox">
+    <a rel="gallery-2" href="/assets/build/img/koppelstok_achter_" class="swipebox" title="view of the Residences from the common area">
     	<figure>
     		<picture>
     		      <source media="(min-width: 1200px)" srcset="/assets/build/img/koppelstok_achter_l.jpg">
     		      <source media="(min-width: 1024px)" srcset="/assets/build/img/koppelstok_achter_m.jpg">
     		      <source media="(max-width: 480px)" srcset="/assets/build/img/koppelstok_achter_s.jpg">
-    		      <img src="/assets/build/img/koppelstok_achter_s.jpg" srcset="/assets/build/img/koppelstok_achter_m.jpg 768w, /assets/build/img/koppelstok_achter_l.jpg 1024w, /assets/build/img/koppelstok_achter_xl.jpg 1200w, /assets/build/img/koppelstok_achter_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of the Residences in the CoolHouse from the Koppelstokstraat">
+    		      <img src="/assets/build/img/koppelstok_achter_s.jpg" srcset="/assets/build/img/koppelstok_achter_m.jpg 768w, /assets/build/img/koppelstok_achter_l.jpg 1024w, /assets/build/img/koppelstok_achter_xl.jpg 1200w, /assets/build/img/koppelstok_achter_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="rendering of the Residences in Coolhouse">
     		</picture>
     	</figure>
     </a>
+    <a rel="gallery-2" href="/assets/build/img/l21_" class="swipebox" title="the roof garden of Loft L2.2">
+        <figure>
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="/assets/build/img/l21_l.jpg">
+                  <source media="(min-width: 1024px)" srcset="/assets/build/img/l21_m.jpg">
+                  <source media="(max-width: 480px)" srcset="/assets/build/img/l21_s.jpg">
+                  <img src="/assets/build/img/l21_s.jpg" srcset="/assets/build/img/l21_m.jpg 768w, /assets/build/img/l21_l.jpg 1024w, /assets/build/img/l21_xl.jpg 1200w, /assets/build/img/l21_xxl.jpg 1632w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="roof garden of Loft L2.2 in Coolhouse">
+            </picture>
+        </figure>
+    </a>
 </section>
 
+<section class="text">
+<div class="leftcolumn">
+    <p>
+        The CoolHouse offers spacious penthouses of ca. 308m&#178; and lofts of ca. 154m&#178;, spread across seven floors. The apartments, which are surrounded by balconies, can be completely custom designed to ensure that future residents can live in their dream house. By closely cooperating with the architect personal layouts will be defined in an early stage. This makes Coolhouse a unique chance to put your personal wishes and needs into the home.
+    </p>
+</div>
+<div class="rightcolumn">
+    <p>
+        The project also contains four fantastic houses on the Koppelstokstraat of ca. 185m&#178; each.
+    </p>
+    <p>
+        In the image below you can see which homes have been reserved (in blue) and which homes are still available (in golden yellow). Click on the home for a link to the floor plan.
+    </p>
+</div>
+</section>
 
-The CoolHouse offers spacious penthouses of ca. 308m&#178; and lofts of ca. 154m&#178;, spread across seven floors. The apartments, which are surrounded by balconies, can be completely custom designed to ensure that future residents can live in their dream house. By closely cooperating with the (interior) architect personal layouts will be defined in an early stage. This makes the CoolHouse a unique chance to put your personal wishes and needs into the home.
-
-The project also contains four fantastic houses on the Koppelstokstraat of ca. 185m&#178; each.
-
-In the image below you can see which homes are still available (in dark blue) and which have been reserved (in golden yellow).
-
-<figure class="big">
-    <picture>
-        <source media="(min-width: 1200px)" srcset="/assets/build/img/coolhouse_availability_xxl.png">
-        <source media="(min-width: 1024px)" srcset="/assets/build/img/coolhouse_availability_xl.png">
-        <source  media="(min-width: 768px)" srcset="/assets/build/img/coolhouse_availability_l.png">
-        <source  media="(min-width: 480px)" srcset="/assets/build/img/coolhouse_availability_m.png">
-        <source  media="(max-width: 480px)" srcset="/assets/build/img/coolhouse_availability_s.png">
-        <img src="/assets/build/img/coolhouse_availability_s.png" srcset="/assets/build/img/coolhouse_availability_m.png 768w, /assets/build/img/coolhouse_availability_l.png 1024w, /assets/build/img/coolhouse_availability_xl.png 1200w, /assets/build/img/coolhouse_availability_xxl.png 1608w" sizes="(min-width: 768px) 95vw, (min-width: 1024px) 80vw, (min-width: 1200px) 70vw, 100vw" alt="picture of the availability of the CoolHouse">
-    </picture>
+<figure class="big" id="overview">
+    <object type="image/svg+xml" data="/assets/build/img/overview-new-en.svg" id="overview-svg">
+        <img class="svgfallback" src="/assets/build/img/overview_fallback_1680.png" alt="Homes in Coolhouse">
+    </object>
 </figure>
+
+<h3 class="pullquote">‘Coolhouse is therefore a unique chance to project your wants and needs on an apartment.’</h3>
