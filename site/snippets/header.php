@@ -50,7 +50,7 @@
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script>
 
-  <?php echo css('assets/build/style/global.css') ?>
+  <?php echo css('assets/build/style/global.css?v=2') ?>
 
 </head>
 <body class="<?php echo $page->template() ?>">

@@ -28,7 +28,7 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3b9pBpSLNDZoC6jt-kJXadoOxm-g5Jgo&sensor=false"></script>
   <script src="<?php echo l::get('jotform-prototype') ?>" type="text/javascript"></script>
   <script src="<?php echo l::get('jotform') ?>" type="text/javascript"></script>
-  <script src="/assets/build/js/production.js"></script>
+  <script src="/assets/build/js/production.min.js?v=2"></script>
   <script src="//localhost:35729/livereload.js"></script>
   <!-- Facebook Conversion Code for Registrations - CoolHouse -->
   <script>(function() {
